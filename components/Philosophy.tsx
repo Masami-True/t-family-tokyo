@@ -59,14 +59,14 @@ export default function Philosophy() {
 
       {/* CEO Message */}
       <div className="mt-20 flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
-        {/* CEO Image */}
-        <div className="shrink-0">
+        {/* Company Logo */}
+        <div className="shrink-0 flex items-center justify-center w-48 h-48">
           <Image
-            src="/images/ceo.jpg"
-            alt={t("ceo_name")}
-            width={192}
-            height={192}
-            className="w-48 h-48 object-cover rounded-full"
+            src="/images/logo.png"
+            alt="T-Family"
+            width={160}
+            height={160}
+            className="w-40 h-auto object-contain"
           />
         </div>
 
