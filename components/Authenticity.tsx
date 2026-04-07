@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function Authenticity() {
@@ -38,14 +37,8 @@ export default function Authenticity() {
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
         {/* Entrupy */}
         <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-            <Image
-              src="/images/entrupy.png"
-              alt="Entrupy"
-              width={60}
-              height={60}
-              className="object-contain"
-            />
+          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+            ◉
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
             {t("entrupy_title")}
@@ -84,27 +77,16 @@ export default function Authenticity() {
 
       {/* Certificate info */}
       <div className="max-w-3xl mx-auto bg-offwhite p-8 md:p-12 rounded">
-        <div className="flex flex-col md:flex-row items-center gap-8">
-          <div className="shrink-0">
-            <Image
-              src="/images/entrupy.png"
-              alt="Entrupy Certificate"
-              width={200}
-              height={200}
-              className="w-48 h-auto object-contain"
-            />
-          </div>
-          <div>
-            <h3 className="font-heading text-xl mb-3">{t("cert_title")}</h3>
-            <p className="text-subtext text-sm leading-relaxed mb-4">
-              {t("cert_desc")}
-            </p>
-            <div className="flex items-center gap-2 text-gold">
-              <span className="text-lg">✓</span>
-              <span className="text-sm font-medium tracking-wider">
-                {t("cert_badge")}
-              </span>
-            </div>
+        <div className="text-center">
+          <h3 className="font-heading text-xl mb-3">{t("cert_title")}</h3>
+          <p className="text-subtext text-sm leading-relaxed mb-4">
+            {t("cert_desc")}
+          </p>
+          <div className="flex items-center justify-center gap-2 text-gold">
+            <span className="text-lg">✓</span>
+            <span className="text-sm font-medium tracking-wider">
+              {t("cert_badge")}
+            </span>
           </div>
         </div>
       </div>
