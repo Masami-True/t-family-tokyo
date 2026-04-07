@@ -7,9 +7,10 @@
   },
   "hero": {
     "eyebrow": "TOKYO · NISHI-SHIMBASHI",
-    "h1_line1": "Only Authentic.",
-    "h1_line2": "Only Japan.",
-    "subcopy": "Premium pre-owned luxury bags from Tokyo. Authenticated. Curated. Certified.",
+    "h1_line1": "Timeless",
+    "h1_accent": "Value,",
+    "h1_line2": " Delivered.",
+    "subcopy": "Curated luxury pieces awaiting their next chapter. Authenticated. Certified. From Tokyo.",
     "cta_shop": "SHOP NOW",
     "cta_live": "BECOME A LIVE SELLER"
   },
@@ -18,14 +19,14 @@
     "guarantee": "100% AUTHENTICITY GUARANTEED"
   },
   "philosophy": {
-    "headline": "Japan's Finest, Delivered to the World.",
+    "headline": "From Japan to the World, Delivering Authenticity.",
     "authentic_title": "AUTHENTIC",
     "authentic_desc": "Verified by expert staff, one by one. Every item guaranteed genuine.",
     "curated_title": "CURATED",
     "curated_desc": "Only the finest condition items make it to our shelves.",
     "certified_title": "CERTIFIED",
     "certified_desc": "AI authentication by Entrupy — world standard precision.",
-    "ceo_name": "Tominaga Tomitsugu",
+    "ceo_name": "Tominaga Asaki",
     "ceo_title": "Representative Director, T-Family Inc.",
     "ceo_message": "Our commitment is to deliver only authentic items. Every product comes with an Authenticity Guarantee — 100% refund if ever found inauthentic. We serve customers worldwide with trust, transparency, and care."
   },

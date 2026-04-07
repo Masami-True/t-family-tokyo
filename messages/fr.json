@@ -7,9 +7,10 @@
   },
   "hero": {
     "eyebrow": "TOKYO · NISHI-SHIMBASHI",
-    "h1_line1": "Uniquement Authentique.",
-    "h1_line2": "Uniquement le Japon.",
-    "subcopy": "Sacs de luxe authentiques depuis Tokyo. Certifiés. Sélectionnés.",
+    "h1_line1": "Au-delà du temps,",
+    "h1_accent": "la valeur",
+    "h1_line2": " perdure.",
+    "subcopy": "Des pièces de luxe soigneusement sélectionnées, en attente de leur prochain chapitre.",
     "cta_shop": "ACHETER MAINTENANT",
     "cta_live": "DEVENIR VENDEUR LIVE"
   },
@@ -18,14 +19,14 @@
     "guarantee": "AUTHENTICITÉ 100% GARANTIE"
   },
   "philosophy": {
-    "headline": "L'Authenticité du Japon, pour le Monde.",
+    "headline": "Du Japon au Monde, l'Authenticité Livrée.",
     "authentic_title": "AUTHENTIC",
     "authentic_desc": "Vérifié par nos experts, pièce par pièce. Chaque article garanti authentique.",
     "curated_title": "CURATED",
     "curated_desc": "Seuls les articles en excellent état sont sélectionnés pour nos vitrines.",
     "certified_title": "CERTIFIED",
     "certified_desc": "Authentification IA par Entrupy — précision aux standards mondiaux.",
-    "ceo_name": "Tominaga Tomitsugu",
+    "ceo_name": "Tominaga Asaki",
     "ceo_title": "Directeur Représentant, T-Family Inc.",
     "ceo_message": "Notre engagement est de ne livrer que des articles authentiques. Chaque produit est accompagné d'une Garantie d'Authenticité — remboursement intégral en cas de contrefaçon avérée. Nous servons nos clients du monde entier avec confiance, transparence et attention."
   },

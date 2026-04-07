@@ -7,9 +7,10 @@
   },
   "hero": {
     "eyebrow": "TOKYO · 西新桥",
-    "h1_line1": "只卖正品。",
-    "h1_line2": "只来自日本。",
-    "subcopy": "来自东京的正品奢华包袋。严选·认证·可信赖。",
+    "h1_line1": "跨越时间，",
+    "h1_accent": "传递",
+    "h1_line2": "价值。",
+    "subcopy": "精心甄选的至臻逸品，等待开启新的篇章。",
     "cta_shop": "立即选购",
     "cta_live": "成为直播卖家"
   },
@@ -18,14 +19,14 @@
     "guarantee": "100% 正品保证"
   },
   "philosophy": {
-    "headline": "将日本正品带向世界。",
+    "headline": "从日本到世界，传递真品。",
     "authentic_title": "AUTHENTIC",
     "authentic_desc": "专业团队逐一鉴定，每件商品均保证正品。",
     "curated_title": "CURATED",
     "curated_desc": "仅甄选品相优良的商品上架。",
     "certified_title": "CERTIFIED",
     "certified_desc": "Entrupy AI鉴定——世界级精准认证。",
-    "ceo_name": "冨永 智嗣",
+    "ceo_name": "富永 朝樹",
     "ceo_title": "T-Family株式会社 代表取缔役",
     "ceo_message": "我们始终坚持只提供正品。每件商品均附真伪保证书——如经确认为假货，全额退款。我们以信任、透明和用心，服务全球客户。"
   },

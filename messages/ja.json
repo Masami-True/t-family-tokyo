@@ -7,9 +7,10 @@
   },
   "hero": {
     "eyebrow": "TOKYO · 西新橋",
-    "h1_line1": "本物だけを。",
-    "h1_line2": "日本から。",
-    "subcopy": "東京から世界へ。本物のブランドバッグを、安心して。",
+    "h1_line1": "時を越えて、",
+    "h1_accent": "価値",
+    "h1_line2": "を繋ぐ。",
+    "subcopy": "厳選された至高の逸品たちが、新たな物語を待ちわびています。",
     "cta_shop": "今すぐ購入",
     "cta_live": "ライブセラーになる"
   },
@@ -18,14 +19,14 @@
     "guarantee": "100% 真贋保証"
   },
   "philosophy": {
-    "headline": "日本の本物を、世界へ。",
+    "headline": "日本から世界へ、本物を届ける。",
     "authentic_title": "AUTHENTIC",
     "authentic_desc": "専門スタッフが一点一点確認。全商品に真贋保証。",
     "curated_title": "CURATED",
     "curated_desc": "状態の良い商品のみを厳選した在庫。",
     "certified_title": "CERTIFIED",
     "certified_desc": "EntrupyによるAI認証。世界基準の品質保証。",
-    "ceo_name": "冨永 智嗣",
+    "ceo_name": "富永 朝樹",
     "ceo_title": "株式会社T-Family 代表取締役",
     "ceo_message": "「確かな本物だけをお届けする」ことを徹底しています。全商品に真贋保証をお付けし、万が一偽物と確認された場合は全額返金。国内外どちらのお客様にも、信頼・透明性・丁寧さを軸にお届けします。"
   },
@@ -36,7 +37,7 @@
   },
   "live": {
     "label": "ライブコマースプログラム",
-    "headline": "日本の本物を、世界へ売る。どこからでも。",
+    "headline": "日本から世界へ、本物を売る。どこからでも。",
     "subcopy": "在庫不要。リスクなし。ライブ配信するだけ。",
     "step1_num": "01",
     "step1_title": "応募",

@@ -7,9 +7,10 @@
   },
   "hero": {
     "eyebrow": "TOKYO · NISHI-SHIMBASHI",
-    "h1_line1": "Solo Auténtico.",
-    "h1_line2": "Solo Japón.",
-    "subcopy": "Bolsos de lujo auténticos desde Tokio. Certificados. Curados.",
+    "h1_line1": "A través del tiempo,",
+    "h1_accent": "valor",
+    "h1_line2": " que perdura.",
+    "subcopy": "Piezas de lujo cuidadosamente seleccionadas, esperando su próximo capítulo.",
     "cta_shop": "COMPRAR AHORA",
     "cta_live": "SER VENDEDOR EN VIVO"
   },
@@ -18,14 +19,14 @@
     "guarantee": "100% AUTENTICIDAD GARANTIZADA"
   },
   "philosophy": {
-    "headline": "Lo Auténtico de Japón, para el Mundo.",
+    "headline": "De Japón al Mundo, Entregando Autenticidad.",
     "authentic_title": "AUTHENTIC",
     "authentic_desc": "Verificado por expertos, pieza por pieza. Cada artículo garantizado como genuino.",
     "curated_title": "CURATED",
     "curated_desc": "Solo los artículos en las mejores condiciones llegan a nuestras vitrinas.",
     "certified_title": "CERTIFIED",
     "certified_desc": "Autenticación con IA de Entrupy — precisión de estándar mundial.",
-    "ceo_name": "Tominaga Tomitsugu",
+    "ceo_name": "Tominaga Asaki",
     "ceo_title": "Director Representante, T-Family Inc.",
     "ceo_message": "Nuestro compromiso es entregar solo artículos auténticos. Cada producto incluye una Garantía de Autenticidad — reembolso del 100% si se determina que no es genuino. Servimos a clientes en todo el mundo con confianza, transparencia y dedicación."
   },
