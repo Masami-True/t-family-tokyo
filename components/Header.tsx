@@ -24,6 +24,7 @@ const navItems = [
 
 export default function Header() {
   const t = useTranslations("nav");
+  const tFooter = useTranslations("footer");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -187,14 +188,14 @@ export default function Header() {
                 onClick={() => setMobileOpen(false)}
                 className="text-sm text-white/40 hover:text-gold transition-colors tracking-wider"
               >
-                {t("company", { defaultValue: "会社概要" })}
+                {tFooter("company")}
               </a>
               <a
                 href={`/${locale}/tokusyohou`}
                 onClick={() => setMobileOpen(false)}
                 className="text-sm text-white/40 hover:text-gold transition-colors tracking-wider"
               >
-                特定商取引法
+                {tFooter("tokusho")}
               </a>
             </div>
 
