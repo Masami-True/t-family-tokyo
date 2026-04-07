@@ -69,9 +69,10 @@ export default function Header() {
           <Image
             src="/images/logo.png"
             alt="T-Family"
-            width={180}
-            height={52}
-            style={{ height: "52px", width: "auto" }}
+            width={240}
+            height={90}
+            style={{ height: "90px", width: "auto" }}
+            className="max-h-[40px] md:max-h-[90px] w-auto"
             priority
           />
         </a>

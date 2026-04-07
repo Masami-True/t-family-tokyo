@@ -98,14 +98,11 @@ export default function LiveCommerce() {
         {/* CTA - link to WhatsApp or email instead of form */}
         <div className="text-center">
           <a
-            href="mailto:info@t-family.tokyo?subject=Live%20Seller%20Application"
+            href="/liveseller/"
             className="inline-block bg-gold text-dark px-12 py-4 text-sm tracking-[0.2em] font-medium hover:bg-gold-dark transition-colors"
           >
             {t("cta")}
           </a>
-          <p className="text-offwhite/30 text-xs mt-4 tracking-wider">
-            info@t-family.tokyo
-          </p>
         </div>
       </div>
     </section>
