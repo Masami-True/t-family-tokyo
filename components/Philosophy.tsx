@@ -42,10 +42,10 @@ export default function Philosophy() {
         src="/images/japan/sakura.jpg"
         alt=""
         fill
-        className="object-cover opacity-[0.08]"
+        className="object-cover opacity-[0.25]"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-offwhite/90" />
+      <div className="absolute inset-0 bg-offwhite/75" />
 
       {/* Headline */}
       <h2 className="relative z-10 font-heading text-4xl md:text-5xl text-center text-text mb-16">

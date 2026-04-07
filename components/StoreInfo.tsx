@@ -46,10 +46,10 @@ export default function StoreInfo() {
           src="/images/japan/tokyo-night.jpg"
           alt=""
           fill
-          className="object-cover opacity-[0.05]"
+          className="object-cover opacity-[0.25]"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-offwhite/93" />
+        <div className="absolute inset-0 bg-offwhite/70" />
 
         {/* Label */}
         <p className="relative z-10 text-xs tracking-[0.2em] text-gold text-center mb-12">

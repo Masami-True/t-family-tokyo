@@ -31,10 +31,10 @@ export default function CeoGreeting() {
         src="/images/japan/temple.jpg"
         alt=""
         fill
-        className="object-cover opacity-[0.06]"
+        className="object-cover opacity-[0.25]"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-offwhite/92" />
+      <div className="absolute inset-0 bg-offwhite/70" />
 
       <p className="relative z-10 text-xs tracking-[0.2em] text-gold text-center mb-4">
         {t("label")}
