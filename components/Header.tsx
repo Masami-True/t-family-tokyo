@@ -127,17 +127,17 @@ export default function Header() {
         >
           <span
             className={`block h-[2px] w-6 transition-all duration-300 ${
-              mobileOpen ? "translate-y-[7px] rotate-45 bg-text" : "bg-white"
+              mobileOpen ? "translate-y-[7px] rotate-45 bg-white" : "bg-white"
             }`}
           />
           <span
             className={`block h-[2px] w-6 transition-opacity duration-300 ${
-              mobileOpen ? "opacity-0 bg-text" : "bg-white"
+              mobileOpen ? "opacity-0 bg-white" : "bg-white"
             }`}
           />
           <span
             className={`block h-[2px] w-6 transition-all duration-300 ${
-              mobileOpen ? "-translate-y-[7px] -rotate-45 bg-text" : "bg-white"
+              mobileOpen ? "-translate-y-[7px] -rotate-45 bg-white" : "bg-white"
             }`}
           />
         </button>
@@ -145,49 +145,80 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 top-0 z-50 bg-offwhite transition-transform duration-300 md:hidden ${
-          mobileOpen ? "translate-x-0" : "translate-x-full"
+        className={`fixed inset-0 top-0 z-50 bg-dark/95 backdrop-blur-lg transition-all duration-500 md:hidden ${
+          mobileOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
         }`}
       >
-        <div className="flex h-full flex-col items-center justify-center gap-8">
-          {navItems.map((item) =>
-            item.external ? (
-              <a
-                key={item.key}
-                href={item.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                onClick={() => setMobileOpen(false)}
-                className="text-xl font-medium uppercase tracking-[0.1em] text-text transition-colors hover:text-gold"
-              >
-                {t(item.key)}
-              </a>
-            ) : (
-              <a
-                key={item.key}
-                href={item.href}
-                onClick={() => setMobileOpen(false)}
-                className="text-xl font-medium uppercase tracking-[0.1em] text-text transition-colors hover:text-gold"
-              >
-                {t(item.key)}
-              </a>
-            )
-          )}
+        <div className="flex h-full flex-col justify-between px-8 py-24">
+          {/* Main nav */}
+          <div className="space-y-1">
+            {navItems.map((item, i) =>
+              item.external ? (
+                <a
+                  key={item.key}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setMobileOpen(false)}
+                  className="block font-heading text-3xl tracking-[0.08em] text-white/90 py-3 border-b border-white/10 transition-colors hover:text-gold"
+                  style={{ animationDelay: `${i * 80}ms` }}
+                >
+                  {t(item.key)}
+                </a>
+              ) : (
+                <a
+                  key={item.key}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block font-heading text-3xl tracking-[0.08em] text-white/90 py-3 border-b border-white/10 transition-colors hover:text-gold"
+                  style={{ animationDelay: `${i * 80}ms` }}
+                >
+                  {t(item.key)}
+                </a>
+              )
+            )}
+          </div>
 
-          <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
-            {routing.locales.map((loc, i) => (
-              <span key={loc} className="flex items-center">
-                {i > 0 && <span className="mx-1 text-border">|</span>}
+          {/* Sub links */}
+          <div className="space-y-4">
+            <div className="flex gap-6">
+              <a
+                href={`/${locale}/company`}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm text-white/40 hover:text-gold transition-colors tracking-wider"
+              >
+                {t("company", { defaultValue: "会社概要" })}
+              </a>
+              <a
+                href={`/${locale}/tokusyohou`}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm text-white/40 hover:text-gold transition-colors tracking-wider"
+              >
+                特定商取引法
+              </a>
+            </div>
+
+            {/* Locale switcher */}
+            <div className="flex flex-wrap items-center gap-3 pt-4 border-t border-white/10">
+              {routing.locales.map((loc) => (
                 <button
+                  key={loc}
                   onClick={() => switchLocale(loc)}
-                  className={`transition-colors hover:text-gold ${
-                    locale === loc ? "font-semibold text-gold" : "text-subtext"
+                  className={`text-xs tracking-wider px-3 py-1.5 border transition-all ${
+                    locale === loc
+                      ? "border-gold text-gold"
+                      : "border-white/15 text-white/40 hover:border-gold hover:text-gold"
                   }`}
                 >
                   {localeLabels[loc]}
                 </button>
-              </span>
-            ))}
+              ))}
+            </div>
+
+            {/* Contact */}
+            <p className="text-[10px] text-white/20 tracking-widest">
+              info@t-family.tokyo
+            </p>
           </div>
         </div>
       </div>
