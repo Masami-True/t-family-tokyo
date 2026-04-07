@@ -69,13 +69,22 @@ export default function Footer() {
     <footer className="bg-dark py-16 px-6">
       <div className="max-w-5xl mx-auto text-center">
         {/* Logo */}
-        <Image
-          src="/images/logo.png"
-          alt="T-Family"
-          width={120}
-          height={32}
-          className="h-8 w-auto mx-auto mb-8"
-        />
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="inline-block mb-8"
+        >
+          <Image
+            src="/images/logo.png"
+            alt="T-Family"
+            width={200}
+            height={80}
+            className="h-20 w-auto mx-auto"
+          />
+        </a>
 
         {/* SNS Icons */}
         <div className="flex justify-center gap-6 mb-8">
