@@ -111,7 +111,9 @@ export default function B2BSection() {
       {/* CTA */}
       <div className="text-center mt-12">
         <a
-          href="/buyer01/"
+          href="https://t-family.tokyo/buyer01/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-block border border-gold text-gold px-10 py-4 text-sm tracking-[0.2em] hover:bg-gold hover:text-dark transition-all"
         >
           {t("cta")}
