@@ -50,8 +50,8 @@ export default function CeoGreeting() {
           <p className="text-subtext text-sm leading-[2] whitespace-pre-line mb-6">
             {t("message")}
           </p>
-          <p className="font-heading text-lg text-text">{t("name")}</p>
-          <p className="text-sm text-subtext">{t("title")}</p>
+          <p className="text-sm text-subtext whitespace-pre-line">{t("title")}</p>
+          <p className="font-heading text-lg text-text mt-1">{t("name")}</p>
         </div>
       </div>
     </section>
