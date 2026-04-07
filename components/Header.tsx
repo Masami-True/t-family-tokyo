@@ -146,7 +146,7 @@ export default function Header() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 top-0 z-50 bg-dark/95 backdrop-blur-lg transition-all duration-500 md:hidden ${
+        className={`fixed inset-0 top-0 z-50 bg-[#111111] transition-all duration-500 md:hidden ${
           mobileOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full"
         }`}
       >
