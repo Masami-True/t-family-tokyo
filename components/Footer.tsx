@@ -108,10 +108,16 @@ export default function Footer() {
             )
           )}
           <Link
+            href="/company"
+            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+          >
+            {t("footer.company")}
+          </Link>
+          <Link
             href="/tokusyohou"
             className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
           >
-            特定商取引法に基づく表記
+            {t("footer.tokusho")}
           </Link>
         </nav>
 
