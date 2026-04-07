@@ -58,17 +58,23 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="shrink-0">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          className="shrink-0"
+        >
           <Image
             src="/images/logo.png"
             alt="T-Family"
-            width={140}
-            height={40}
-            style={{ height: "40px", width: "auto" }}
+            width={180}
+            height={52}
+            style={{ height: "52px", width: "auto" }}
             priority
-            className="brightness-0 invert"
           />
-        </Link>
+        </a>
 
         {/* Desktop Nav */}
         <nav className="hidden items-center gap-10 md:flex">

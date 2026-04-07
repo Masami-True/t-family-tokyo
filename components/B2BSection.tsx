@@ -101,6 +101,10 @@ export default function B2BSection() {
             <p className="text-offwhite/40 mb-1">{t("info_license")}</p>
             <p className="text-offwhite text-xs">第301132115776号</p>
           </div>
+          <div className="col-span-2">
+            <p className="text-offwhite/40 mb-1">{t("info_address")}</p>
+            <p className="text-offwhite text-sm whitespace-pre-line">{t("info_address_value")}</p>
+          </div>
         </div>
       </div>
 

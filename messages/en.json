@@ -142,6 +142,10 @@
     "info_capital": "Capital",
     "info_employees": "Employees",
     "info_license": "License No.",
+    "info_address": "Address",
+    "info_address_value": "Le Gracielle BLDG 15, 5F
+1-18-11 Nishi-Shinbashi
+Minato-ku, Tokyo",
     "cta": "CONTACT FOR WHOLESALE"
   }
 }

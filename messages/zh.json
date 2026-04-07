@@ -142,6 +142,9 @@
     "info_capital": "注册资本",
     "info_employees": "员工人数",
     "info_license": "许可证号",
+    "info_address": "地址",
+    "info_address_value": "东京都港区西新桥1丁目18-11
+Le Gracielle BLDG 15号馆5F",
     "cta": "批发咨询"
   }
 }

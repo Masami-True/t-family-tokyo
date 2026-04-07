@@ -23,9 +23,9 @@ export default function HomePage() {
         <CollectionPreview />
         <Authenticity />
         <GoogleReviews />
-        <CeoGreeting />
         <LiveCommerce />
         <B2BSection />
+        <CeoGreeting />
         <StoreInfo />
       </main>
       <Footer />

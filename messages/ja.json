@@ -142,6 +142,9 @@
     "info_capital": "資本金",
     "info_employees": "従業員数",
     "info_license": "古物商許可番号",
+    "info_address": "所在地",
+    "info_address_value": "東京都港区西新橋1丁目18-11
+ル・グラシエルBLDG 15号館5F",
     "cta": "卸売のお問い合わせ"
   }
 }
