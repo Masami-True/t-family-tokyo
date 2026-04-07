@@ -1,14 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function StoreInfo() {
   const t = useTranslations("store");
   const sectionRef = useRef<HTMLElement>(null);
-  const [showWechatQR, setShowWechatQR] = useState(false);
-
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -109,13 +107,6 @@ export default function StoreInfo() {
               >
                 WHATSAPP
               </a>
-              <button
-                type="button"
-                onClick={() => setShowWechatQR(true)}
-                className="border border-gold text-gold px-6 py-3 text-sm tracking-wider hover:bg-gold/10 transition-colors"
-              >
-                WECHAT QR
-              </button>
             </div>
 
             {/* Payment Methods */}
@@ -133,30 +124,6 @@ export default function StoreInfo() {
         </div>
       </section>
 
-      {/* WeChat QR Modal */}
-      {showWechatQR && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/50"
-          onClick={() => setShowWechatQR(false)}
-        >
-          <div
-            className="bg-white p-8 rounded max-w-sm w-full mx-4 text-center"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <p className="font-heading text-lg mb-4">WeChat QR Code</p>
-            <div className="w-48 h-48 mx-auto bg-cream border border-border flex items-center justify-center text-subtext text-sm">
-              QR Code
-            </div>
-            <button
-              type="button"
-              onClick={() => setShowWechatQR(false)}
-              className="mt-6 text-sm text-subtext hover:text-text transition-colors"
-            >
-              CLOSE
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
