@@ -10,6 +10,8 @@
   --color-dark: #1A1A1A;
   --color-border: #E0D9CC;
   --color-whatsapp: #25D366;
+  --color-sakura: #F4B4C6;
+  --color-sakura-light: #FDE8EF;
 
   --font-heading: "Cormorant Garamond", "Noto Serif JP", serif;
   --font-body: "DM Sans", sans-serif;
@@ -49,4 +51,31 @@ body {
 .fade-in-section.is-visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* Sakura petal falling animation */
+@keyframes sakura-fall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(105vh) translateX(80px) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes sakura-sway {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
 }
