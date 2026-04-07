@@ -18,7 +18,8 @@ export async function POST(req: NextRequest) {
 
     // 1. Notification email to T-Family
     await transporter.sendMail({
-      from: `"T-Family" <${process.env.SMTP_USER || "info@t-family.tokyo"}>`,
+      from: `"T-Family" <${process.env.SMTP_USER || "tominaga@t-family.tokyo"}>`,
+      replyTo: email,
       to: "info@t-family.tokyo",
       subject: `【ライブセラー応募】${name} 様`,
       html: `
@@ -38,7 +39,8 @@ export async function POST(req: NextRequest) {
 
     // 2. Auto-reply to applicant
     await transporter.sendMail({
-      from: `"T-Family Inc." <${process.env.SMTP_USER || "info@t-family.tokyo"}>`,
+      from: `"T-Family Inc." <${process.env.SMTP_USER || "tominaga@t-family.tokyo"}>`,
+      replyTo: "info@t-family.tokyo",
       to: email,
       subject: "【T-Family】ライブセラーへのご応募ありがとうございます",
       html: `
