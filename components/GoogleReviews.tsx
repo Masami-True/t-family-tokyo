@@ -103,7 +103,7 @@ export default function GoogleReviews() {
       {/* Google Maps link */}
       <div className="text-center">
         <a
-          href="https://www.google.com/maps/place/T-Family/@35.668,139.7515,17z"
+          href="https://share.google/eJlVMlu8ie6p8b51v"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm text-subtext hover:text-gold transition-colors"
