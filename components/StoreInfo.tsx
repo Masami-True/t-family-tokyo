@@ -39,14 +39,24 @@ export default function StoreInfo() {
       <section
         id="store"
         ref={sectionRef}
-        className="fade-in-section bg-offwhite py-24 px-6"
+        className="fade-in-section relative py-24 px-6 overflow-hidden"
       >
+        {/* Tokyo night background */}
+        <Image
+          src="/images/japan/tokyo-night.jpg"
+          alt=""
+          fill
+          className="object-cover opacity-[0.05]"
+          aria-hidden="true"
+        />
+        <div className="absolute inset-0 bg-offwhite/93" />
+
         {/* Label */}
-        <p className="text-xs tracking-[0.2em] text-gold text-center mb-12">
+        <p className="relative z-10 text-xs tracking-[0.2em] text-gold text-center mb-12">
           {t("label")}
         </p>
 
-        <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+        <div className="relative z-10 grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
           {/* Left column — Map & Photos */}
           <div>
             <iframe

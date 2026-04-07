@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const cardData = [
@@ -34,15 +35,25 @@ export default function Philosophy() {
     <section
       id="about"
       ref={sectionRef}
-      className="fade-in-section bg-offwhite py-24 px-6"
+      className="fade-in-section relative py-24 px-6 overflow-hidden"
     >
+      {/* Sakura background */}
+      <Image
+        src="/images/japan/sakura.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-[0.08]"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-offwhite/90" />
+
       {/* Headline */}
-      <h2 className="font-heading text-4xl md:text-5xl text-center text-text mb-16">
+      <h2 className="relative z-10 font-heading text-4xl md:text-5xl text-center text-text mb-16">
         {t("headline")}
       </h2>
 
       {/* 3-column card grid */}
-      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <div className="relative z-10 grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         {cardData.map((card) => (
           <div key={card.titleKey} className="text-center p-8">
             <div className="text-gold text-2xl mb-4">{card.icon}</div>

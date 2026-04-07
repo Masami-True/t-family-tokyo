@@ -24,16 +24,26 @@ export default function CeoGreeting() {
   return (
     <section
       ref={sectionRef}
-      className="fade-in-section bg-offwhite py-24 px-6"
+      className="fade-in-section relative py-24 px-6 overflow-hidden"
     >
-      <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
+      {/* Japanese temple background */}
+      <Image
+        src="/images/japan/temple.jpg"
+        alt=""
+        fill
+        className="object-cover opacity-[0.06]"
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0 bg-offwhite/92" />
+
+      <p className="relative z-10 text-xs tracking-[0.2em] text-gold text-center mb-4">
         {t("label")}
       </p>
-      <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-16">
+      <h2 className="relative z-10 font-heading text-3xl md:text-4xl text-center text-text mb-16">
         {t("headline")}
       </h2>
 
-      <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="relative z-10 max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-12">
         {/* Logo */}
         <div className="shrink-0 flex items-center justify-center w-40 h-40">
           <Image
