@@ -42,11 +42,11 @@ export default function Philosophy() {
         src="/images/japan/fuji-sakura.jpg"
         alt="Mount Fuji with cherry blossoms"
         fill
-        className="object-cover"
+        className="object-cover object-top"
         priority
       />
-      {/* Dark overlay for text readability */}
-      <div className="absolute inset-0 bg-black/50" />
+      {/* Overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40" />
 
       {/* Headline */}
       <h2 className="relative z-10 font-heading text-4xl md:text-5xl text-center text-white mb-16">
