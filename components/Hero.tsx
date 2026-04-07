@@ -13,10 +13,9 @@ const slides = [
   { src: "/images/hero/06.png", alt: "PRADA", brand: "PRADA" },
   { src: "/images/hero/07.png", alt: "GOYARD", brand: "GOYARD" },
   { src: "/images/hero/08.png", alt: "BURBERRY", brand: "BURBERRY" },
-  { src: "/images/hero/09.jpg", alt: "TOKYO", brand: "TOKYO" },
-  { src: "/images/hero/10.jpg", alt: "LUXURY", brand: "LUXURY" },
-  { src: "/images/hero/11.jpg", alt: "PREMIUM", brand: "PREMIUM" },
-  { src: "/images/hero/12.jpg", alt: "COLLECTION", brand: "COLLECTION" },
+  { src: "/images/hero/09.png", alt: "LOUIS VUITTON", brand: "LOUIS VUITTON" },
+  { src: "/images/hero/10.jpg", alt: "TOKYO", brand: "TOKYO" },
+  { src: "/images/hero/11.jpg", alt: "LUXURY", brand: "LUXURY" },
 ];
 
 const scrollBrands =
@@ -40,7 +39,7 @@ export default function Hero() {
   useEffect(() => {
     const timer = setInterval(() => {
       goToSlide((current + 1) % slides.length);
-    }, 3000);
+    }, 2000);
     return () => clearInterval(timer);
   }, [current, goToSlide]);
 
