@@ -131,39 +131,6 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Mount Fuji silhouette - bottom right */}
-      <div className="absolute bottom-0 right-0 z-[1] pointer-events-none hidden lg:block">
-        <svg
-          width="400"
-          height="200"
-          viewBox="0 0 400 200"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          className="opacity-[0.06]"
-        >
-          <path
-            d="M400 200H0L120 120L160 60L180 30L200 10L220 30L240 60L280 120L400 200Z"
-            fill="white"
-          />
-          <path
-            d="M185 25L200 10L215 25L210 28L200 20L190 28Z"
-            fill="#F4B4C6"
-            opacity="0.5"
-          />
-        </svg>
-      </div>
-
-      {/* Sakura branch - top right corner */}
-      <div className="absolute top-20 right-4 z-[3] pointer-events-none opacity-[0.08]">
-        <svg width="120" height="120" viewBox="0 0 120 120" fill="none">
-          <path d="M100 10C80 30 60 50 30 80" stroke="#F4B4C6" strokeWidth="1.5" fill="none" />
-          <circle cx="85" cy="25" r="6" fill="#F4B4C6" opacity="0.6" />
-          <circle cx="70" cy="40" r="5" fill="#F4B4C6" opacity="0.5" />
-          <circle cx="55" cy="55" r="7" fill="#F4B4C6" opacity="0.4" />
-          <circle cx="40" cy="70" r="4" fill="#F4B4C6" opacity="0.5" />
-        </svg>
-      </div>
-
       {/* Brand name - bottom right */}
       <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
         <p className="text-[10px] tracking-[0.4em] text-white/30 uppercase">

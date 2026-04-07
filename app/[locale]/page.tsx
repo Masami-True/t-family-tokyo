@@ -11,21 +11,16 @@ import B2BSection from "@/components/B2BSection";
 import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
-import SakuraEffect from "@/components/SakuraEffect";
-import JapaneseDivider from "@/components/JapaneseDivider";
 
 export default function HomePage() {
   return (
     <>
       <Header />
-      <SakuraEffect />
       <main>
         <Hero />
         <TrustBar />
         <Philosophy />
-        <JapaneseDivider variant="gold" />
         <CollectionPreview />
-        <JapaneseDivider variant="gold" />
         <Authenticity />
         <GoogleReviews />
         <LiveCommerce />

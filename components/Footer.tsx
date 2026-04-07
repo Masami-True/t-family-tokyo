@@ -66,22 +66,8 @@ export default function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bg-dark py-8 px-6 relative overflow-hidden">
-      {/* Sumi-e mountain silhouette */}
-      <div className="absolute bottom-0 left-0 right-0 pointer-events-none">
-        <svg
-          viewBox="0 0 1200 80"
-          preserveAspectRatio="none"
-          className="w-full h-16 opacity-[0.04]"
-          fill="white"
-        >
-          <path d="M0 80L100 50L200 60L350 25L450 15L500 5L550 15L650 25L750 45L900 55L1000 40L1100 50L1200 45L1200 80Z" />
-          <circle cx="480" cy="35" r="4" fill="#F4B4C6" opacity="0.3" />
-          <circle cx="520" cy="30" r="3" fill="#F4B4C6" opacity="0.2" />
-          <circle cx="550" cy="38" r="3.5" fill="#F4B4C6" opacity="0.25" />
-        </svg>
-      </div>
-      <div className="max-w-5xl mx-auto text-center relative z-10">
+    <footer className="bg-dark py-8 px-6">
+      <div className="max-w-5xl mx-auto text-center">
         {/* SNS Icons */}
         <div className="flex justify-center gap-6 mb-8">
           {socialLinks.map((social) => (
