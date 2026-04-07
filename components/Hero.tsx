@@ -5,14 +5,14 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const slides = [
-  { src: "/images/hero/01.png", alt: "HERMÈS" },
-  { src: "/images/hero/02.png", alt: "GUCCI" },
-  { src: "/images/hero/03.png", alt: "LOUIS VUITTON" },
-  { src: "/images/hero/04.png", alt: "FENDI" },
-  { src: "/images/hero/05.png", alt: "YSL" },
-  { src: "/images/hero/06.png", alt: "PRADA" },
-  { src: "/images/hero/07.png", alt: "GOYARD" },
-  { src: "/images/hero/08.png", alt: "BURBERRY" },
+  { src: "/images/hero/01.png", alt: "HERMÈS", brand: "HERMÈS" },
+  { src: "/images/hero/02.png", alt: "GUCCI", brand: "GUCCI" },
+  { src: "/images/hero/03.png", alt: "LOUIS VUITTON", brand: "LOUIS VUITTON" },
+  { src: "/images/hero/04.png", alt: "FENDI", brand: "FENDI" },
+  { src: "/images/hero/05.png", alt: "YSL", brand: "SAINT LAURENT" },
+  { src: "/images/hero/06.png", alt: "PRADA", brand: "PRADA" },
+  { src: "/images/hero/07.png", alt: "GOYARD", brand: "GOYARD" },
+  { src: "/images/hero/08.png", alt: "BURBERRY", brand: "BURBERRY" },
 ];
 
 export default function Hero() {
@@ -38,8 +38,8 @@ export default function Hero() {
   }, [current, goToSlide]);
 
   return (
-    <section className="relative flex min-h-[100vh] items-center justify-center overflow-hidden">
-      {/* Slides */}
+    <section className="relative h-[100vh] bg-[#111] overflow-hidden">
+      {/* Full image - object-contain so entire image is visible */}
       {slides.map((slide, i) => (
         <div
           key={slide.src}
@@ -50,57 +50,70 @@ export default function Hero() {
             src={slide.src}
             alt={slide.alt}
             fill
-            className="object-cover"
+            className="object-contain object-center"
             priority={i === 0}
             sizes="100vw"
           />
         </div>
       ))}
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60" />
+      {/* Left gradient overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent lg:via-black/20" />
+      {/* Bottom gradient for mobile */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 lg:from-black/40" />
 
-      {/* Content */}
-      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
-        {/* Eyebrow */}
-        <p className="mb-4 text-[11px] tracking-[0.3em] text-gold/80 uppercase border border-gold/30 inline-block px-6 py-2">
-          {t("eyebrow")}
-        </p>
+      {/* Text content - positioned in the left margin space */}
+      <div className="absolute inset-0 z-10 flex items-center">
+        <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
+          <div className="max-w-md lg:max-w-lg">
+            {/* Eyebrow */}
+            <p className="mb-6 text-[10px] tracking-[0.35em] text-gold/80 uppercase border border-gold/25 inline-block px-5 py-2">
+              {t("eyebrow")}
+            </p>
 
-        {/* Heading */}
-        <h1 className="mt-6 font-heading text-5xl leading-[1.1] text-white sm:text-6xl md:text-7xl lg:text-8xl">
-          <span className="block">{t("h1_line1")}</span>
-          <span className="block mt-2">
-            <span className="text-gold">{t("h1_accent")}</span>
-            {t("h1_line2")}
-          </span>
-        </h1>
+            {/* Heading */}
+            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-white">
+              <span className="block">{t("h1_line1")}</span>
+              <span className="block mt-2">
+                <span className="text-gold">{t("h1_accent")}</span>
+                {t("h1_line2")}
+              </span>
+            </h1>
 
-        {/* Subcopy */}
-        <p className="mx-auto mt-8 max-w-2xl text-base leading-relaxed text-white/70 tracking-wide">
-          {t("subcopy")}
-        </p>
+            {/* Subcopy */}
+            <p className="mt-6 text-sm sm:text-base leading-relaxed text-white/50 tracking-wide max-w-sm">
+              {t("subcopy")}
+            </p>
 
-        {/* CTA Buttons */}
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 sm:flex-row">
-          <a
-            href="https://t-secondhands.jp/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-white px-10 py-4 text-sm tracking-[0.15em] text-dark font-medium transition-all hover:bg-gold hover:text-white"
-          >
-            {t("cta_shop")}
-          </a>
-          <a
-            href="#live-seller"
-            className="inline-block border border-white/40 bg-transparent px-10 py-4 text-sm tracking-[0.15em] text-white transition-all hover:border-gold hover:text-gold"
-          >
-            {t("cta_live")}
-          </a>
+            {/* CTA Buttons */}
+            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+              <a
+                href="https://t-secondhands.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-white px-8 py-3.5 text-sm tracking-[0.15em] text-dark font-medium transition-all hover:bg-gold hover:text-white text-center"
+              >
+                {t("cta_shop")}
+              </a>
+              <a
+                href="#live-seller"
+                className="inline-block border border-white/30 px-8 py-3.5 text-sm tracking-[0.15em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+              >
+                {t("cta_live")}
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Slide indicators */}
+      {/* Brand name - bottom right */}
+      <div className="absolute bottom-8 right-8 z-10 hidden lg:block">
+        <p className="text-[10px] tracking-[0.4em] text-white/30 uppercase">
+          {slides[current].brand}
+        </p>
+      </div>
+
+      {/* Slide indicators - bottom center */}
       <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {slides.map((_, i) => (
           <button
@@ -114,13 +127,6 @@ export default function Hero() {
             aria-label={`Slide ${i + 1}`}
           />
         ))}
-      </div>
-
-      {/* Brand name indicator */}
-      <div className="absolute bottom-8 right-8 z-10">
-        <p className="text-[10px] tracking-[0.3em] text-white/40 uppercase">
-          {slides[current].alt}
-        </p>
       </div>
     </section>
   );
