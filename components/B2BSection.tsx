@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 export default function B2BSection() {
@@ -27,12 +28,22 @@ export default function B2BSection() {
     { key: "feature4", icon: "✧" },
   ];
 
+  const companyInfo = [
+    { label: "info_company", value: "T-Family株式会社" },
+    { label: "info_ceo", value: "富永 朝樹" },
+    { label: "info_established", value: "2020.11.27" },
+    { label: "info_capital", value: "3,000万円" },
+    { label: "info_employees", value: "8名" },
+    { label: "info_license", value: "第301132115776号" },
+  ];
+
   return (
     <section
       id="b2b"
       ref={sectionRef}
       className="fade-in-section bg-dark py-24 px-6"
     >
+      {/* Partnership header */}
       <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
         {t("label")}
       </p>
@@ -43,7 +54,7 @@ export default function B2BSection() {
         {t("subcopy")}
       </p>
 
-      {/* Features grid */}
+      {/* Features */}
       <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-16">
         {features.map((f) => (
           <div
@@ -61,8 +72,8 @@ export default function B2BSection() {
         ))}
       </div>
 
-      {/* Brands handled */}
-      <div className="max-w-4xl mx-auto mb-12">
+      {/* Brands */}
+      <div className="max-w-4xl mx-auto mb-20">
         <h3 className="text-xs tracking-[0.2em] text-gold text-center mb-6">
           {t("brands_label")}
         </h3>
@@ -71,45 +82,8 @@ export default function B2BSection() {
         </p>
       </div>
 
-      {/* Company info */}
-      <div className="max-w-3xl mx-auto border border-offwhite/10 p-8 md:p-12 rounded">
-        <h3 className="font-heading text-xl text-offwhite mb-6 text-center">
-          {t("company_title")}
-        </h3>
-        <div className="grid grid-cols-2 gap-4 text-sm">
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_company")}</p>
-            <p className="text-offwhite">T-Family株式会社</p>
-          </div>
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_ceo")}</p>
-            <p className="text-offwhite">富永 朝樹</p>
-          </div>
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_established")}</p>
-            <p className="text-offwhite">2020.11.27</p>
-          </div>
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_capital")}</p>
-            <p className="text-offwhite">3,000万円</p>
-          </div>
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_employees")}</p>
-            <p className="text-offwhite">8名</p>
-          </div>
-          <div>
-            <p className="text-offwhite/40 mb-1">{t("info_license")}</p>
-            <p className="text-offwhite text-xs">第301132115776号</p>
-          </div>
-          <div className="col-span-2">
-            <p className="text-offwhite/40 mb-1">{t("info_address")}</p>
-            <p className="text-offwhite text-sm whitespace-pre-line">{t("info_address_value")}</p>
-          </div>
-        </div>
-      </div>
-
       {/* CTA */}
-      <div className="text-center mt-12">
+      <div className="text-center mb-24">
         <a
           href="https://t-family.tokyo/buyer01/"
           target="_blank"
@@ -118,6 +92,52 @@ export default function B2BSection() {
         >
           {t("cta")}
         </a>
+      </div>
+
+      {/* Divider */}
+      <div className="max-w-xs mx-auto border-t border-offwhite/10 mb-20" />
+
+      {/* Company info - elegant minimal style */}
+      <div className="max-w-2xl mx-auto">
+        <h3 className="font-heading text-2xl text-center text-offwhite mb-2">
+          {t("company_title")}
+        </h3>
+        <div className="w-12 h-[1px] bg-gold mx-auto mb-12" />
+
+        <div className="flex justify-center mb-10">
+          <Image
+            src="/images/logo.png"
+            alt="T-Family"
+            width={120}
+            height={60}
+            className="h-14 w-auto object-contain"
+          />
+        </div>
+
+        <div className="space-y-0">
+          {companyInfo.map((item) => (
+            <div
+              key={item.label}
+              className="flex border-b border-offwhite/5 py-4"
+            >
+              <span className="text-offwhite/35 text-xs tracking-[0.15em] w-36 shrink-0 pt-0.5">
+                {t(item.label)}
+              </span>
+              <span className="text-offwhite/80 text-sm">
+                {item.value}
+              </span>
+            </div>
+          ))}
+          {/* Address row */}
+          <div className="flex border-b border-offwhite/5 py-4">
+            <span className="text-offwhite/35 text-xs tracking-[0.15em] w-36 shrink-0 pt-0.5">
+              {t("info_address")}
+            </span>
+            <span className="text-offwhite/80 text-sm whitespace-pre-line">
+              {t("info_address_value")}
+            </span>
+          </div>
+        </div>
       </div>
     </section>
   );
