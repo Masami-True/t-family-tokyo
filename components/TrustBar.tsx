@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const brands = [
@@ -43,21 +42,6 @@ export default function TrustBar() {
           </div>
         </div>
 
-        {/* Right authenticity badge */}
-        <div className="hidden md:flex items-center gap-3 shrink-0">
-          <Image
-            src="/images/entrupy.png"
-            alt="Entrupy"
-            width={80}
-            height={24}
-            className="h-6 w-auto"
-          />
-          <div className="border border-gold/30 px-3 py-1.5">
-            <span className="text-[10px] tracking-[0.15em] text-gold font-medium whitespace-nowrap">
-              {t("trust.guarantee")}
-            </span>
-          </div>
-        </div>
       </div>
     </section>
   );
