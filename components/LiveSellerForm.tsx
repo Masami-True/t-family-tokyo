@@ -28,8 +28,7 @@ export default function LiveSellerForm() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
-    const endpoint = `https://formspree.io/f/${process.env.NEXT_PUBLIC_FORMSPREE_ID || "xtest"}`;
-    const res = await fetch(endpoint, {
+    const res = await fetch("/api/apply", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),

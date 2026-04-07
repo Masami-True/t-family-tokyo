@@ -86,7 +86,7 @@ export default function Header() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[14px] font-medium uppercase tracking-[0.12em] text-white/90 transition-colors hover:text-gold"
+                className="font-heading text-[15px] uppercase tracking-[0.15em] text-white/90 transition-colors hover:text-gold"
               >
                 {t(item.key)}
               </a>
@@ -94,7 +94,7 @@ export default function Header() {
               <a
                 key={item.key}
                 href={item.href}
-                className="text-[14px] font-medium uppercase tracking-[0.12em] text-white/90 transition-colors hover:text-gold"
+                className="font-heading text-[15px] uppercase tracking-[0.15em] text-white/90 transition-colors hover:text-gold"
               >
                 {t(item.key)}
               </a>

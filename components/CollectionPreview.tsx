@@ -13,7 +13,7 @@ const products = [
   {
     src: "/images/products/02.jpg",
     brand: "HERMÈS",
-    link: "https://t-secondhands.jp/collections/hermes",
+    link: "https://t-secondhands.jp/products/hermes-togo-leather-birkin-handbag-red-gold-hardware-he358",
   },
   {
     src: "/images/products/03.jpg",

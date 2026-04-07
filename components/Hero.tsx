@@ -43,7 +43,7 @@ export default function Hero() {
   return (
     <section className="relative h-[100vh] bg-[#111] overflow-hidden">
       {/* Flowing brand names in background - fills the dark space */}
-      <div className="absolute inset-0 z-0 flex flex-col justify-center opacity-[0.06] pointer-events-none select-none overflow-hidden">
+      <div className="absolute inset-0 z-0 flex flex-col justify-center opacity-[0.15] pointer-events-none select-none overflow-hidden">
         {[...Array(8)].map((_, row) => (
           <div
             key={row}
