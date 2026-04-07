@@ -66,26 +66,8 @@ export default function Footer() {
   const t = useTranslations();
 
   return (
-    <footer className="bg-dark py-16 px-6">
+    <footer className="bg-dark py-8 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        {/* Logo */}
-        <a
-          href="#"
-          onClick={(e) => {
-            e.preventDefault();
-            window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="inline-block mb-8"
-        >
-          <Image
-            src="/images/logo.png"
-            alt="T-Family"
-            width={200}
-            height={80}
-            className="h-20 w-auto mx-auto"
-          />
-        </a>
-
         {/* SNS Icons */}
         <div className="flex justify-center gap-6 mb-8">
           {socialLinks.map((social) => (
