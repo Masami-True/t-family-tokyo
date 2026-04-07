@@ -58,20 +58,13 @@ export default function StoreInfo() {
               allowFullScreen
             />
 
-            <div className="grid grid-cols-2 gap-2 mt-4">
+            <div className="mt-4">
               <Image
                 src="/images/store.jpg"
                 alt="T-Family Store"
-                width={400}
+                width={600}
                 height={400}
-                className="aspect-square object-cover rounded"
-              />
-              <Image
-                src="/images/store2.jpg"
-                alt="T-Family Store Interior"
-                width={400}
-                height={400}
-                className="aspect-square object-cover rounded"
+                className="w-full aspect-[3/2] object-cover rounded"
               />
             </div>
           </div>

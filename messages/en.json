@@ -90,5 +90,41 @@
   "footer": {
     "tokusho": "特定商取引法に基づく表記",
     "copyright": "© 2025 T-Family Inc. All rights reserved."
+  },
+  "authenticity": {
+    "label": "WHY TRUST US",
+    "headline": "Guaranteed Authentic, Every Time.",
+    "entrupy_title": "ENTRUPY AI AUTHENTICATION",
+    "entrupy_desc": "Every item is verified using Entrupy's AI-powered authentication system. Each product receives a unique certificate with a verifiable link.",
+    "guarantee_title": "100% MONEY-BACK GUARANTEE",
+    "guarantee_desc": "If any item is found to be inauthentic, we provide a full refund — no questions asked. Your trust is our top priority.",
+    "expert_title": "EXPERT STAFF VERIFICATION",
+    "expert_desc": "Our trained specialists inspect every item individually before it reaches our shelves. Only products meeting our strict standards are approved.",
+    "cert_title": "Official Entrupy Certificate",
+    "cert_desc": "Each product comes with an Entrupy authentication certificate featuring a unique verification link. Customers can verify authenticity anytime, anywhere.",
+    "cert_badge": "AUTHENTICITY VERIFIED",
+    "license": "Antique Dealer License: Tokyo Metropolitan Public Safety Commission No. 301132115776"
+  },
+  "b2b": {
+    "label": "FOR BUYERS & DEALERS",
+    "headline": "Wholesale Partnership",
+    "subcopy": "We supply authenticated luxury goods to dealers and buyers worldwide. Competitive wholesale pricing with full authenticity guarantee.",
+    "feature1_title": "ALL ITEMS AUTHENTICATED",
+    "feature1_desc": "Every product has been verified for authenticity. Full refund guarantee if any item is found inauthentic.",
+    "feature2_title": "COMPETITIVE WHOLESALE PRICING",
+    "feature2_desc": "Market-driven pricing on high-demand brands popular in international markets.",
+    "feature3_title": "GLOBAL SHIPPING (DHL)",
+    "feature3_desc": "International shipping via DHL with invoice and export documentation support.",
+    "feature4_title": "CROSS-BORDER EC SUPPORT",
+    "feature4_desc": "Support for cross-border e-commerce and live selling inventory sourcing consultations.",
+    "brands_label": "BRANDS WE HANDLE",
+    "company_title": "Company Information",
+    "info_company": "Company",
+    "info_ceo": "Representative",
+    "info_established": "Established",
+    "info_capital": "Capital",
+    "info_employees": "Employees",
+    "info_license": "License No.",
+    "cta": "CONTACT FOR WHOLESALE"
   }
 }

@@ -90,5 +90,41 @@
   "footer": {
     "tokusho": "特定商取引法に基づく表記",
     "copyright": "© 2025 T-Family Inc. All rights reserved."
+  },
+  "authenticity": {
+    "label": "安心してご購入いただける理由",
+    "headline": "すべて正規品。保証付き。",
+    "entrupy_title": "ENTRUPY AI鑑定",
+    "entrupy_desc": "すべての商品にEntrupyのAI鑑定を実施。1点ごとに固有リンクで照合できる公式証明書を発行しています。",
+    "guarantee_title": "全額返金保証",
+    "guarantee_desc": "万が一、正規品でないと判断された場合には全額返金いたします。お客様の信頼が最優先です。",
+    "expert_title": "専門スタッフによる検品",
+    "expert_desc": "経験豊富な専門スタッフが1点ずつ検品。厳格な基準をクリアした商品のみを取り扱いしています。",
+    "cert_title": "Entrupy公式証明書",
+    "cert_desc": "各商品にEntrupy認証証明書を付帯。固有の認証リンクで、いつでもどこからでも真贋を確認できます。",
+    "cert_badge": "真贋認証済",
+    "license": "古物商許可：東京都公安委員会 第301132115776号"
+  },
+  "b2b": {
+    "label": "業者様・バイヤー様向けご案内",
+    "headline": "卸売パートナーシップ",
+    "subcopy": "海外需要の高い人気ブランドを中心に、真贋確認済み商品を業者様・バイヤー様へ供給しています。",
+    "feature1_title": "全商品 真贋確認済み",
+    "feature1_desc": "すべての商品は真贋確認済み。万が一問題があった場合は全額返金保証。",
+    "feature2_title": "競争力のある卸価格",
+    "feature2_desc": "市場動向を踏まえた、海外需要の高いブランドの適正卸価格をご提供。",
+    "feature3_title": "海外発送対応（DHL）",
+    "feature3_desc": "DHL国際配送に対応。インボイス・輸出書類のサポートも行います。",
+    "feature4_title": "越境EC・ライブ販売サポート",
+    "feature4_desc": "越境ECやライブ販売向けの仕入れ相談に対応しています。",
+    "brands_label": "取扱ブランド",
+    "company_title": "会社概要",
+    "info_company": "商号",
+    "info_ceo": "代表者",
+    "info_established": "設立",
+    "info_capital": "資本金",
+    "info_employees": "従業員数",
+    "info_license": "古物商許可番号",
+    "cta": "卸売のお問い合わせ"
   }
 }

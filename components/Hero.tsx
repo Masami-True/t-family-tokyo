@@ -15,6 +15,9 @@ const slides = [
   { src: "/images/hero/08.png", alt: "BURBERRY", brand: "BURBERRY" },
 ];
 
+const scrollBrands =
+  "CHANEL · HERMÈS · LOUIS VUITTON · DIOR · PRADA · GUCCI · FENDI · YSL · GOYARD · BURBERRY · BVLGARI · CÉLINE · BALENCIAGA · MIU MIU · BOTTEGA VENETA";
+
 export default function Hero() {
   const t = useTranslations("hero");
   const [current, setCurrent] = useState(0);
@@ -39,11 +42,34 @@ export default function Hero() {
 
   return (
     <section className="relative h-[100vh] bg-[#111] overflow-hidden">
+      {/* Flowing brand names in background - fills the dark space */}
+      <div className="absolute inset-0 z-0 flex flex-col justify-center opacity-[0.06] pointer-events-none select-none overflow-hidden">
+        {[...Array(8)].map((_, row) => (
+          <div
+            key={row}
+            className="whitespace-nowrap overflow-hidden"
+            style={{ transform: `translateX(${row % 2 === 0 ? "0" : "-30"}%)` }}
+          >
+            <div
+              className="inline-block animate-scroll-brands"
+              style={{
+                animationDuration: `${40 + row * 5}s`,
+                animationDirection: row % 2 === 0 ? "normal" : "reverse",
+              }}
+            >
+              <span className="text-[3vw] lg:text-[2.5vw] font-heading tracking-[0.15em] text-white">
+                {scrollBrands} &nbsp;&nbsp; {scrollBrands} &nbsp;&nbsp;
+              </span>
+            </div>
+          </div>
+        ))}
+      </div>
+
       {/* Full image - object-contain so entire image is visible */}
       {slides.map((slide, i) => (
         <div
           key={slide.src}
-          className="absolute inset-0 transition-opacity duration-[1200ms] ease-in-out"
+          className="absolute inset-0 z-[1] transition-opacity duration-[1200ms] ease-in-out"
           style={{ opacity: i === current ? 1 : 0 }}
         >
           <Image
@@ -58,9 +84,8 @@ export default function Hero() {
       ))}
 
       {/* Left gradient overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent lg:via-black/20" />
-      {/* Bottom gradient for mobile */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/30 lg:from-black/40" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/80 via-black/40 to-transparent lg:via-black/20" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/70 via-transparent to-black/30 lg:from-black/40" />
 
       {/* Text content - positioned in the left margin space */}
       <div className="absolute inset-0 z-10 flex items-center">
@@ -113,7 +138,7 @@ export default function Hero() {
         </p>
       </div>
 
-      {/* Slide indicators - bottom center */}
+      {/* Slide indicators */}
       <div className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 gap-2">
         {slides.map((_, i) => (
           <button

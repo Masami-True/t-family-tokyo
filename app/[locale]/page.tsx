@@ -3,7 +3,9 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import Philosophy from "@/components/Philosophy";
 import CollectionPreview from "@/components/CollectionPreview";
+import Authenticity from "@/components/Authenticity";
 import LiveCommerce from "@/components/LiveCommerce";
+import B2BSection from "@/components/B2BSection";
 import ApplyForm from "@/components/ApplyForm";
 import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
@@ -18,7 +20,9 @@ export default function HomePage() {
         <TrustBar />
         <Philosophy />
         <CollectionPreview />
+        <Authenticity />
         <LiveCommerce />
+        <B2BSection />
         <ApplyForm />
         <StoreInfo />
       </main>

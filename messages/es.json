@@ -90,5 +90,41 @@
   "footer": {
     "tokusho": "特定商取引法に基づく表記",
     "copyright": "© 2025 T-Family Inc. All rights reserved."
+  },
+  "authenticity": {
+    "label": "POR QUE CONFIAR EN NOSOTROS",
+    "headline": "Autenticidad Garantizada, Siempre.",
+    "entrupy_title": "AUTENTICACION IA DE ENTRUPY",
+    "entrupy_desc": "Cada artículo es verificado mediante el sistema de autenticación con IA de Entrupy. Cada producto recibe un certificado único con un enlace verificable.",
+    "guarantee_title": "GARANTIA DE DEVOLUCION DEL 100%",
+    "guarantee_desc": "Si se determina que algún artículo no es auténtico, ofrecemos un reembolso completo, sin preguntas. Su confianza es nuestra máxima prioridad.",
+    "expert_title": "VERIFICACION POR EXPERTOS",
+    "expert_desc": "Nuestros especialistas capacitados inspeccionan cada artículo individualmente antes de que llegue a nuestras vitrinas. Solo los productos que cumplen nuestros estrictos estándares son aprobados.",
+    "cert_title": "Certificado Oficial de Entrupy",
+    "cert_desc": "Cada producto incluye un certificado de autenticación de Entrupy con un enlace de verificación único. Los clientes pueden verificar la autenticidad en cualquier momento y lugar.",
+    "cert_badge": "AUTENTICIDAD VERIFICADA",
+    "license": "Licencia de Anticuario: Comisión de Seguridad Pública Metropolitana de Tokio N.º 301132115776"
+  },
+  "b2b": {
+    "label": "PARA COMPRADORES Y DISTRIBUIDORES",
+    "headline": "Alianza Mayorista",
+    "subcopy": "Suministramos artículos de lujo autenticados a distribuidores y compradores de todo el mundo. Precios mayoristas competitivos con garantía total de autenticidad.",
+    "feature1_title": "TODOS LOS ARTICULOS AUTENTICADOS",
+    "feature1_desc": "Cada producto ha sido verificado en su autenticidad. Garantía de reembolso completo si se encuentra un artículo no auténtico.",
+    "feature2_title": "PRECIOS MAYORISTAS COMPETITIVOS",
+    "feature2_desc": "Precios orientados al mercado en marcas de alta demanda populares en mercados internacionales.",
+    "feature3_title": "ENVIO GLOBAL (DHL)",
+    "feature3_desc": "Envío internacional a través de DHL con soporte de facturación y documentación de exportación.",
+    "feature4_title": "SOPORTE DE COMERCIO ELECTRONICO TRANSFRONTERIZO",
+    "feature4_desc": "Soporte para comercio electrónico transfronterizo y consultas de abastecimiento para ventas en vivo.",
+    "brands_label": "MARCAS QUE MANEJAMOS",
+    "company_title": "Información de la Empresa",
+    "info_company": "Empresa",
+    "info_ceo": "Representante",
+    "info_established": "Fundada",
+    "info_capital": "Capital",
+    "info_employees": "Empleados",
+    "info_license": "N.º de Licencia",
+    "cta": "CONTACTAR PARA MAYOREO"
   }
 }

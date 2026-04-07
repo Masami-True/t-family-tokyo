@@ -90,5 +90,41 @@
   "footer": {
     "tokusho": "特定商取引法に基づく表記",
     "copyright": "© 2025 T-Family Inc. All rights reserved."
+  },
+  "authenticity": {
+    "label": "신뢰할 수 있는 이유",
+    "headline": "모든 상품, 정품 보증.",
+    "entrupy_title": "ENTRUPY AI 감정",
+    "entrupy_desc": "모든 상품은 Entrupy AI 감정 시스템으로 검증됩니다. 각 제품에 고유 인증서와 검증 링크가 제공됩니다.",
+    "guarantee_title": "100% 환불 보증",
+    "guarantee_desc": "만약 정품이 아닌 것으로 확인될 경우, 무조건 전액 환불해 드립니다. 고객님의 신뢰가 최우선입니다.",
+    "expert_title": "전문 스태프 검수",
+    "expert_desc": "숙련된 전문가가 모든 상품을 하나하나 검수합니다. 엄격한 기준을 통과한 상품만 판매됩니다.",
+    "cert_title": "Entrupy 공식 인증서",
+    "cert_desc": "각 상품에 Entrupy 인증서가 제공되며, 고유 인증 링크를 통해 언제 어디서나 정품 여부를 확인할 수 있습니다.",
+    "cert_badge": "정품 인증 완료",
+    "license": "고물상 허가: 도쿄도 공안위원회 제301132115776호"
+  },
+  "b2b": {
+    "label": "업체 및 바이어 안내",
+    "headline": "도매 파트너십",
+    "subcopy": "전 세계 딜러 및 바이어에게 정품 인증된 럭셔리 상품을 공급합니다. 경쟁력 있는 도매가와 완전한 정품 보증을 제공합니다.",
+    "feature1_title": "전 상품 정품 인증",
+    "feature1_desc": "모든 상품은 정품 인증 완료. 비정품 확인 시 전액 환불 보증.",
+    "feature2_title": "경쟁력 있는 도매 가격",
+    "feature2_desc": "해외 시장에서 수요가 높은 인기 브랜드의 시장 기반 도매 가격 제공.",
+    "feature3_title": "해외 배송 (DHL)",
+    "feature3_desc": "DHL 국제 배송 지원. 인보이스 및 수출 서류 지원 포함.",
+    "feature4_title": "크로스보더 EC 지원",
+    "feature4_desc": "크로스보더 전자상거래 및 라이브 판매 소싱 상담을 지원합니다.",
+    "brands_label": "취급 브랜드",
+    "company_title": "회사 정보",
+    "info_company": "회사명",
+    "info_ceo": "대표자",
+    "info_established": "설립",
+    "info_capital": "자본금",
+    "info_employees": "직원 수",
+    "info_license": "허가 번호",
+    "cta": "도매 문의하기"
   }
 }

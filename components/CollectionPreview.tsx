@@ -8,48 +8,33 @@ const products = [
   {
     src: "/images/products/01.jpg",
     brand: "CHANEL",
-    name: "Matelasse Collection",
     link: "https://t-secondhands.jp/collections/chanel",
   },
   {
     src: "/images/products/02.jpg",
     brand: "HERMÈS",
-    name: "Birkin & Kelly Collection",
     link: "https://t-secondhands.jp/collections/hermes",
   },
   {
     src: "/images/products/03.jpg",
     brand: "LOUIS VUITTON",
-    name: "Monogram Collection",
     link: "https://t-secondhands.jp/collections/louisvuitton",
   },
   {
     src: "/images/products/04.jpg",
     brand: "CHRISTIAN DIOR",
-    name: "Lady Dior & Book Tote",
     link: "https://t-secondhands.jp/collections/christian-dior",
   },
   {
     src: "/images/products/05.jpg",
     brand: "GUCCI",
-    name: "GG Supreme Collection",
     link: "https://t-secondhands.jp/collections/gucci",
   },
   {
     src: "/images/products/06.jpg",
     brand: "FENDI",
-    name: "Peekaboo & Baguette",
     link: "https://t-secondhands.jp/collections/fendi",
   },
-];
-
-const brandLinks = [
-  { name: "CHANEL", href: "https://t-secondhands.jp/collections/chanel" },
-  { name: "LOUIS VUITTON", href: "https://t-secondhands.jp/collections/louisvuitton" },
-  { name: "HERMÈS", href: "https://t-secondhands.jp/collections/hermes" },
-  { name: "GUCCI", href: "https://t-secondhands.jp/collections/gucci" },
-  { name: "PRADA", href: "https://t-secondhands.jp/collections/prada" },
-  { name: "FENDI", href: "https://t-secondhands.jp/collections/fendi" },
 ];
 
 export default function CollectionPreview() {
@@ -99,7 +84,7 @@ export default function CollectionPreview() {
             <div className="relative aspect-square">
               <Image
                 src={product.src}
-                alt={product.name}
+                alt={product.brand}
                 fill
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -107,12 +92,11 @@ export default function CollectionPreview() {
               <div className="absolute inset-0 border-2 border-gold opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
 
-            {/* Info */}
-            <div className="p-4">
-              <p className="text-xs tracking-[0.15em] text-subtext">
+            {/* Brand name - large */}
+            <div className="p-4 text-center">
+              <p className="text-sm sm:text-base tracking-[0.2em] font-medium text-text">
                 {product.brand}
               </p>
-              <p className="text-sm mt-1 text-text">{product.name}</p>
             </div>
           </a>
         ))}
@@ -128,21 +112,6 @@ export default function CollectionPreview() {
         >
           {t("cta")}
         </a>
-      </div>
-
-      {/* Brand Links */}
-      <div className="flex flex-wrap justify-center gap-4 mt-6">
-        {brandLinks.map((brand) => (
-          <a
-            key={brand.name}
-            href={brand.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs tracking-wider text-subtext hover:text-gold transition-colors"
-          >
-            {brand.name}
-          </a>
-        ))}
       </div>
     </section>
   );

@@ -90,5 +90,41 @@
   "footer": {
     "tokusho": "特定商取引法に基づく表記",
     "copyright": "© 2025 T-Family Inc. All rights reserved."
+  },
+  "authenticity": {
+    "label": "值得信赖的理由",
+    "headline": "每一件，皆为正品。",
+    "entrupy_title": "ENTRUPY AI鉴定",
+    "entrupy_desc": "每件商品均通过Entrupy AI鉴定系统验证。每件产品附带唯一证书及可验证链接。",
+    "guarantee_title": "100%全额退款保证",
+    "guarantee_desc": "如任何商品被确认为非正品，我们将无条件全额退款。您的信任是我们的首要承诺。",
+    "expert_title": "专业团队逐一检验",
+    "expert_desc": "经验丰富的专业人员对每件商品进行逐一检验。只有通过严格标准的商品才会上架销售。",
+    "cert_title": "Entrupy官方证书",
+    "cert_desc": "每件商品均附带Entrupy鉴定证书，内含唯一验证链接。客户可随时随地验证商品真伪。",
+    "cert_badge": "真伪已认证",
+    "license": "古物商许可：东京都公安委员会 第301132115776号"
+  },
+  "b2b": {
+    "label": "面向经销商与买手",
+    "headline": "批发合作伙伴",
+    "subcopy": "我们为全球经销商和买手供应经过真伪验证的奢侈品。提供具有竞争力的批发价格及完整的正品保证。",
+    "feature1_title": "全部商品真伪验证",
+    "feature1_desc": "每件商品均已通过真伪验证。如发现非正品，提供全额退款保证。",
+    "feature2_title": "具有竞争力的批发价格",
+    "feature2_desc": "针对国际市场高需求品牌，提供符合市场行情的批发价格。",
+    "feature3_title": "全球配送（DHL）",
+    "feature3_desc": "通过DHL国际配送，提供发票及出口文件支持。",
+    "feature4_title": "跨境电商支持",
+    "feature4_desc": "支持跨境电商及直播销售的货源采购咨询。",
+    "brands_label": "经营品牌",
+    "company_title": "公司信息",
+    "info_company": "公司名称",
+    "info_ceo": "代表人",
+    "info_established": "成立时间",
+    "info_capital": "注册资本",
+    "info_employees": "员工人数",
+    "info_license": "许可证号",
+    "cta": "批发咨询"
   }
 }
