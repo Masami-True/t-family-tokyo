@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "About",
+    "shop": "Shop",
+    "live": "Live Commerce",
+    "store": "Store"
+  },
+  "hero": {
+    "eyebrow": "TOKYO · NISHI-SHIMBASHI",
+    "h1_line1": "Only Authentic.",
+    "h1_line2": "Only Japan.",
+    "subcopy": "Premium pre-owned luxury bags from Tokyo. Authenticated. Curated. Certified.",
+    "cta_shop": "SHOP NOW",
+    "cta_live": "BECOME A LIVE SELLER"
+  },
+  "trust": {
+    "label": "AUTHENTIC BRANDS",
+    "guarantee": "100% AUTHENTICITY GUARANTEED"
+  },
+  "philosophy": {
+    "headline": "Japan's Finest, Delivered to the World.",
+    "authentic_title": "AUTHENTIC",
+    "authentic_desc": "Verified by expert staff, one by one. Every item guaranteed genuine.",
+    "curated_title": "CURATED",
+    "curated_desc": "Only the finest condition items make it to our shelves.",
+    "certified_title": "CERTIFIED",
+    "certified_desc": "AI authentication by Entrupy — world standard precision.",
+    "ceo_name": "Tominaga Tomitsugu",
+    "ceo_title": "Representative Director, T-Family Inc.",
+    "ceo_message": "Our commitment is to deliver only authentic items. Every product comes with an Authenticity Guarantee — 100% refund if ever found inauthentic. We serve customers worldwide with trust, transparency, and care."
+  },
+  "collection": {
+    "label": "FEATURED COLLECTION",
+    "headline": "Select Pieces",
+    "cta": "VIEW ALL PRODUCTS →"
+  },
+  "live": {
+    "label": "LIVE COMMERCE PROGRAM",
+    "headline": "Sell Japan's Finest to the World. From Anywhere.",
+    "subcopy": "No inventory. No risk. Just go live.",
+    "step1_num": "01",
+    "step1_title": "APPLY",
+    "step1_desc": "No follower count required. Beginners welcome.",
+    "step2_num": "02",
+    "step2_title": "GO LIVE",
+    "step2_desc": "Full equipment & support provided by T-Family.",
+    "step3_num": "03",
+    "step3_title": "EARN",
+    "step3_desc": "High-ticket sales to global luxury buyers.",
+    "benefit1": "Zero inventory risk — all products managed by T-Family",
+    "benefit2": "Authentic CHANEL / HERMÈS / LOUIS VUITTON and more",
+    "benefit3": "Lighting, equipment & product support fully covered",
+    "benefit4": "Claims & returns handled — focus on selling",
+    "benefit5": "Access to global high-net-worth live commerce audience",
+    "benefit6": "Part-time OK · Beginners welcome · No experience needed",
+    "cta": "APPLY NOW"
+  },
+  "form": {
+    "label": "JOIN US",
+    "headline": "Apply as Live Seller",
+    "name": "NAME",
+    "email": "EMAIL",
+    "contact_method": "CONTACT METHOD",
+    "contact_id": "ACCOUNT ID / PHONE",
+    "sns_url": "SNS ACCOUNT URL",
+    "sns_placeholder": "Instagram / TikTok / YouTube",
+    "followers": "APPROXIMATE FOLLOWERS",
+    "experience": "LIVE STREAMING EXPERIENCE",
+    "experience_yes": "Yes",
+    "experience_no": "No",
+    "message": "MESSAGE (OPTIONAL)",
+    "message_placeholder": "Tell us about yourself...",
+    "submit": "SEND APPLICATION",
+    "success": "Thank you! We will be in touch shortly."
+  },
+  "store": {
+    "label": "VISIT US",
+    "name": "T-Family Inc.",
+    "address": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "hours": "Open Daily · 11:00 – 21:00",
+    "access1": "JR Shimbashi Station → 7 min walk",
+    "access2": "Uchisaiwaicho Station → 7 min walk",
+    "access3": "Toranomon Station → 7 min walk",
+    "tel": "03-6823-2699",
+    "email": "info@t-family.tokyo",
+    "whatsapp_btn": "WHATSAPP",
+    "wechat_btn": "WECHAT QR"
+  },
+  "footer": {
+    "tokusho": "特定商取引法に基づく表記",
+    "copyright": "© 2025 T-Family Inc. All rights reserved."
+  }
+}

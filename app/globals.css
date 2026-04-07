@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-offwhite: #FAFAF8;
+  --color-gold: #B8972A;
+  --color-gold-dark: #9A7D22;
+  --color-text: #1A1A1A;
+  --color-subtext: #6B6B6B;
+  --color-cream: #F5F0E8;
+  --color-dark: #1A1A1A;
+  --color-border: #E0D9CC;
+  --color-whatsapp: #25D366;
+
+  --font-heading: "Cormorant Garamond", "Noto Serif JP", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FAFAF8;
+  color: #1A1A1A;
+  font-family: "DM Sans", sans-serif;
+}
+
+/* Trust bar infinite scroll */
+@keyframes scroll-brands {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll-brands {
+  animation: scroll-brands 60s linear infinite;
+}
+
+/* Scroll fade-in */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}

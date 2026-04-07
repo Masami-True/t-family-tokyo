@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "À propos",
+    "shop": "Boutique",
+    "live": "Live Commerce",
+    "store": "Notre Boutique"
+  },
+  "hero": {
+    "eyebrow": "TOKYO · NISHI-SHIMBASHI",
+    "h1_line1": "Uniquement Authentique.",
+    "h1_line2": "Uniquement le Japon.",
+    "subcopy": "Sacs de luxe authentiques depuis Tokyo. Certifiés. Sélectionnés.",
+    "cta_shop": "ACHETER MAINTENANT",
+    "cta_live": "DEVENIR VENDEUR LIVE"
+  },
+  "trust": {
+    "label": "MARQUES AUTHENTIQUES",
+    "guarantee": "AUTHENTICITÉ 100% GARANTIE"
+  },
+  "philosophy": {
+    "headline": "L'Authenticité du Japon, pour le Monde.",
+    "authentic_title": "AUTHENTIC",
+    "authentic_desc": "Vérifié par nos experts, pièce par pièce. Chaque article garanti authentique.",
+    "curated_title": "CURATED",
+    "curated_desc": "Seuls les articles en excellent état sont sélectionnés pour nos vitrines.",
+    "certified_title": "CERTIFIED",
+    "certified_desc": "Authentification IA par Entrupy — précision aux standards mondiaux.",
+    "ceo_name": "Tominaga Tomitsugu",
+    "ceo_title": "Directeur Représentant, T-Family Inc.",
+    "ceo_message": "Notre engagement est de ne livrer que des articles authentiques. Chaque produit est accompagné d'une Garantie d'Authenticité — remboursement intégral en cas de contrefaçon avérée. Nous servons nos clients du monde entier avec confiance, transparence et attention."
+  },
+  "collection": {
+    "label": "COLLECTION EN VEDETTE",
+    "headline": "Pièces Sélectionnées",
+    "cta": "VOIR TOUS LES PRODUITS →"
+  },
+  "live": {
+    "label": "PROGRAMME LIVE COMMERCE",
+    "headline": "Vendez le meilleur du Japon au monde. De n'importe où.",
+    "subcopy": "Pas de stock. Pas de risque. Diffusez en direct.",
+    "step1_num": "01",
+    "step1_title": "POSTULEZ",
+    "step1_desc": "Aucun nombre d'abonnés requis. Débutants bienvenus.",
+    "step2_num": "02",
+    "step2_title": "DIFFUSEZ",
+    "step2_desc": "Équipement complet et support fournis par T-Family.",
+    "step3_num": "03",
+    "step3_title": "GAGNEZ",
+    "step3_desc": "Ventes haut de gamme aux acheteurs de luxe du monde entier.",
+    "benefit1": "Zéro risque de stock — tous les produits gérés par T-Family",
+    "benefit2": "CHANEL / HERMÈS / LOUIS VUITTON authentiques et plus encore",
+    "benefit3": "Éclairage, équipement et support produit entièrement couverts",
+    "benefit4": "Réclamations et retours gérés — concentrez-vous sur la vente",
+    "benefit5": "Accès à une audience mondiale de clients fortunés en live commerce",
+    "benefit6": "Temps partiel OK · Débutants bienvenus · Aucune expérience requise",
+    "cta": "POSTULER MAINTENANT"
+  },
+  "form": {
+    "label": "REJOIGNEZ-NOUS",
+    "headline": "Candidature Vendeur Live",
+    "name": "NOM",
+    "email": "EMAIL",
+    "contact_method": "MÉTHODE DE CONTACT",
+    "contact_id": "ID DE COMPTE / TÉLÉPHONE",
+    "sns_url": "URL RÉSEAUX SOCIAUX",
+    "sns_placeholder": "Instagram / TikTok / YouTube",
+    "followers": "NOMBRE D'ABONNÉS APPROXIMATIF",
+    "experience": "EXPÉRIENCE EN DIFFUSION LIVE",
+    "experience_yes": "Oui",
+    "experience_no": "Non",
+    "message": "MESSAGE (FACULTATIF)",
+    "message_placeholder": "Parlez-nous de vous...",
+    "submit": "ENVOYER LA CANDIDATURE",
+    "success": "Merci！Nous vous contacterons bientôt."
+  },
+  "store": {
+    "label": "RENDEZ-NOUS VISITE",
+    "name": "T-Family Inc.",
+    "address": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "hours": "Ouvert tous les jours · 11:00 – 21:00",
+    "access1": "Gare JR Shimbashi → 7 min à pied",
+    "access2": "Station Uchisaiwaicho → 7 min à pied",
+    "access3": "Station Toranomon → 7 min à pied",
+    "tel": "03-6823-2699",
+    "email": "info@t-family.tokyo",
+    "whatsapp_btn": "WHATSAPP",
+    "wechat_btn": "WECHAT QR"
+  },
+  "footer": {
+    "tokusho": "特定商取引法に基づく表記",
+    "copyright": "© 2025 T-Family Inc. All rights reserved."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "关于我们",
+    "shop": "商店",
+    "live": "直播电商",
+    "store": "店铺信息"
+  },
+  "hero": {
+    "eyebrow": "TOKYO · 西新桥",
+    "h1_line1": "只卖正品。",
+    "h1_line2": "只来自日本。",
+    "subcopy": "来自东京的正品奢华包袋。严选·认证·可信赖。",
+    "cta_shop": "立即选购",
+    "cta_live": "成为直播卖家"
+  },
+  "trust": {
+    "label": "正品品牌",
+    "guarantee": "100% 正品保证"
+  },
+  "philosophy": {
+    "headline": "将日本正品带向世界。",
+    "authentic_title": "AUTHENTIC",
+    "authentic_desc": "专业团队逐一鉴定，每件商品均保证正品。",
+    "curated_title": "CURATED",
+    "curated_desc": "仅甄选品相优良的商品上架。",
+    "certified_title": "CERTIFIED",
+    "certified_desc": "Entrupy AI鉴定——世界级精准认证。",
+    "ceo_name": "冨永 智嗣",
+    "ceo_title": "T-Family株式会社 代表取缔役",
+    "ceo_message": "我们始终坚持只提供正品。每件商品均附真伪保证书——如经确认为假货，全额退款。我们以信任、透明和用心，服务全球客户。"
+  },
+  "collection": {
+    "label": "精选系列",
+    "headline": "甄选单品",
+    "cta": "查看全部商品 →"
+  },
+  "live": {
+    "label": "直播电商计划",
+    "headline": "从日本向世界销售正品。随时随地。",
+    "subcopy": "无需库存。零风险。开播即可。",
+    "step1_num": "01",
+    "step1_title": "申请",
+    "step1_desc": "无粉丝数量要求，欢迎新手。",
+    "step2_num": "02",
+    "step2_title": "开始直播",
+    "step2_desc": "T-Family提供全套设备与支持。",
+    "step3_num": "03",
+    "step3_title": "赚取收入",
+    "step3_desc": "面向全球奢侈品买家的高客单价销售。",
+    "benefit1": "零库存风险——所有商品由T-Family管理",
+    "benefit2": "正品CHANEL / HERMÈS / LOUIS VUITTON等众多品牌",
+    "benefit3": "灯光、设备及商品支持全部覆盖",
+    "benefit4": "售后与退换由我们处理——专注销售即可",
+    "benefit5": "触达全球高净值直播电商客群",
+    "benefit6": "兼职可 · 欢迎新手 · 无需经验",
+    "cta": "立即申请"
+  },
+  "form": {
+    "label": "加入我们",
+    "headline": "申请成为直播卖家",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "contact_method": "联系方式",
+    "contact_id": "账号ID / 电话号码",
+    "sns_url": "社交媒体账号URL",
+    "sns_placeholder": "Instagram / TikTok / YouTube",
+    "followers": "大约粉丝数",
+    "experience": "直播经验",
+    "experience_yes": "有",
+    "experience_no": "无",
+    "message": "留言（可选）",
+    "message_placeholder": "请介绍一下自己…",
+    "submit": "提交申请",
+    "success": "谢谢！我们将很快与您联系。"
+  },
+  "store": {
+    "label": "到店访问",
+    "name": "T-Family株式会社",
+    "address": "Le Gracielle BLDG 15号馆 5F\n东京都港区西新桥1-18-11",
+    "hours": "每日营业 · 11:00 – 21:00",
+    "access1": "JR新桥站 → 步行7分钟",
+    "access2": "内幸町站 → 步行7分钟",
+    "access3": "虎之门站 → 步行7分钟",
+    "tel": "03-6823-2699",
+    "email": "info@t-family.tokyo",
+    "whatsapp_btn": "WHATSAPP",
+    "wechat_btn": "微信二维码"
+  },
+  "footer": {
+    "tokusho": "特定商取引法に基づく表記",
+    "copyright": "© 2025 T-Family Inc. All rights reserved."
+  }
+}

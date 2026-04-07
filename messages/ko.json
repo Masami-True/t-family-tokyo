@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "소개",
+    "shop": "쇼핑",
+    "live": "라이브 커머스",
+    "store": "매장 안내"
+  },
+  "hero": {
+    "eyebrow": "TOKYO · 니시신바시",
+    "h1_line1": "오직 정품만.",
+    "h1_line2": "오직 일본에서.",
+    "subcopy": "도쿄에서 세계로. 정품 명품백을 안심하고.",
+    "cta_shop": "지금 쇼핑하기",
+    "cta_live": "라이브 셀러 되기"
+  },
+  "trust": {
+    "label": "정품 브랜드",
+    "guarantee": "100% 정품 보증"
+  },
+  "philosophy": {
+    "headline": "일본의 진품을, 세계로.",
+    "authentic_title": "AUTHENTIC",
+    "authentic_desc": "전문 스태프가 한 점 한 점 검증. 모든 상품 정품 보증.",
+    "curated_title": "CURATED",
+    "curated_desc": "최상의 컨디션 상품만 엄선하여 제공합니다.",
+    "certified_title": "CERTIFIED",
+    "certified_desc": "Entrupy AI 인증 — 세계 기준의 정밀 감정.",
+    "ceo_name": "토미나가 토미츠구",
+    "ceo_title": "T-Family 주식회사 대표이사",
+    "ceo_message": "확실한 정품만을 전달하는 것에 최선을 다하고 있습니다. 모든 상품에 정품 보증서를 제공하며, 만약 위조품으로 확인될 경우 전액 환불해 드립니다. 국내외 모든 고객께 신뢰, 투명성, 정성을 담아 서비스합니다."
+  },
+  "collection": {
+    "label": "추천 컬렉션",
+    "headline": "엄선 아이템",
+    "cta": "전체 상품 보기 →"
+  },
+  "live": {
+    "label": "라이브 커머스 프로그램",
+    "headline": "일본의 진품을 세계에 판매하세요. 어디서든.",
+    "subcopy": "재고 불필요. 리스크 제로. 라이브만 하세요.",
+    "step1_num": "01",
+    "step1_title": "지원",
+    "step1_desc": "팔로워 수 무관. 초보자 환영.",
+    "step2_num": "02",
+    "step2_title": "라이브 시작",
+    "step2_desc": "장비 및 지원은 T-Family가 전면 제공.",
+    "step3_num": "03",
+    "step3_title": "수익 창출",
+    "step3_desc": "전 세계 럭셔리 바이어 대상 고단가 판매.",
+    "benefit1": "재고 리스크 제로 — 모든 상품은 T-Family가 관리",
+    "benefit2": "정품 CHANEL / HERMÈS / LOUIS VUITTON 등 다수",
+    "benefit3": "조명, 장비 및 상품 지원 전액 제공",
+    "benefit4": "클레임 및 반품 처리는 저희가 — 판매에만 집중",
+    "benefit5": "전 세계 고액 자산가 대상 라이브 커머스 접근",
+    "benefit6": "부업 OK · 초보자 환영 · 경험 불문",
+    "cta": "지금 지원하기"
+  },
+  "form": {
+    "label": "지원하기",
+    "headline": "라이브 셀러 지원서",
+    "name": "이름",
+    "email": "이메일",
+    "contact_method": "연락 방법",
+    "contact_id": "계정 ID / 전화번호",
+    "sns_url": "SNS 계정 URL",
+    "sns_placeholder": "Instagram / TikTok / YouTube",
+    "followers": "대략적인 팔로워 수",
+    "experience": "라이브 방송 경험",
+    "experience_yes": "있음",
+    "experience_no": "없음",
+    "message": "메시지 (선택사항)",
+    "message_placeholder": "자기소개를 적어주세요…",
+    "submit": "지원서 보내기",
+    "success": "감사합니다！곧 연락드리겠습니다."
+  },
+  "store": {
+    "label": "매장 방문",
+    "name": "T-Family 주식회사",
+    "address": "Le Gracielle BLDG 15, 5F\n도쿄도 미나토구 니시신바시 1-18-11",
+    "hours": "매일 영업 · 11:00 – 21:00",
+    "access1": "JR 신바시역 → 도보 7분",
+    "access2": "우치사이와이초역 → 도보 7분",
+    "access3": "도라노몬역 → 도보 7분",
+    "tel": "03-6823-2699",
+    "email": "info@t-family.tokyo",
+    "whatsapp_btn": "WHATSAPP",
+    "wechat_btn": "WECHAT QR"
+  },
+  "footer": {
+    "tokusho": "特定商取引法に基づく表記",
+    "copyright": "© 2025 T-Family Inc. All rights reserved."
+  }
+}

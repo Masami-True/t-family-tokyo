@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "about": "私たちについて",
+    "shop": "ショップ",
+    "live": "ライブコマース",
+    "store": "店舗情報"
+  },
+  "hero": {
+    "eyebrow": "TOKYO · 西新橋",
+    "h1_line1": "本物だけを。",
+    "h1_line2": "日本から。",
+    "subcopy": "東京から世界へ。本物のブランドバッグを、安心して。",
+    "cta_shop": "今すぐ購入",
+    "cta_live": "ライブセラーになる"
+  },
+  "trust": {
+    "label": "正規ブランド",
+    "guarantee": "100% 真贋保証"
+  },
+  "philosophy": {
+    "headline": "日本の本物を、世界へ。",
+    "authentic_title": "AUTHENTIC",
+    "authentic_desc": "専門スタッフが一点一点確認。全商品に真贋保証。",
+    "curated_title": "CURATED",
+    "curated_desc": "状態の良い商品のみを厳選した在庫。",
+    "certified_title": "CERTIFIED",
+    "certified_desc": "EntrupyによるAI認証。世界基準の品質保証。",
+    "ceo_name": "冨永 智嗣",
+    "ceo_title": "株式会社T-Family 代表取締役",
+    "ceo_message": "「確かな本物だけをお届けする」ことを徹底しています。全商品に真贋保証をお付けし、万が一偽物と確認された場合は全額返金。国内外どちらのお客様にも、信頼・透明性・丁寧さを軸にお届けします。"
+  },
+  "collection": {
+    "label": "注目コレクション",
+    "headline": "厳選アイテム",
+    "cta": "すべての商品を見る →"
+  },
+  "live": {
+    "label": "ライブコマースプログラム",
+    "headline": "日本の本物を、世界へ売る。どこからでも。",
+    "subcopy": "在庫不要。リスクなし。ライブ配信するだけ。",
+    "step1_num": "01",
+    "step1_title": "応募",
+    "step1_desc": "フォロワー数不問。初心者歓迎。",
+    "step2_num": "02",
+    "step2_title": "ライブ配信",
+    "step2_desc": "機材・サポートはT-Familyが全面提供。",
+    "step3_num": "03",
+    "step3_title": "報酬を得る",
+    "step3_desc": "世界のラグジュアリーバイヤーへの高単価販売。",
+    "benefit1": "在庫リスクゼロ — 全商品をT-Familyが管理",
+    "benefit2": "正規品のCHANEL / HERMÈS / LOUIS VUITTONなど多数",
+    "benefit3": "照明・機材・商品サポートをすべてカバー",
+    "benefit4": "クレーム・返品対応はお任せ — 販売に集中",
+    "benefit5": "世界の富裕層向けライブコマースへのアクセス",
+    "benefit6": "副業OK · 初心者歓迎 · 経験不問",
+    "cta": "今すぐ応募"
+  },
+  "form": {
+    "label": "応募する",
+    "headline": "ライブセラー応募フォーム",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "contact_method": "ご連絡方法",
+    "contact_id": "アカウントID / 電話番号",
+    "sns_url": "SNSアカウントURL",
+    "sns_placeholder": "Instagram / TikTok / YouTube",
+    "followers": "おおよそのフォロワー数",
+    "experience": "ライブ配信経験",
+    "experience_yes": "あり",
+    "experience_no": "なし",
+    "message": "メッセージ（任意）",
+    "message_placeholder": "自己紹介をお書きください…",
+    "submit": "応募する",
+    "success": "ありがとうございます！近日中にご連絡いたします。"
+  },
+  "store": {
+    "label": "店舗のご案内",
+    "name": "株式会社T-Family",
+    "address": "東京都港区西新橋1丁目18-11\nル・グラシエルBLDG 15号館5F",
+    "hours": "営業時間 · 11:00 – 21:00（年中無休）",
+    "access1": "JR「新橋駅」より徒歩7分",
+    "access2": "都営三田線「内幸町駅」より徒歩7分",
+    "access3": "東京メトロ銀座線「虎ノ門駅」より徒歩7分",
+    "tel": "03-6823-2699",
+    "email": "info@t-family.tokyo",
+    "whatsapp_btn": "WHATSAPP",
+    "wechat_btn": "WECHAT QR"
+  },
+  "footer": {
+    "tokusho": "特定商取引法に基づく表記",
+    "copyright": "© 2025 T-Family Inc. All rights reserved."
+  }
+}
