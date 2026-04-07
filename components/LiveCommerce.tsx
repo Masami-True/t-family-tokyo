@@ -26,16 +26,12 @@ export default function LiveCommerce() {
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
-
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
-          el.classList.add("is-visible");
-        }
+        if (entry.isIntersecting) el.classList.add("is-visible");
       },
       { threshold: 0.1 }
     );
-
     observer.observe(el);
     return () => observer.disconnect();
   }, []);
@@ -46,7 +42,7 @@ export default function LiveCommerce() {
       ref={sectionRef}
       className="fade-in-section bg-dark text-offwhite py-24 px-6 relative overflow-hidden"
     >
-      {/* Optional background image */}
+      {/* Background image */}
       <Image
         src="/images/live-scene.jpg"
         alt=""
@@ -55,20 +51,17 @@ export default function LiveCommerce() {
         aria-hidden="true"
       />
 
-      {/* Content layer */}
       <div className="relative z-10">
-        {/* Eyebrow */}
-        <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
-          {t("label")}
-        </p>
-
-        {/* Headline */}
-        <h2 className="font-heading text-3xl md:text-5xl text-center mb-4">
-          {t("headline")}
-        </h2>
-
-        {/* Subcopy */}
-        <p className="text-offwhite/60 text-center mb-16">{t("subcopy")}</p>
+        {/* Big headline - prominent */}
+        <div className="text-center mb-16">
+          <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold mb-6">
+            {t("label")}
+          </h2>
+          <p className="text-xl md:text-2xl text-offwhite/80 font-heading">
+            {t("headline")}
+          </p>
+          <p className="text-offwhite/50 mt-4 text-sm">{t("subcopy")}</p>
+        </div>
 
         {/* 3-step process */}
         <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
@@ -102,13 +95,18 @@ export default function LiveCommerce() {
           ))}
         </div>
 
-        {/* CTA */}
-        <a
-          href="#apply"
-          className="block mx-auto w-fit bg-gold text-dark px-10 py-4 text-sm tracking-[0.2em] hover:bg-gold-dark transition-colors"
-        >
-          {t("cta")}
-        </a>
+        {/* CTA - link to WhatsApp or email instead of form */}
+        <div className="text-center">
+          <a
+            href="mailto:info@t-family.tokyo?subject=Live%20Seller%20Application"
+            className="inline-block bg-gold text-dark px-12 py-4 text-sm tracking-[0.2em] font-medium hover:bg-gold-dark transition-colors"
+          >
+            {t("cta")}
+          </a>
+          <p className="text-offwhite/30 text-xs mt-4 tracking-wider">
+            info@t-family.tokyo
+          </p>
+        </div>
       </div>
     </section>
   );

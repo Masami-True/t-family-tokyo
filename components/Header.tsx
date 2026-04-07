@@ -9,17 +9,17 @@ import { routing } from "@/i18n/routing";
 const localeLabels: Record<string, string> = {
   en: "EN",
   ja: "JA",
-  zh: "\u4E2D\u6587",
-  ko: "\uD55C\uAD6D\uC5B4",
+  zh: "中文",
+  ko: "한국어",
   es: "ES",
   fr: "FR",
 };
 
 const navItems = [
-  { label: "About", href: "/#about" },
-  { label: "Shop", href: "https://t-secondhands.jp/", external: true },
-  { label: "Live", href: "/#live-seller" },
-  { label: "Store", href: "/#store" },
+  { key: "about", href: "/#about" },
+  { key: "shop", href: "https://t-secondhands.jp/", external: true },
+  { key: "live", href: "/#live-seller" },
+  { key: "store", href: "/#store" },
 ];
 
 export default function Header() {
@@ -36,7 +36,6 @@ export default function Header() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Lock body scroll when mobile menu is open
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "";
     return () => {
@@ -51,57 +50,60 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-colors duration-300 ${
-        scrolled ? "bg-[rgba(250,250,248,0.95)] backdrop-blur-sm" : "bg-transparent"
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-[rgba(20,20,20,0.95)] backdrop-blur-md shadow-lg"
+          : "bg-gradient-to-b from-black/60 to-transparent"
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link href="/" className="shrink-0">
           <Image
-            src="/logo.png"
+            src="/images/logo.png"
             alt="T-Family"
-            width={120}
-            height={36}
-            style={{ height: "36px", width: "auto" }}
+            width={140}
+            height={40}
+            style={{ height: "40px", width: "auto" }}
             priority
+            className="brightness-0 invert"
           />
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-10 md:flex">
           {navItems.map((item) =>
             item.external ? (
               <a
-                key={item.label}
+                key={item.key}
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-body text-[13px] uppercase tracking-[0.08em] text-text transition-colors hover:text-gold"
+                className="text-[14px] font-medium uppercase tracking-[0.12em] text-white/90 transition-colors hover:text-gold"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             ) : (
               <a
-                key={item.label}
+                key={item.key}
                 href={item.href}
-                className="font-body text-[13px] uppercase tracking-[0.08em] text-text transition-colors hover:text-gold"
+                className="text-[14px] font-medium uppercase tracking-[0.12em] text-white/90 transition-colors hover:text-gold"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             )
           )}
         </nav>
 
         {/* Desktop Locale Switcher */}
-        <div className="hidden items-center gap-1 text-[13px] md:flex">
+        <div className="hidden items-center gap-1 text-[12px] md:flex">
           {routing.locales.map((loc, i) => (
             <span key={loc} className="flex items-center">
-              {i > 0 && <span className="mx-1 text-border">|</span>}
+              {i > 0 && <span className="mx-1 text-white/20">|</span>}
               <button
                 onClick={() => switchLocale(loc)}
                 className={`transition-colors hover:text-gold ${
-                  locale === loc ? "font-semibold text-gold" : "text-subtext"
+                  locale === loc ? "font-semibold text-gold" : "text-white/60"
                 }`}
               >
                 {localeLabels[loc]}
@@ -112,23 +114,23 @@ export default function Header() {
 
         {/* Mobile Hamburger */}
         <button
-          className="relative z-60 flex flex-col gap-[5px] md:hidden"
+          className="relative z-[60] flex flex-col gap-[5px] md:hidden"
           onClick={() => setMobileOpen((v) => !v)}
           aria-label="Toggle menu"
         >
           <span
-            className={`block h-[2px] w-6 bg-text transition-transform duration-300 ${
-              mobileOpen ? "translate-y-[7px] rotate-45" : ""
+            className={`block h-[2px] w-6 transition-all duration-300 ${
+              mobileOpen ? "translate-y-[7px] rotate-45 bg-text" : "bg-white"
             }`}
           />
           <span
-            className={`block h-[2px] w-6 bg-text transition-opacity duration-300 ${
-              mobileOpen ? "opacity-0" : ""
+            className={`block h-[2px] w-6 transition-opacity duration-300 ${
+              mobileOpen ? "opacity-0 bg-text" : "bg-white"
             }`}
           />
           <span
-            className={`block h-[2px] w-6 bg-text transition-transform duration-300 ${
-              mobileOpen ? "-translate-y-[7px] -rotate-45" : ""
+            className={`block h-[2px] w-6 transition-all duration-300 ${
+              mobileOpen ? "-translate-y-[7px] -rotate-45 bg-text" : "bg-white"
             }`}
           />
         </button>
@@ -144,28 +146,27 @@ export default function Header() {
           {navItems.map((item) =>
             item.external ? (
               <a
-                key={item.label}
+                key={item.key}
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setMobileOpen(false)}
-                className="font-body text-lg uppercase tracking-[0.08em] text-text transition-colors hover:text-gold"
+                className="text-xl font-medium uppercase tracking-[0.1em] text-text transition-colors hover:text-gold"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             ) : (
               <a
-                key={item.label}
+                key={item.key}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="font-body text-lg uppercase tracking-[0.08em] text-text transition-colors hover:text-gold"
+                className="text-xl font-medium uppercase tracking-[0.1em] text-text transition-colors hover:text-gold"
               >
-                {item.label}
+                {t(item.key)}
               </a>
             )
           )}
 
-          {/* Mobile Locale Switcher */}
           <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-sm">
             {routing.locales.map((loc, i) => (
               <span key={loc} className="flex items-center">

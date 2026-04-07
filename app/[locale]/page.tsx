@@ -4,9 +4,10 @@ import TrustBar from "@/components/TrustBar";
 import Philosophy from "@/components/Philosophy";
 import CollectionPreview from "@/components/CollectionPreview";
 import Authenticity from "@/components/Authenticity";
+import GoogleReviews from "@/components/GoogleReviews";
+import CeoGreeting from "@/components/CeoGreeting";
 import LiveCommerce from "@/components/LiveCommerce";
 import B2BSection from "@/components/B2BSection";
-import ApplyForm from "@/components/ApplyForm";
 import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
@@ -21,9 +22,10 @@ export default function HomePage() {
         <Philosophy />
         <CollectionPreview />
         <Authenticity />
+        <GoogleReviews />
+        <CeoGreeting />
         <LiveCommerce />
         <B2BSection />
-        <ApplyForm />
         <StoreInfo />
       </main>
       <Footer />

@@ -36,7 +36,7 @@
     "cta": "VIEW ALL PRODUCTS →"
   },
   "live": {
-    "label": "LIVE COMMERCE PROGRAM",
+    "label": "LIVE SELLERS WANTED",
     "headline": "Sell Japan's Finest to the World.",
     "subcopy": "No inventory. No risk. Just go live.",
     "step1_num": "01",
@@ -105,9 +105,26 @@
     "cert_badge": "AUTHENTICITY VERIFIED",
     "license": "Antique Dealer License: Tokyo Metropolitan Public Safety Commission No. 301132115776"
   },
+  "reviews": {
+    "label": "CUSTOMER REVIEWS",
+    "headline": "Google Reviews",
+    "rating_text": "Highly Rated on Google Maps",
+    "review1": "Outstanding quality. Everything is authentic and I felt safe purchasing. International shipping was fast too.",
+    "review2": "The best vintage luxury shop in Tokyo. Staff is very professional, and the Entrupy certificate gives extra peace of mind.",
+    "review3": "Purchased a CHANEL bag. Excellent condition with authenticity certificate. Very satisfied and will shop again.",
+    "review4": "Ordered from overseas and received it quickly via DHL. Beautiful packaging and perfect product quality.",
+    "cta": "View Reviews on Google Maps →"
+  },
+  "greeting": {
+    "label": "MESSAGE FROM THE CEO",
+    "headline": "Greeting",
+    "name": "Tominaga Asaki",
+    "title": "Representative Director, T-Family Inc.",
+    "message": "I am Tominaga Asaki, Representative Director of T-Family Inc.\n\nOur company was founded in 2020 with one unwavering belief: to deliver only authentic items. Every product comes with Entrupy AI authentication and a full authenticity guarantee — if any item is ever found to be inauthentic, we provide a complete refund.\n\nThrough our physical store in Nishi-Shinbashi, Tokyo, and our online shop, we serve customers worldwide with trust, transparency, and care.\n\nWe cherish every connection with our customers and will continue to deliver genuine value to the world."
+  },
   "b2b": {
     "label": "FOR BUYERS & DEALERS",
-    "headline": "Wholesale Partnership",
+    "headline": "Partnership",
     "subcopy": "We supply authenticated luxury goods to dealers and buyers worldwide. Competitive wholesale pricing with full authenticity guarantee.",
     "feature1_title": "ALL ITEMS AUTHENTICATED",
     "feature1_desc": "Every product has been verified for authenticity. Full refund guarantee if any item is found inauthentic.",

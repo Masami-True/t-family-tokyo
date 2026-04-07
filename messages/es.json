@@ -36,7 +36,7 @@
     "cta": "VER TODOS LOS PRODUCTOS →"
   },
   "live": {
-    "label": "PROGRAMA LIVE COMMERCE",
+    "label": "BUSCAMOS VENDEDORES EN VIVO",
     "headline": "Vende lo mejor de Japón al mundo.",
     "subcopy": "Sin inventario. Sin riesgo. Solo transmite en vivo.",
     "step1_num": "01",
@@ -105,9 +105,26 @@
     "cert_badge": "AUTENTICIDAD VERIFICADA",
     "license": "Licencia de Anticuario: Comisión de Seguridad Pública Metropolitana de Tokio N.º 301132115776"
   },
+  "reviews": {
+    "label": "OPINIONES DE CLIENTES",
+    "headline": "Reseñas de Google",
+    "rating_text": "Altamente valorado en Google Maps",
+    "review1": "Calidad excepcional. Todo es auténtico y me sentí seguro al comprar. El envío internacional fue rápido.",
+    "review2": "La mejor tienda de lujo vintage en Tokio. Personal muy profesional y el certificado Entrupy da tranquilidad.",
+    "review3": "Compré un bolso CHANEL. Excelente estado con certificado de autenticidad. Muy satisfecho.",
+    "review4": "Pedí desde el extranjero y llegó rápidamente por DHL. Empaque hermoso y calidad perfecta.",
+    "cta": "Ver reseñas en Google Maps →"
+  },
+  "greeting": {
+    "label": "MENSAJE DEL CEO",
+    "headline": "Saludo",
+    "name": "Tominaga Asaki",
+    "title": "Director Representante, T-Family Inc.",
+    "message": "Soy Tominaga Asaki, Director Representante de T-Family Inc.\n\nNuestra empresa fue fundada en 2020 con una creencia inquebrantable: entregar solo artículos auténticos. Cada producto incluye autenticación con IA de Entrupy y una garantía total de autenticidad — si algún artículo resulta no ser auténtico, ofrecemos un reembolso completo.\n\nA través de nuestra tienda física en Nishi-Shinbashi, Tokio, y nuestra tienda en línea, servimos a clientes de todo el mundo con confianza, transparencia y dedicación.\n\nValoramos cada conexión con nuestros clientes y seguiremos entregando valor genuino al mundo."
+  },
   "b2b": {
     "label": "PARA COMPRADORES Y DISTRIBUIDORES",
-    "headline": "Alianza Mayorista",
+    "headline": "Alianza",
     "subcopy": "Suministramos artículos de lujo autenticados a distribuidores y compradores de todo el mundo. Precios mayoristas competitivos con garantía total de autenticidad.",
     "feature1_title": "TODOS LOS ARTICULOS AUTENTICADOS",
     "feature1_desc": "Cada producto ha sido verificado en su autenticidad. Garantía de reembolso completo si se encuentra un artículo no auténtico.",

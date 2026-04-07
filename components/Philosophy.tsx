@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const cardData = [
@@ -57,28 +56,6 @@ export default function Philosophy() {
         ))}
       </div>
 
-      {/* CEO Message */}
-      <div className="mt-20 flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
-        {/* Company Logo */}
-        <div className="shrink-0 flex items-center justify-center w-48 h-48">
-          <Image
-            src="/images/logo.png"
-            alt="T-Family"
-            width={160}
-            height={160}
-            className="w-40 h-auto object-contain"
-          />
-        </div>
-
-        {/* CEO Quote */}
-        <div>
-          <p className="text-subtext italic text-lg leading-relaxed mb-6">
-            &ldquo;{t("ceo_message")}&rdquo;
-          </p>
-          <p className="font-heading text-lg text-text">{t("ceo_name")}</p>
-          <p className="text-sm text-subtext">{t("ceo_title")}</p>
-        </div>
-      </div>
     </section>
   );
 }

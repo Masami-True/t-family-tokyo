@@ -36,7 +36,7 @@
     "cta": "VOIR TOUS LES PRODUITS →"
   },
   "live": {
-    "label": "PROGRAMME LIVE COMMERCE",
+    "label": "VENDEURS LIVE RECHERCHÉS",
     "headline": "Vendez le meilleur du Japon au monde.",
     "subcopy": "Pas de stock. Pas de risque. Diffusez en direct.",
     "step1_num": "01",
@@ -105,9 +105,26 @@
     "cert_badge": "AUTHENTICITÉ VÉRIFIÉE",
     "license": "Licence d'Antiquaire : Commission de Sécurité Publique Métropolitaine de Tokyo N° 301132115776"
   },
+  "reviews": {
+    "label": "AVIS CLIENTS",
+    "headline": "Avis Google",
+    "rating_text": "Très bien noté sur Google Maps",
+    "review1": "Qualité exceptionnelle. Tout est authentique et j'ai pu acheter en toute confiance. L'expédition internationale était rapide.",
+    "review2": "La meilleure boutique de luxe vintage à Tokyo. Personnel très professionnel et le certificat Entrupy rassure.",
+    "review3": "J'ai acheté un sac CHANEL. Excellent état avec certificat d'authenticité. Très satisfait.",
+    "review4": "Commandé depuis l'étranger et reçu rapidement via DHL. Emballage soigné et qualité parfaite.",
+    "cta": "Voir les avis sur Google Maps →"
+  },
+  "greeting": {
+    "label": "MESSAGE DU PDG",
+    "headline": "Salutations",
+    "name": "Tominaga Asaki",
+    "title": "Directeur Représentant, T-Family Inc.",
+    "message": "Je suis Tominaga Asaki, Directeur Représentant de T-Family Inc.\n\nNotre entreprise a été fondée en 2020 avec une conviction inébranlable : ne livrer que des articles authentiques. Chaque produit est accompagné d'une authentification IA Entrupy et d'une garantie totale d'authenticité — si un article s'avère non authentique, nous offrons un remboursement intégral.\n\nÀ travers notre boutique physique à Nishi-Shinbashi, Tokyo, et notre boutique en ligne, nous servons des clients du monde entier avec confiance, transparence et attention.\n\nNous chérissons chaque lien avec nos clients et continuerons à transmettre une valeur authentique au monde."
+  },
   "b2b": {
     "label": "POUR ACHETEURS ET DISTRIBUTEURS",
-    "headline": "Partenariat Grossiste",
+    "headline": "Partenariat",
     "subcopy": "Nous fournissons des articles de luxe authentifiés aux distributeurs et acheteurs du monde entier. Prix de gros compétitifs avec garantie totale d'authenticité.",
     "feature1_title": "TOUS LES ARTICLES AUTHENTIFIÉS",
     "feature1_desc": "Chaque produit a été vérifié pour son authenticité. Garantie de remboursement intégral en cas d'article non authentique.",
