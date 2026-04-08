@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const slides = [
+  { src: "/images/hero/00.png", alt: "T-Family", brand: "T-FAMILY" },
   { src: "/images/hero/01.png", alt: "HERMÈS", brand: "HERMÈS" },
   { src: "/images/hero/02.png", alt: "GUCCI", brand: "GUCCI" },
   { src: "/images/hero/03.png", alt: "LOUIS VUITTON", brand: "LOUIS VUITTON" },
