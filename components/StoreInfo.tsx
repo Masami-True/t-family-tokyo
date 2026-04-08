@@ -32,6 +32,9 @@ export default function StoreInfo() {
     "PayPay",
     "Alipay",
     "PayPal",
+    "WISE",
+    "Apple Pay",
+    "Google Pay",
   ];
 
   return (

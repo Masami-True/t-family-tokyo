@@ -85,8 +85,25 @@ export default function LiveCommerce() {
           ))}
         </div>
 
+        {/* Worry section */}
+        <div className="max-w-2xl mx-auto mb-16 border border-offwhite/10 p-8 rounded">
+          <h3 className="text-lg font-heading text-offwhite text-center mb-6">
+            {t("worry_title")}
+          </h3>
+          <div className="space-y-3 mb-6">
+            {(["worry1", "worry2", "worry3", "worry4"] as const).map((key) => (
+              <p key={key} className="text-sm text-offwhite/60 flex items-start gap-2">
+                <span className="text-offwhite/40">・</span>{t(key)}
+              </p>
+            ))}
+          </div>
+          <p className="text-gold text-center font-medium tracking-wider">
+            👉 {t("worry_answer")}
+          </p>
+        </div>
+
         {/* Benefits grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-16">
           {benefitKeys.map((key) => (
             <div key={key} className="flex items-start gap-2">
               <span className="text-gold shrink-0">✦</span>
@@ -95,7 +112,24 @@ export default function LiveCommerce() {
           ))}
         </div>
 
-        {/* CTA - link to WhatsApp or email instead of form */}
+        {/* Official program */}
+        <div className="max-w-2xl mx-auto mb-16 text-center">
+          <h3 className="text-lg font-heading text-gold mb-4">
+            {t("official_title")}
+          </h3>
+          <p className="text-sm text-offwhite/60 leading-relaxed">
+            {t("official_desc")}
+          </p>
+        </div>
+
+        {/* Closing message */}
+        <div className="max-w-2xl mx-auto mb-12 text-center">
+          <p className="text-offwhite/80 font-heading text-lg italic">
+            &ldquo;{t("closing")}&rdquo;
+          </p>
+        </div>
+
+        {/* CTA */}
         <div className="text-center">
           <a
             href="/liveseller/"

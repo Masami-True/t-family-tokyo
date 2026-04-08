@@ -76,6 +76,43 @@ export default function Authenticity() {
         </div>
       </div>
 
+      {/* Additional trust points */}
+      <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="bg-offwhite p-8 text-center rounded">
+          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+            🏬
+          </div>
+          <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
+            {t("store_title")}
+          </h3>
+          <p className="text-subtext text-sm leading-relaxed">
+            {t("store_desc")}
+          </p>
+        </div>
+        <div className="bg-offwhite p-8 text-center rounded">
+          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+            🌐
+          </div>
+          <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
+            {t("online_title")}
+          </h3>
+          <p className="text-subtext text-sm leading-relaxed">
+            {t("online_desc")}
+          </p>
+        </div>
+        <div className="bg-offwhite p-8 text-center rounded">
+          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+            ✧
+          </div>
+          <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
+            {t("transparent_title")}
+          </h3>
+          <p className="text-subtext text-sm leading-relaxed">
+            {t("transparent_desc")}
+          </p>
+        </div>
+      </div>
+
       {/* Certificate info */}
       <div className="max-w-3xl mx-auto bg-offwhite p-8 md:p-12 rounded">
         <div className="flex flex-col md:flex-row items-center gap-8">

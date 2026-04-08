@@ -62,8 +62,25 @@ export default function B2BSection() {
         ))}
       </div>
 
+      {/* Target customers */}
+      <div className="max-w-3xl mx-auto mb-16 border border-offwhite/10 p-8 rounded">
+        <h3 className="text-sm tracking-[0.15em] text-gold font-medium mb-6 text-center">
+          {t("target_title")}
+        </h3>
+        <div className="space-y-3">
+          {(["target1", "target2", "target3", "target4"] as const).map((key) => (
+            <p key={key} className="text-sm text-offwhite/70 flex items-start gap-2">
+              <span className="text-gold shrink-0">✦</span>{t(key)}
+            </p>
+          ))}
+        </div>
+        <p className="text-xs text-offwhite/40 mt-6 text-center">
+          {t("deal_info")}
+        </p>
+      </div>
+
       {/* Brands */}
-      <div className="max-w-4xl mx-auto mb-20">
+      <div className="max-w-4xl mx-auto mb-16">
         <h3 className="text-xs tracking-[0.2em] text-gold text-center mb-6">
           {t("brands_label")}
         </h3>
