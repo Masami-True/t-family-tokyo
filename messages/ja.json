@@ -168,5 +168,20 @@
     "info_address": "所在地",
     "info_address_value": "東京都港区西新橋1丁目18-11\nル・グラシエルBLDG 15号館5F",
     "cta": "詳細はこちら"
+  },
+  "contact": {
+    "label": "お問い合わせ",
+    "headline": "お問い合わせはこちら",
+    "name": "お名前",
+    "email": "メールアドレス",
+    "subject": "お問い合わせ種別",
+    "subject_purchase": "商品購入について",
+    "subject_wholesale": "卸売・業者取引について",
+    "subject_live": "ライブセラーについて",
+    "subject_other": "その他",
+    "message": "お問い合わせ内容",
+    "message_placeholder": "ご質問やご要望をお書きください…",
+    "submit": "送信する",
+    "success": "お問い合わせありがとうございます。担当者より近日中にご連絡いたします。"
   }
 }

@@ -168,5 +168,20 @@
     "info_address": "地址",
     "info_address_value": "东京都港区西新桥1丁目18-11\nLe Gracielle BLDG 15号馆5F",
     "cta": "了解详情"
+  },
+  "contact": {
+    "label": "联系我们",
+    "headline": "在线咨询",
+    "name": "姓名",
+    "email": "电子邮箱",
+    "subject": "咨询类别",
+    "subject_purchase": "商品购买",
+    "subject_wholesale": "批发/经销商合作",
+    "subject_live": "直播卖家项目",
+    "subject_other": "其他",
+    "message": "咨询内容",
+    "message_placeholder": "请描述您的问题或需求…",
+    "submit": "发送",
+    "success": "感谢您的咨询。我们将尽快与您联系。"
   }
 }

@@ -168,5 +168,20 @@
     "info_address": "주소",
     "info_address_value": "도쿄도 미나토구 니시신바시 1-18-11\nLe Gracielle BLDG 15, 5F",
     "cta": "자세히 보기"
+  },
+  "contact": {
+    "label": "문의하기",
+    "headline": "문의 양식",
+    "name": "이름",
+    "email": "이메일",
+    "subject": "문의 유형",
+    "subject_purchase": "상품 구매",
+    "subject_wholesale": "도매/업체 거래",
+    "subject_live": "라이브 셀러 프로그램",
+    "subject_other": "기타",
+    "message": "문의 내용",
+    "message_placeholder": "질문이나 요청 사항을 작성해 주세요…",
+    "submit": "전송",
+    "success": "문의해 주셔서 감사합니다. 담당자가 곧 연락드리겠습니다."
   }
 }

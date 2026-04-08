@@ -112,16 +112,20 @@ export default function StoreInfo() {
               </a>
             </div>
 
-            {/* Payment Methods */}
-            <div className="mt-8 flex flex-wrap gap-2">
-              {paymentMethods.map((method) => (
-                <span
-                  key={method}
-                  className="text-[10px] tracking-wider text-subtext border border-border px-2 py-1"
-                >
-                  {method}
-                </span>
-              ))}
+            {/* Payment Methods - prominent */}
+            <div className="mt-8">
+              <p className="text-xs tracking-[0.15em] text-gold font-medium mb-3">PAYMENT METHODS</p>
+              <div className="flex flex-wrap gap-2">
+                {paymentMethods.map((method) => (
+                  <span
+                    key={method}
+                    className="text-xs tracking-wider text-text bg-cream border border-border px-3 py-1.5 rounded font-medium"
+                  >
+                    {method}
+                  </span>
+                ))}
+              </div>
+              <p className="text-[10px] text-subtext mt-2">銀行振込（ゆうちょ銀行 / みずほ銀行）/ 現金 / 電子マネー</p>
             </div>
           </div>
         </div>

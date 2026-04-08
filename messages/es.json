@@ -168,5 +168,20 @@
     "info_address": "Dirección",
     "info_address_value": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokio",
     "cta": "MÁS INFORMACIÓN"
+  },
+  "contact": {
+    "label": "CONTÁCTENOS",
+    "headline": "Escríbanos",
+    "name": "NOMBRE",
+    "email": "EMAIL",
+    "subject": "ASUNTO",
+    "subject_purchase": "Compra de Productos",
+    "subject_wholesale": "Consulta Mayorista",
+    "subject_live": "Programa de Vendedores en Vivo",
+    "subject_other": "Otro",
+    "message": "MENSAJE",
+    "message_placeholder": "Describa su consulta...",
+    "submit": "ENVIAR",
+    "success": "Gracias por su consulta. Nos pondremos en contacto pronto."
   }
 }
