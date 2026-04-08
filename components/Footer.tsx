@@ -119,6 +119,12 @@ export default function Footer() {
           >
             {t("footer.tokusho")}
           </Link>
+          <Link
+            href="/privacy"
+            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+          >
+            {t("footer.privacy")}
+          </Link>
         </nav>
 
         {/* Copyright */}

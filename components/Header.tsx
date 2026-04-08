@@ -197,6 +197,13 @@ export default function Header() {
               >
                 {tFooter("tokusho")}
               </a>
+              <a
+                href={`/${locale}/privacy`}
+                onClick={() => setMobileOpen(false)}
+                className="text-sm text-white/40 hover:text-gold transition-colors tracking-wider"
+              >
+                {tFooter("privacy")}
+              </a>
             </div>
 
             {/* Locale switcher */}
