@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 
 const slides = [
-  { src: "/images/hero/00.png", alt: "T-Family", brand: "T-FAMILY" },
   { src: "/images/hero/01.png", alt: "HERMÈS", brand: "HERMÈS" },
   { src: "/images/hero/02.png", alt: "GUCCI", brand: "GUCCI" },
   { src: "/images/hero/03.png", alt: "LOUIS VUITTON", brand: "LOUIS VUITTON" },
@@ -17,6 +16,7 @@ const slides = [
   { src: "/images/hero/09.png", alt: "LOUIS VUITTON", brand: "LOUIS VUITTON" },
   { src: "/images/hero/10.jpg", alt: "TOKYO", brand: "TOKYO" },
   { src: "/images/hero/11.jpg", alt: "LUXURY", brand: "LUXURY" },
+  { src: "/images/hero/12.png", alt: "GUCCI", brand: "GUCCI" },
 ];
 
 const scrollBrands =
