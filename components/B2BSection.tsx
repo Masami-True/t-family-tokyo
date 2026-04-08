@@ -33,12 +33,9 @@ export default function B2BSection() {
       ref={sectionRef}
       className="fade-in-section bg-dark py-24 px-6"
     >
-      {/* Partnership header */}
-      <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
+      {/* Header - label is the main heading now */}
+      <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-center text-gold mb-6">
         {t("label")}
-      </p>
-      <h2 className="font-heading text-3xl md:text-4xl text-center text-offwhite mb-6">
-        {t("headline")}
       </h2>
       <p className="text-center text-offwhite/50 text-sm max-w-2xl mx-auto mb-16">
         {t("subcopy")}

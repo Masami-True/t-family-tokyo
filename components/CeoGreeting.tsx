@@ -34,14 +34,14 @@ export default function CeoGreeting() {
       </h2>
 
       <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* Logo */}
-        <div className="shrink-0 flex items-center justify-center w-40 h-40">
+        {/* CEO Portrait */}
+        <div className="shrink-0">
           <Image
-            src="/images/logo.png"
-            alt="T-Family"
-            width={140}
-            height={140}
-            className="w-36 h-auto object-contain"
+            src="/images/ceo-portrait.png"
+            alt={t("name")}
+            width={200}
+            height={200}
+            className="w-48 h-48 object-cover rounded-full"
           />
         </div>
 

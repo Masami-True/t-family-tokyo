@@ -11,12 +11,8 @@ const steps = [
 ];
 
 const benefitKeys = [
-  "benefit1",
-  "benefit2",
-  "benefit3",
-  "benefit4",
-  "benefit5",
-  "benefit6",
+  "benefit1", "benefit2", "benefit3",
+  "benefit4", "benefit5", "benefit6",
 ];
 
 export default function LiveCommerce() {
@@ -42,7 +38,6 @@ export default function LiveCommerce() {
       ref={sectionRef}
       className="fade-in-section bg-dark text-offwhite py-24 px-6 relative overflow-hidden"
     >
-      {/* Background image */}
       <Image
         src="/images/live-scene.jpg"
         alt=""
@@ -51,80 +46,84 @@ export default function LiveCommerce() {
         aria-hidden="true"
       />
 
-      <div className="relative z-10">
-        {/* Big headline - prominent */}
-        <div className="text-center mb-16">
+      <div className="relative z-10 max-w-4xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-20">
           <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold mb-6">
             {t("label")}
           </h2>
           <p className="text-xl md:text-2xl text-offwhite/80 font-heading">
             {t("headline")}
           </p>
-          <p className="text-offwhite/50 mt-4 text-sm">{t("subcopy")}</p>
-        </div>
-
-        {/* 3-step process */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
-          {steps.map((step, i) => (
-            <div
-              key={step.numKey}
-              className={`text-center ${
-                i < steps.length - 1
-                  ? "md:border-r md:border-offwhite/10"
-                  : ""
-              }`}
-            >
-              <p className="text-gold font-heading text-4xl mb-2">
-                {t(step.numKey)}
-              </p>
-              <p className="text-sm tracking-[0.2em] font-medium mb-2">
-                {t(step.titleKey)}
-              </p>
-              <p className="text-offwhite/60 text-sm">{t(step.descKey)}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Worry section */}
-        <div className="max-w-2xl mx-auto mb-16 border border-offwhite/10 p-8 rounded">
-          <h3 className="text-lg font-heading text-offwhite text-center mb-6">
-            {t("worry_title")}
-          </h3>
-          <div className="space-y-3 mb-6">
-            {(["worry1", "worry2", "worry3", "worry4"] as const).map((key) => (
-              <p key={key} className="text-sm text-offwhite/60 flex items-start gap-2">
-                <span className="text-offwhite/40">・</span>{t(key)}
-              </p>
-            ))}
-          </div>
-          <p className="text-gold text-center font-medium tracking-wider">
-            👉 {t("worry_answer")}
+          <p className="text-offwhite/50 mt-4 text-sm max-w-xl mx-auto">
+            {t("subcopy")}
           </p>
         </div>
 
-        {/* Benefits grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto mb-16">
-          {benefitKeys.map((key) => (
-            <div key={key} className="flex items-start gap-2">
-              <span className="text-gold shrink-0">✦</span>
-              <p className="text-sm text-offwhite/80">{t(key)}</p>
+        {/* Worry section */}
+        <div className="mb-20 border border-offwhite/10 rounded p-8 md:p-10">
+          <h3 className="text-xl font-heading text-offwhite text-center mb-8">
+            {t("worry_title")}
+          </h3>
+          <div className="grid md:grid-cols-2 gap-3 mb-8">
+            {(["worry1", "worry2", "worry3", "worry4"] as const).map((key) => (
+              <p key={key} className="text-sm text-offwhite/60 flex items-center gap-3 bg-offwhite/5 px-5 py-3 rounded">
+                <span className="text-offwhite/30">●</span>{t(key)}
+              </p>
+            ))}
+          </div>
+          <p className="text-gold text-center font-heading text-lg">
+            {t("worry_answer")}
+          </p>
+        </div>
+
+        {/* 3-step process */}
+        <div className="grid md:grid-cols-3 gap-0 mb-20">
+          {steps.map((step, i) => (
+            <div
+              key={step.numKey}
+              className={`text-center py-8 px-6 ${
+                i < steps.length - 1 ? "md:border-r md:border-offwhite/10" : ""
+              }`}
+            >
+              <p className="text-gold font-heading text-5xl mb-3">
+                {t(step.numKey)}
+              </p>
+              <p className="text-sm tracking-[0.2em] font-medium mb-3 text-offwhite">
+                {t(step.titleKey)}
+              </p>
+              <p className="text-offwhite/50 text-sm leading-relaxed">
+                {t(step.descKey)}
+              </p>
             </div>
           ))}
         </div>
 
+        {/* Benefits */}
+        <div className="mb-20">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {benefitKeys.map((key) => (
+              <div key={key} className="flex items-start gap-3 bg-offwhite/5 p-5 rounded">
+                <span className="text-gold shrink-0 mt-0.5">✦</span>
+                <p className="text-sm text-offwhite/80 leading-relaxed">{t(key)}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* Official program */}
-        <div className="max-w-2xl mx-auto mb-16 text-center">
-          <h3 className="text-lg font-heading text-gold mb-4">
+        <div className="mb-20 text-center border-t border-b border-offwhite/10 py-12">
+          <h3 className="text-xl font-heading text-gold mb-6">
             {t("official_title")}
           </h3>
-          <p className="text-sm text-offwhite/60 leading-relaxed">
+          <p className="text-sm text-offwhite/60 leading-relaxed max-w-2xl mx-auto">
             {t("official_desc")}
           </p>
         </div>
 
-        {/* Closing message */}
-        <div className="max-w-2xl mx-auto mb-12 text-center">
-          <p className="text-offwhite/80 font-heading text-lg italic">
+        {/* Closing */}
+        <div className="mb-12 text-center">
+          <p className="text-offwhite/80 font-heading text-xl md:text-2xl italic leading-relaxed">
             &ldquo;{t("closing")}&rdquo;
           </p>
         </div>
@@ -133,7 +132,7 @@ export default function LiveCommerce() {
         <div className="text-center">
           <a
             href="/liveseller/"
-            className="inline-block bg-gold text-dark px-12 py-4 text-sm tracking-[0.2em] font-medium hover:bg-gold-dark transition-colors"
+            className="inline-block bg-gold text-dark px-14 py-5 text-sm tracking-[0.2em] font-medium hover:bg-gold-dark transition-colors"
           >
             {t("cta")}
           </a>

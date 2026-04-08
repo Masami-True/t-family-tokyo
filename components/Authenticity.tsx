@@ -113,26 +113,28 @@ export default function Authenticity() {
         </div>
       </div>
 
-      {/* Certificate info */}
-      <div className="max-w-3xl mx-auto bg-offwhite p-8 md:p-12 rounded">
-        <div className="flex flex-col md:flex-row items-center gap-8">
+      {/* Certificate info - prominent */}
+      <div className="max-w-4xl mx-auto bg-offwhite p-10 md:p-16 rounded border border-gold/20">
+        <h3 className="font-heading text-2xl md:text-3xl text-center mb-8 text-text">
+          {t("cert_title")}
+        </h3>
+        <div className="flex flex-col md:flex-row items-center gap-10">
           <div className="shrink-0">
             <Image
               src="/images/entrupy.png"
               alt="Entrupy Certificate"
-              width={200}
-              height={200}
-              className="w-48 h-auto object-contain"
+              width={320}
+              height={320}
+              className="w-64 md:w-80 h-auto object-contain"
             />
           </div>
           <div>
-            <h3 className="font-heading text-xl mb-3">{t("cert_title")}</h3>
-            <p className="text-subtext text-sm leading-relaxed mb-4">
+            <p className="text-subtext text-base leading-relaxed mb-6">
               {t("cert_desc")}
             </p>
-            <div className="flex items-center gap-2 text-gold">
-              <span className="text-lg">✓</span>
-              <span className="text-sm font-medium tracking-wider">
+            <div className="flex items-center gap-3 bg-gold/10 px-6 py-3 rounded inline-flex">
+              <span className="text-gold text-xl">✓</span>
+              <span className="text-gold font-medium tracking-wider">
                 {t("cert_badge")}
               </span>
             </div>
