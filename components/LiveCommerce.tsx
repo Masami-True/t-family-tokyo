@@ -125,7 +125,7 @@ export default function LiveCommerce() {
 
         {/* Closing */}
         <div className="mb-12 text-center">
-          <p className="text-offwhite/80 font-heading text-xl md:text-2xl italic leading-relaxed">
+          <p className="text-offwhite/80 font-heading text-xl md:text-2xl italic leading-relaxed whitespace-pre-line">
             &ldquo;{t("closing")}&rdquo;
           </p>
         </div>
