@@ -41,7 +41,7 @@ export default function CeoGreeting() {
             alt={t("name")}
             width={200}
             height={200}
-            className="w-48 h-48 object-cover rounded-full"
+            className="w-48 h-48 object-contain rounded-full bg-white"
           />
         </div>
 
