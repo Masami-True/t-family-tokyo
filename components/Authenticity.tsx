@@ -129,11 +129,11 @@ export default function Authenticity() {
               className="w-64 md:w-80 h-auto object-contain"
             />
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <p className="text-subtext text-base leading-relaxed mb-6">
               {t("cert_desc")}
             </p>
-            <div className="flex items-center gap-3 bg-gold/10 px-6 py-3 rounded inline-flex">
+            <div className="inline-flex items-center gap-3 bg-gold/10 px-6 py-3 rounded">
               <span className="text-gold text-xl">✓</span>
               <span className="text-gold font-medium tracking-wider">
                 {t("cert_badge")}
