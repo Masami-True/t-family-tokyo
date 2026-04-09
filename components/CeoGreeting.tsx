@@ -25,7 +25,7 @@ export default function CeoGreeting() {
     <section
       ref={sectionRef}
       className="fade-in-section py-24 px-6"
-      style={{ background: "linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 50%, #d8d8d8 100%)" }}
+      style={{ background: "linear-gradient(135deg, #f5f0e8 0%, #efe6d6 50%, #e8dcc8 100%)" }}
     >
       <div className="max-w-5xl mx-auto relative">
         {/* Text area */}
