@@ -26,13 +26,13 @@ const securityHeaders = [
   {
     key: "Content-Security-Policy",
     value: [
-      "default-src 'self'",
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://*.elfsight.com",
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.elfsight.com",
-      "font-src 'self' https://fonts.gstatic.com https://*.elfsight.com",
-      "img-src 'self' data: blob: https://t-secondhands.jp https://images.unsplash.com https://maps.google.com https://maps.gstatic.com https://*.googleapis.com https://*.googleusercontent.com https://*.elfsight.com",
-      "frame-src 'self' https://maps.google.com https://www.google.com https://*.elfsight.com",
-      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://*.elfsight.com https://core.service.elfsight.com",
+      "default-src 'self' https://*.elfsight.com https://elfsightcdn.com https://*.elfsightcdn.com",
+      "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://www.google-analytics.com https://elfsightcdn.com https://*.elfsight.com https://*.elfsightcdn.com https://static.elfsight.com",
+      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://*.elfsight.com https://*.elfsightcdn.com",
+      "font-src 'self' https://fonts.gstatic.com https://*.elfsight.com https://*.elfsightcdn.com",
+      "img-src 'self' data: blob: https: http:",
+      "frame-src 'self' https://maps.google.com https://www.google.com https://*.elfsight.com https://*.elfsightcdn.com",
+      "connect-src 'self' https://www.google-analytics.com https://www.googletagmanager.com https://*.elfsight.com https://*.elfsightcdn.com https://core.service.elfsight.com https://lh3.googleusercontent.com",
     ].join("; "),
   },
 ];
