@@ -44,9 +44,9 @@ export default function CeoGreeting() {
         </div>
 
         {/* Right: CEO Photo - large, natural crop */}
-        <div className="md:w-[40%] relative min-h-[300px] md:min-h-0">
+        <div className="md:w-[25%] relative min-h-[250px] md:min-h-0">
           <Image
-            src="/images/ceo-portrait.jpg"
+            src="/images/ceo-portrait.png"
             alt={t("name")}
             fill
             className="object-cover object-top"
