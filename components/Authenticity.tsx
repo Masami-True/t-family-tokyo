@@ -30,8 +30,9 @@ export default function Authenticity() {
       <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
         {t("label")}
       </p>
-      <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-16">
-        {t("headline")}
+      <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-center text-text mb-16">
+        <span className="block sm:inline">{t("headline_line1")}</span>
+        <span className="block sm:inline">{t("headline_line2")}</span>
       </h2>
 
       {/* 3 pillars */}

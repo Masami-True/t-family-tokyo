@@ -28,7 +28,9 @@
     "certified_desc": "Autenticación con IA de Entrupy — precisión de estándar mundial.",
     "ceo_name": "Tominaga Asaki",
     "ceo_title": "Director Representante, T-Family Inc.",
-    "ceo_message": "Nuestro compromiso es entregar solo artículos auténticos. Cada producto incluye una Garantía de Autenticidad — reembolso del 100% si se determina que no es genuino. Servimos a clientes en todo el mundo con confianza, transparencia y dedicación."
+    "ceo_message": "Nuestro compromiso es entregar solo artículos auténticos. Cada producto incluye una Garantía de Autenticidad — reembolso del 100% si se determina que no es genuino. Servimos a clientes en todo el mundo con confianza, transparencia y dedicación.",
+    "headline_line1": "De Japón al Mundo,",
+    "headline_line2": "Entregando Autenticidad."
   },
   "collection": {
     "label": "COLECCIÓN DESTACADA",
@@ -120,7 +122,9 @@
     "online_desc": "Para clientes que no pueden visitarnos, nuestra tienda en línea mantiene los mismos estándares rigurosos en la gestión y venta de cada artículo.",
     "transparent_title": "Operación Transparente y Honesta",
     "transparent_desc": "Presentamos claramente el estado del producto, precios y condiciones de venta, creando un entorno donde los clientes pueden comprar con total confianza.",
-    "license": "Licencia de Anticuario: Comisión de Seguridad Pública Metropolitana de Tokio N.º 301132115776"
+    "license": "Licencia de Anticuario: Comisión de Seguridad Pública Metropolitana de Tokio N.º 301132115776",
+    "headline_line1": "Todo Auténtico.",
+    "headline_line2": "Garantizado."
   },
   "reviews": {
     "label": "OPINIONES DE CLIENTES",

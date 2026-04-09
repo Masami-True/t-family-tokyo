@@ -49,8 +49,9 @@ export default function Philosophy() {
       <div className="absolute inset-0 bg-black/40" />
 
       {/* Headline */}
-      <h2 className="relative z-10 font-heading text-4xl md:text-5xl text-center text-white mb-16">
-        {t("headline")}
+      <h2 className="relative z-10 font-heading text-3xl sm:text-4xl md:text-5xl text-center text-white mb-16">
+        <span className="block sm:inline">{t("headline_line1")}</span>
+        <span className="block sm:inline">{t("headline_line2")}</span>
       </h2>
 
       {/* 3-column card grid - glass panels */}
