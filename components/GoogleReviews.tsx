@@ -3,44 +3,6 @@
 import { useEffect, useRef } from "react";
 import { useTranslations } from "next-intl";
 
-const reviews = [
-  { name: "M. Chen", rating: 5, text_key: "review1", country: "🇨🇳" },
-  { name: "Sarah K.", rating: 5, text_key: "review2", country: "🇺🇸" },
-  { name: "田中 様", rating: 5, text_key: "review3", country: "🇯🇵" },
-  { name: "Kim J.", rating: 5, text_key: "review4", country: "🇰🇷" },
-];
-
-function Stars({ count }: { count: number }) {
-  return (
-    <div className="flex gap-0.5 text-gold text-sm mb-2">
-      {[...Array(count)].map((_, i) => (
-        <span key={i}>★</span>
-      ))}
-    </div>
-  );
-}
-
-function ReviewCard({
-  review,
-  t,
-}: {
-  review: (typeof reviews)[number];
-  t: ReturnType<typeof useTranslations>;
-}) {
-  return (
-    <div className="bg-white p-6 rounded border border-border">
-      <Stars count={review.rating} />
-      <p className="text-sm text-subtext leading-relaxed mb-4 italic">
-        &ldquo;{t(review.text_key)}&rdquo;
-      </p>
-      <div className="flex items-center gap-2">
-        <span className="text-lg">{review.country}</span>
-        <span className="text-xs font-medium text-text">{review.name}</span>
-      </div>
-    </div>
-  );
-}
-
 export default function GoogleReviews() {
   const t = useTranslations("reviews");
   const sectionRef = useRef<HTMLElement>(null);
@@ -63,46 +25,60 @@ export default function GoogleReviews() {
       ref={sectionRef}
       className="fade-in-section bg-offwhite py-24 px-6"
     >
-      <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
-        {t("label")}
-      </p>
-      <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-4">
-        {t("headline")}
-      </h2>
+      {/* Google Reviews embed widget */}
+      <div className="max-w-5xl mx-auto">
+        <div className="bg-white rounded-lg shadow-md p-6 md:p-8">
+          {/* Header */}
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-6">
+            <div>
+              <h2 className="text-xl font-medium mb-1">
+                <span className="text-[#4285F4]">G</span>
+                <span className="text-[#EA4335]">o</span>
+                <span className="text-[#FBBC05]">o</span>
+                <span className="text-[#4285F4]">g</span>
+                <span className="text-[#34A853]">l</span>
+                <span className="text-[#EA4335]">e</span>
+                <span className="text-text ml-2">{t("label")}</span>
+              </h2>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl font-medium text-text">4.7</span>
+                <div className="flex gap-0.5 text-[#FBBC05] text-lg">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span className="text-sm text-subtext">(21)</span>
+              </div>
+            </div>
+            <a
+              href="https://g.page/r/CT5WXUVxa3XmEAI/review"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-4 sm:mt-0 inline-block bg-[#4285F4] text-white px-5 py-2.5 rounded text-sm font-medium hover:bg-[#3367D6] transition-colors"
+            >
+              {t("write_review")}
+            </a>
+          </div>
 
-      {/* Rating summary */}
-      <div className="flex items-center justify-center gap-2 mb-12">
-        <div className="flex gap-0.5 text-gold text-lg">
-          {[...Array(5)].map((_, i) => (
-            <span key={i}>★</span>
-          ))}
+          {/* Google Maps Place embed - shows actual reviews */}
+          <div className="w-full rounded overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.5!2d139.7515!3d35.668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b5e4a3ed1f7%3A0xe675716b455d5e3e!2sT-Family%E6%A0%AA%E5%BC%8F%E4%BC%9A%E7%A4%BE!5e0!3m2!1sja!2sjp!4v1700000000000"
+              width="100%"
+              height="350"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              className="rounded"
+            />
+          </div>
+
+          {/* Review request */}
+          <div className="mt-6 text-center">
+            <p className="text-sm text-subtext">
+              {t("review_request")}
+            </p>
+          </div>
         </div>
-        <span className="text-sm text-subtext">{t("rating_text")}</span>
-      </div>
-
-      {/* Review cards - no duplicates */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
-        {reviews.map((review) => (
-          <ReviewCard key={review.text_key} review={review} t={t} />
-        ))}
-      </div>
-
-      {/* Google review request + link */}
-      <div className="text-center space-y-4">
-        <p className="text-sm text-subtext">
-          {t("review_request")}
-        </p>
-        <a
-          href="https://share.google/eJlVMlu8ie6p8b51v"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-sm text-gold hover:text-gold-dark transition-colors border border-gold/30 px-6 py-2.5 rounded"
-        >
-          <svg className="w-4 h-4" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-          </svg>
-          {t("cta")}
-        </a>
       </div>
     </section>
   );
