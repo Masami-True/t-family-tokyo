@@ -27,7 +27,12 @@ export default function GoogleReviews() {
       className="fade-in-section bg-offwhite py-24 px-6"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Elfsight Google Reviews Widget */}
+        {/* Multi-language title from site translations */}
+        <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-8">
+          {t("headline")}
+        </h2>
+
+        {/* Elfsight Google Reviews Widget (header disabled, title from above) */}
         <Script
           src="https://elfsightcdn.com/platform.js"
           strategy="lazyOnload"
