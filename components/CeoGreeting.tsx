@@ -37,7 +37,7 @@ export default function CeoGreeting() {
         {/* CEO Portrait */}
         <div className="shrink-0">
           <Image
-            src="/images/ceo-portrait.png"
+            src="/images/ceo-portrait.jpg"
             alt={t("name")}
             width={200}
             height={200}
