@@ -36,7 +36,7 @@ export default function Authenticity() {
       </h2>
 
       {/* Introduction text */}
-      <p className="text-sm text-subtext leading-relaxed text-center max-w-2xl mx-auto mb-16">
+      <p className="text-sm text-subtext leading-relaxed text-left max-w-2xl mx-auto mb-16">
         {t("intro")}
       </p>
 
