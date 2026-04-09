@@ -24,36 +24,35 @@ export default function CeoGreeting() {
   return (
     <section
       ref={sectionRef}
-      className="fade-in-section bg-offwhite py-24 px-6"
+      className="fade-in-section bg-gradient-to-br from-[#f0f0f0] to-[#e8e8e8] py-0 overflow-hidden"
     >
-      <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
-        {t("label")}
-      </p>
-      <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-16">
-        {t("headline")}
-      </h2>
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-stretch">
+        {/* Left: Text content */}
+        <div className="flex-1 py-16 md:py-24 px-6 md:px-12 lg:px-16">
+          <h2 className="font-heading text-2xl md:text-3xl text-text mb-8 border-l-4 border-gold pl-4">
+            {t("headline")}
+          </h2>
 
-      <div className="max-w-3xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        {/* CEO Portrait */}
-        <div className="shrink-0">
+          <p className="text-subtext text-sm leading-[2] whitespace-pre-line mb-8">
+            {t("message")}
+          </p>
+
+          <div className="text-right">
+            <p className="text-sm text-subtext whitespace-pre-line">{t("title")}</p>
+            <p className="font-heading text-xl text-text mt-1">{t("name")}</p>
+          </div>
+        </div>
+
+        {/* Right: CEO Photo - large, natural crop */}
+        <div className="md:w-[40%] relative min-h-[300px] md:min-h-0">
           <Image
             src="/images/ceo-portrait.jpg"
             alt={t("name")}
-            width={200}
-            height={200}
-            className="w-48 h-48 object-contain rounded-full"
+            fill
+            className="object-cover object-top"
           />
-        </div>
-
-        {/* Message */}
-        <div>
-          <p className="text-subtext text-sm leading-[2] whitespace-pre-line mb-6">
-            {t("message")}
-          </p>
-          <div className="text-right mt-8">
-            <p className="text-sm text-subtext whitespace-pre-line">{t("title")}</p>
-            <p className="font-heading text-lg text-text mt-1">{t("name")}</p>
-          </div>
+          {/* Subtle gradient overlay from left for text blending */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#f0f0f0] via-transparent to-transparent w-1/4 hidden md:block" />
         </div>
       </div>
     </section>
