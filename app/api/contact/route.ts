@@ -1,10 +1,43 @@
 import { NextRequest, NextResponse } from "next/server";
 import nodemailer from "nodemailer";
+import { checkRateLimit, sanitize, isValidEmail, getClientIp } from "@/lib/security";
 
 export async function POST(req: NextRequest) {
   try {
+    // Rate limiting
+    const ip = getClientIp(req);
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { success: false, error: "Too many requests. Please try again later." },
+        { status: 429 }
+      );
+    }
+
     const data = await req.json();
     const { name, email, subject, message } = data;
+
+    // Validation
+    if (!name || !email || !subject || !message) {
+      return NextResponse.json(
+        { success: false, error: "Required fields missing" },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidEmail(email)) {
+      return NextResponse.json(
+        { success: false, error: "Invalid email" },
+        { status: 400 }
+      );
+    }
+
+    // Sanitize
+    const safe = {
+      name: sanitize(name),
+      email: sanitize(email),
+      subject: sanitize(subject),
+      message: sanitize(message),
+    };
 
     const subjectLabels: Record<string, string> = {
       purchase: "商品購入について",
@@ -26,16 +59,16 @@ export async function POST(req: NextRequest) {
     // 1. Notification to T-Family
     await transporter.sendMail({
       from: `"T-Family" <${process.env.SMTP_USER || "tominaga@t-family.tokyo"}>`,
-      replyTo: email,
+      replyTo: safe.email,
       to: "info@t-family.tokyo",
-      subject: `【お問い合わせ】${subjectLabels[subject] || subject} — ${name} 様`,
+      subject: `【お問い合わせ】${subjectLabels[safe.subject] || safe.subject} — ${safe.name} 様`,
       html: `
         <h2>ウェブサイトからのお問い合わせ</h2>
         <table style="border-collapse:collapse;width:100%;max-width:600px;">
-          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">お名前</td><td style="padding:8px;border:1px solid #ddd;">${name}</td></tr>
-          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">メール</td><td style="padding:8px;border:1px solid #ddd;">${email}</td></tr>
-          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">お問い合わせ種別</td><td style="padding:8px;border:1px solid #ddd;">${subjectLabels[subject] || subject}</td></tr>
-          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">メッセージ</td><td style="padding:8px;border:1px solid #ddd;white-space:pre-line;">${message}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">お名前</td><td style="padding:8px;border:1px solid #ddd;">${safe.name}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">メール</td><td style="padding:8px;border:1px solid #ddd;">${safe.email}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">お問い合わせ種別</td><td style="padding:8px;border:1px solid #ddd;">${subjectLabels[safe.subject] || safe.subject}</td></tr>
+          <tr><td style="padding:8px;border:1px solid #ddd;font-weight:bold;">メッセージ</td><td style="padding:8px;border:1px solid #ddd;white-space:pre-line;">${safe.message}</td></tr>
         </table>
       `,
     });
@@ -44,7 +77,7 @@ export async function POST(req: NextRequest) {
     await transporter.sendMail({
       from: `"T-Family Inc." <${process.env.SMTP_USER || "tominaga@t-family.tokyo"}>`,
       replyTo: "info@t-family.tokyo",
-      to: email,
+      to: safe.email,
       subject: "【T-Family】お問い合わせありがとうございます",
       html: `
         <div style="max-width:600px;margin:0 auto;font-family:sans-serif;color:#1a1a1a;">
@@ -52,13 +85,13 @@ export async function POST(req: NextRequest) {
             <h1 style="font-size:18px;color:#B8972A;letter-spacing:0.1em;">T-Family Inc.</h1>
           </div>
           <div style="padding:32px 24px;">
-            <p style="margin-bottom:16px;">${name} 様</p>
+            <p style="margin-bottom:16px;">${safe.name} 様</p>
             <p style="margin-bottom:16px;">この度はT-Familyへお問い合わせいただき、誠にありがとうございます。</p>
             <p style="margin-bottom:16px;">ご連絡内容を確認の上、担当者より近日中にご返信いたします。</p>
             <p style="margin-bottom:24px;">今しばらくお待ちくださいませ。</p>
             <div style="background:#F5F0E8;padding:16px;border-radius:4px;margin-bottom:24px;">
               <p style="font-size:12px;color:#6B6B6B;margin-bottom:8px;">お問い合わせ内容：</p>
-              <p style="font-size:13px;white-space:pre-line;">${message}</p>
+              <p style="font-size:13px;white-space:pre-line;">${safe.message}</p>
             </div>
             <hr style="border:none;border-top:1px solid #E0D9CC;margin:24px 0;" />
             <p style="font-size:12px;color:#6B6B6B;">
