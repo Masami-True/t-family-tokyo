@@ -1,6 +1,7 @@
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 export const metadata = {
@@ -40,6 +41,7 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="font-[DM_Sans] bg-offwhite text-text antialiased">
+        <GoogleAnalytics />
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
