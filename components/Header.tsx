@@ -57,7 +57,7 @@ export default function Header() {
           : "bg-gradient-to-b from-black/60 to-transparent"
       }`}
     >
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-2">
         {/* Logo */}
         <a
           href="#"
@@ -73,7 +73,7 @@ export default function Header() {
             width={240}
             height={90}
             style={{ height: "90px", width: "auto" }}
-            className="max-h-[40px] md:max-h-[90px] w-auto"
+            className="max-h-[60px] md:max-h-[120px] w-auto"
             priority
           />
         </a>
