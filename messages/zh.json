@@ -12,7 +12,11 @@
     "h1_line2": "价值。",
     "subcopy": "精心甄选的至臻逸品，等待开启新的篇章。",
     "cta_shop": "立即选购",
-    "cta_live": "成为直播卖家"
+    "cta_live": "成为直播卖家",
+    "badge_auth": "全品正品保证",
+    "badge_entrupy": "Entrupy AI鉴定",
+    "badge_refund": "全额退款保证",
+    "cta_store": "查看店铺"
   },
   "trust": {
     "label": "正品品牌",

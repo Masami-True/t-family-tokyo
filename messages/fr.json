@@ -12,7 +12,11 @@
     "h1_line2": " perdure.",
     "subcopy": "Des pièces de luxe soigneusement sélectionnées, en attente de leur prochain chapitre.",
     "cta_shop": "ACHETER MAINTENANT",
-    "cta_live": "DEVENIR VENDEUR LIVE"
+    "cta_live": "DEVENIR VENDEUR LIVE",
+    "badge_auth": "AUTHENTICITÉ GARANTIE",
+    "badge_entrupy": "CERTIFIÉ ENTRUPY",
+    "badge_refund": "REMBOURSEMENT GARANTI",
+    "cta_store": "VOIR BOUTIQUE"
   },
   "trust": {
     "label": "MARQUES AUTHENTIQUES",

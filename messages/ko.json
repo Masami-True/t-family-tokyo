@@ -12,7 +12,11 @@
     "h1_line2": "를 잇다.",
     "subcopy": "엄선된 최고의 명품들이 새로운 이야기를 기다리고 있습니다.",
     "cta_shop": "지금 쇼핑하기",
-    "cta_live": "라이브 셀러 되기"
+    "cta_live": "라이브 셀러 되기",
+    "badge_auth": "전품 정품보증",
+    "badge_entrupy": "Entrupy AI 감정",
+    "badge_refund": "전액환불보증",
+    "cta_store": "매장 보기"
   },
   "trust": {
     "label": "정품 브랜드",

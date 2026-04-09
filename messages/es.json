@@ -12,7 +12,11 @@
     "h1_line2": " que perdura.",
     "subcopy": "Piezas de lujo cuidadosamente seleccionadas, esperando su próximo capítulo.",
     "cta_shop": "COMPRAR AHORA",
-    "cta_live": "SER VENDEDOR EN VIVO"
+    "cta_live": "SER VENDEDOR EN VIVO",
+    "badge_auth": "AUTENTICIDAD GARANTIZADA",
+    "badge_entrupy": "CERTIFICADO ENTRUPY",
+    "badge_refund": "GARANTÍA DE REEMBOLSO",
+    "cta_store": "VER TIENDA"
   },
   "trust": {
     "label": "MARCAS AUTÉNTICAS",

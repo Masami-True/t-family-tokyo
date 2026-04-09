@@ -12,7 +12,11 @@
     "h1_line2": " Delivered.",
     "subcopy": "Curated luxury pieces awaiting their next chapter. Authenticated. Certified. From Tokyo.",
     "cta_shop": "SHOP NOW",
-    "cta_live": "BECOME A LIVE SELLER"
+    "cta_live": "BECOME A LIVE SELLER",
+    "badge_auth": "AUTHENTICITY GUARANTEED",
+    "badge_entrupy": "ENTRUPY CERTIFIED",
+    "badge_refund": "FULL REFUND GUARANTEE",
+    "cta_store": "VISIT STORE"
   },
   "trust": {
     "label": "AUTHENTIC BRANDS",

@@ -116,19 +116,48 @@ export default function Hero() {
               {t("subcopy")}
             </p>
 
-            {/* CTA Buttons */}
-            <div className="mt-10 flex flex-col sm:flex-row gap-4">
+            {/* Trust badges */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+                {t("badge_auth")}
+              </span>
+              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+                {t("badge_entrupy")}
+              </span>
+              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+                {t("badge_refund")}
+              </span>
+            </div>
+
+            {/* CTA Buttons - 4 actions */}
+            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
               <a
                 href="https://t-secondhands.jp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white px-8 py-3.5 text-sm tracking-[0.15em] text-dark font-medium transition-all hover:bg-gold hover:text-white text-center"
+                className="inline-block bg-white px-6 py-3 text-sm tracking-[0.12em] text-dark font-medium transition-all hover:bg-gold hover:text-white text-center"
               >
                 {t("cta_shop")}
               </a>
               <a
-                href="#live-seller"
-                className="inline-block border border-white/30 px-8 py-3.5 text-sm tracking-[0.15em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+                href="https://wa.me/message/YLKX2G23XTTKM1"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-[#25D366] px-6 py-3 text-sm tracking-[0.1em] text-white font-medium transition-all hover:opacity-90 text-center"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                WhatsApp
+              </a>
+              <a
+                href="#store"
+                className="inline-flex items-center gap-2 border border-white/30 px-6 py-3 text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                {t("cta_store")}
+              </a>
+              <a
+                href="/liveseller/"
+                className="inline-block border border-white/30 px-6 py-3 text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
               >
                 {t("cta_live")}
               </a>

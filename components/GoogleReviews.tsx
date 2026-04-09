@@ -28,7 +28,7 @@ function ReviewCard({
   t: ReturnType<typeof useTranslations>;
 }) {
   return (
-    <div className="bg-white p-6 rounded border border-border min-w-[280px] md:min-w-[320px] shrink-0">
+    <div className="bg-white p-6 rounded border border-border">
       <Stars count={review.rating} />
       <p className="text-sm text-subtext leading-relaxed mb-4 italic">
         &ldquo;{t(review.text_key)}&rdquo;
@@ -80,14 +80,11 @@ export default function GoogleReviews() {
         <span className="text-sm text-subtext">{t("rating_text")}</span>
       </div>
 
-      {/* Auto-scrolling review carousel */}
-      <div className="overflow-hidden mb-12">
-        <div className="flex gap-6 animate-scroll-brands" style={{ animationDuration: "15s" }}>
-          {/* Double the reviews for seamless loop */}
-          {[...reviews, ...reviews, ...reviews].map((review, i) => (
-            <ReviewCard key={`${review.text_key}-${i}`} review={review} t={t} />
-          ))}
-        </div>
+      {/* Review cards - no duplicates */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+        {reviews.map((review) => (
+          <ReviewCard key={review.text_key} review={review} t={t} />
+        ))}
       </div>
 
       {/* Google review request + link */}
