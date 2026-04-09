@@ -28,7 +28,7 @@ export default function CeoGreeting() {
     >
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-stretch">
         {/* Left: Text content */}
-        <div className="flex-1 py-16 md:py-24 px-6 md:px-12 lg:px-16">
+        <div className="flex-1 py-12 md:py-16 px-6 md:px-12 lg:px-16">
           <h2 className="font-heading text-2xl md:text-3xl text-text mb-8 border-l-4 border-gold pl-4">
             {t("headline")}
           </h2>
@@ -44,7 +44,7 @@ export default function CeoGreeting() {
         </div>
 
         {/* Right: CEO Photo - large, natural crop */}
-        <div className="md:w-[25%] relative min-h-[250px] md:min-h-0">
+        <div className="md:w-[40%] relative min-h-[200px] md:min-h-0 max-h-[400px]">
           <Image
             src="/images/ceo-portrait.png"
             alt={t("name")}
