@@ -36,18 +36,11 @@ export default function CeoGreeting() {
             fill
             className="object-cover object-top"
           />
-          {/* Gradient fade right - blends into background */}
+          {/* Soft edge right - thin gradient only at the border */}
           <div
-            className="absolute inset-0 hidden md:block"
+            className="absolute top-0 bottom-0 right-0 w-16 hidden md:block"
             style={{
-              background: "linear-gradient(to right, transparent 50%, #efe6d6 100%)",
-            }}
-          />
-          {/* Gradient fade bottom for mobile */}
-          <div
-            className="absolute inset-0 md:hidden"
-            style={{
-              background: "linear-gradient(to bottom, transparent 60%, #f5f0e8 100%)",
+              background: "linear-gradient(to right, transparent, #efe6d6)",
             }}
           />
         </div>
