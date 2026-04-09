@@ -145,7 +145,8 @@
     "review4": "Commandé depuis l'étranger et reçu rapidement via DHL. Emballage soigné et qualité parfaite.",
     "cta": "Voir les avis sur Google Maps →",
     "review_request": "Nous attendons vos avis Google. Partagez votre expérience avec nous.",
-    "write_review": "Écrire un avis sur Google"
+    "write_review": "Écrire un avis sur Google",
+    "headline_suffix": "Avis"
   },
   "greeting": {
     "label": "MESSAGE DU PDG",

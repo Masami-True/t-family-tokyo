@@ -145,7 +145,8 @@
     "review4": "海外から購入しましたが、DHLですぐに届きました。梱包も丁寧で、商品の品質も完璧でした。",
     "cta": "Google Mapsで口コミを見る →",
     "review_request": "Googleレビューお待ちしております。皆様のご感想をぜひお聞かせください。",
-    "write_review": "Googleでレビューしてください"
+    "write_review": "Googleでレビューしてください",
+    "headline_suffix": "口コミ"
   },
   "greeting": {
     "label": "代表ご挨拶",

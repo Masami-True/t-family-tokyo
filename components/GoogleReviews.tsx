@@ -27,9 +27,17 @@ export default function GoogleReviews() {
       className="fade-in-section bg-offwhite py-24 px-6"
     >
       <div className="max-w-5xl mx-auto">
-        {/* Multi-language title from site translations */}
-        <h2 className="font-heading text-3xl md:text-4xl text-center text-text mb-8">
-          {t("headline")}
+        {/* Multi-language title with Google colors */}
+        <h2 className="text-3xl md:text-4xl text-center mb-8">
+          <span className="font-medium">
+            <span className="text-[#4285F4]">G</span>
+            <span className="text-[#EA4335]">o</span>
+            <span className="text-[#FBBC05]">o</span>
+            <span className="text-[#4285F4]">g</span>
+            <span className="text-[#34A853]">l</span>
+            <span className="text-[#EA4335]">e</span>
+          </span>
+          <span className="font-heading text-text ml-2">{t("headline_suffix")}</span>
         </h2>
 
         {/* Elfsight Google Reviews Widget (header disabled, title from above) */}
