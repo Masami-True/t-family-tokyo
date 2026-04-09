@@ -82,7 +82,7 @@ export default function GoogleReviews() {
 
       {/* Auto-scrolling review carousel */}
       <div className="overflow-hidden mb-12">
-        <div className="flex gap-6 animate-scroll-brands" style={{ animationDuration: "30s" }}>
+        <div className="flex gap-6 animate-scroll-brands" style={{ animationDuration: "15s" }}>
           {/* Double the reviews for seamless loop */}
           {[...reviews, ...reviews, ...reviews].map((review, i) => (
             <ReviewCard key={`${review.text_key}-${i}`} review={review} t={t} />

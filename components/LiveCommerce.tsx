@@ -56,7 +56,8 @@ export default function LiveCommerce() {
             {t("headline")}
           </p>
           <p className="text-offwhite/50 mt-4 text-sm max-w-xl mx-auto">
-            {t("subcopy")}
+            <span className="block sm:inline">{t("subcopy_line1")}</span>
+            <span className="block sm:inline">{t("subcopy_line2")}</span>
           </p>
         </div>
 
@@ -73,7 +74,8 @@ export default function LiveCommerce() {
             ))}
           </div>
           <p className="text-gold text-center font-heading text-lg">
-            {t("worry_answer")}
+            <span className="block sm:inline">{t("worry_answer_line1")}</span>
+            <span className="block sm:inline">{t("worry_answer_line2")}</span>
           </p>
         </div>
 
@@ -112,11 +114,11 @@ export default function LiveCommerce() {
         </div>
 
         {/* Official program */}
-        <div className="mb-20 text-center border-t border-b border-offwhite/10 py-12">
-          <h3 className="text-xl font-heading text-gold mb-6">
+        <div className="mb-20 border-t border-b border-offwhite/10 py-12">
+          <h3 className="text-xl font-heading text-gold mb-6 text-center sm:text-left">
             {t("official_title")}
           </h3>
-          <p className="text-sm text-offwhite/60 leading-relaxed max-w-2xl mx-auto">
+          <p className="text-sm text-offwhite/60 leading-relaxed max-w-2xl text-left">
             {t("official_desc")}
           </p>
         </div>
