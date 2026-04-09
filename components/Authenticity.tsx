@@ -30,16 +30,21 @@ export default function Authenticity() {
       <p className="text-xs tracking-[0.2em] text-gold text-center mb-4">
         {t("label")}
       </p>
-      <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-center text-text mb-16">
+      <h2 className="font-heading text-2xl sm:text-3xl md:text-4xl text-center text-text mb-6">
         <span className="block sm:inline">{t("headline_line1")}</span>
         <span className="block sm:inline">{t("headline_line2")}</span>
       </h2>
 
+      {/* Introduction text */}
+      <p className="text-sm text-subtext leading-relaxed text-center max-w-2xl mx-auto mb-16">
+        {t("intro")}
+      </p>
+
       {/* 3 pillars */}
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
         {/* Entrupy */}
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             ◉
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
@@ -51,8 +56,8 @@ export default function Authenticity() {
         </div>
 
         {/* Guarantee */}
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             ✦
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
@@ -64,8 +69,8 @@ export default function Authenticity() {
         </div>
 
         {/* Expert Staff */}
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             ◈
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
@@ -79,8 +84,8 @@ export default function Authenticity() {
 
       {/* Additional trust points */}
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             🏬
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
@@ -90,8 +95,8 @@ export default function Authenticity() {
             {t("store_desc")}
           </p>
         </div>
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             🌐
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
@@ -101,8 +106,8 @@ export default function Authenticity() {
             {t("online_desc")}
           </p>
         </div>
-        <div className="bg-offwhite p-8 text-center rounded">
-          <div className="w-16 h-16 mx-auto mb-4 flex items-center justify-center text-gold text-3xl">
+        <div className="bg-offwhite p-8 text-left rounded">
+          <div className="w-12 h-12 mb-4 flex items-center justify-center text-gold text-2xl">
             ✧
           </div>
           <h3 className="text-sm tracking-[0.15em] font-medium mb-3">
