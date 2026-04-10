@@ -89,53 +89,53 @@ export default function Hero() {
         </div>
       ))}
 
-      {/* Left gradient overlay for text readability */}
-      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/80 via-black/40 to-transparent lg:via-black/20" />
-      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/70 via-transparent to-black/30 lg:from-black/40" />
+      {/* Gradient overlays for text readability */}
+      <div className="absolute inset-0 z-[2] bg-gradient-to-r from-black/80 via-black/50 to-black/20 lg:via-black/30 lg:to-transparent" />
+      <div className="absolute inset-0 z-[2] bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
 
-      {/* Text content - positioned in the left margin space */}
-      <div className="absolute inset-0 z-10 flex items-center">
-        <div className="w-full max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="max-w-md lg:max-w-lg">
+      {/* Text content */}
+      <div className="absolute inset-0 z-10 flex items-end sm:items-center pb-28 sm:pb-0">
+        <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
+          <div className="max-w-[320px] sm:max-w-md lg:max-w-lg">
             {/* Eyebrow */}
-            <p className="mb-6 text-[10px] tracking-[0.35em] text-gold/80 uppercase border border-gold/25 inline-block px-5 py-2">
+            <p className="mb-3 sm:mb-6 text-[9px] sm:text-[10px] tracking-[0.35em] text-gold/80 uppercase border border-gold/25 inline-block px-3 sm:px-5 py-1.5 sm:py-2">
               {t("eyebrow")}
             </p>
 
             {/* Heading */}
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-white">
+            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-white">
               <span className="block">{t("h1_line1")}</span>
-              <span className="block mt-2">
+              <span className="block mt-1 sm:mt-2">
                 <span className="text-gold">{t("h1_accent")}</span>
                 {t("h1_line2")}
               </span>
             </h1>
 
             {/* Subcopy */}
-            <p className="mt-6 text-sm sm:text-base leading-relaxed text-white/50 tracking-wide max-w-sm">
+            <p className="mt-3 sm:mt-6 text-xs sm:text-base leading-relaxed text-white/60 tracking-wide max-w-[280px] sm:max-w-sm">
               {t("subcopy")}
             </p>
 
             {/* Trust badges */}
-            <div className="mt-4 flex flex-wrap gap-2">
-              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+            <div className="mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
+              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
                 {t("badge_auth")}
               </span>
-              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
                 {t("badge_entrupy")}
               </span>
-              <span className="text-[10px] sm:text-xs tracking-wider text-gold border border-gold/30 px-3 py-1">
+              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
                 {t("badge_refund")}
               </span>
             </div>
 
-            {/* CTA Buttons - 4 actions */}
-            <div className="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
+            {/* CTA Buttons - 2x2 grid on mobile, row on desktop */}
+            <div className="mt-4 sm:mt-8 grid grid-cols-2 sm:flex sm:flex-row sm:flex-wrap gap-2 sm:gap-3">
               <a
                 href="https://t-secondhands.jp/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white px-6 py-3 text-sm tracking-[0.12em] text-dark font-medium transition-all hover:bg-gold hover:text-white text-center"
+                className="bg-white px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-dark font-medium transition-all hover:bg-gold hover:text-white text-center"
               >
                 {t("cta_shop")}
               </a>
@@ -143,21 +143,21 @@ export default function Hero() {
                 href="https://wa.me/message/YLKX2G23XTTKM1"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-[#25D366] px-6 py-3 text-sm tracking-[0.1em] text-white font-medium transition-all hover:opacity-90 text-center"
+                className="flex items-center justify-center gap-1.5 bg-[#25D366] px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white font-medium transition-all hover:opacity-90"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
                 WhatsApp
               </a>
               <a
                 href="#store"
-                className="inline-flex items-center gap-2 border border-white/30 px-6 py-3 text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+                className="flex items-center justify-center gap-1.5 border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold"
               >
-                <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 {t("cta_store")}
               </a>
               <a
                 href="/liveseller/"
-                className="inline-block border border-white/30 px-6 py-3 text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+                className="border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
               >
                 {t("cta_live")}
               </a>
