@@ -37,7 +37,7 @@ export default function B2BSection() {
       <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl text-center text-gold mb-6">
         {t("label")}
       </h2>
-      <p className="text-center text-offwhite/50 text-sm max-w-2xl mx-auto mb-16">
+      <p className="text-center text-offwhite text-sm max-w-2xl mx-auto mb-16">
         {t("subcopy")}
       </p>
 
@@ -52,7 +52,7 @@ export default function B2BSection() {
             <h3 className="text-sm tracking-[0.15em] text-offwhite font-medium mb-2">
               {t(`${f.key}_title`)}
             </h3>
-            <p className="text-offwhite/50 text-sm leading-relaxed">
+            <p className="text-offwhite text-sm leading-relaxed">
               {t(`${f.key}_desc`)}
             </p>
           </div>
@@ -66,12 +66,12 @@ export default function B2BSection() {
         </h3>
         <div className="space-y-3">
           {(["target1", "target2", "target3", "target4"] as const).map((key) => (
-            <p key={key} className="text-sm text-offwhite/70 flex items-start gap-2">
+            <p key={key} className="text-sm text-offwhite flex items-start gap-2">
               <span className="text-gold shrink-0">✦</span>{t(key)}
             </p>
           ))}
         </div>
-        <p className="text-xs text-offwhite/40 mt-6 text-center">
+        <p className="text-xs text-offwhite mt-6 text-center">
           {t("deal_info")}
         </p>
       </div>
@@ -81,7 +81,7 @@ export default function B2BSection() {
         <h3 className="text-xs tracking-[0.2em] text-gold text-center mb-6">
           {t("brands_label")}
         </h3>
-        <p className="text-center text-offwhite/40 text-sm tracking-[0.1em]">
+        <p className="text-center text-offwhite text-sm tracking-[0.1em]">
           CHANEL / HERMÈS / LOUIS VUITTON / GUCCI / PRADA / FENDI / DIOR / YSL / GOYARD / BURBERRY / BVLGARI / CÉLINE / BALENCIAGA
         </p>
       </div>

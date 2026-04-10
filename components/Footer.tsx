@@ -77,7 +77,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={social.name}
-              className="text-offwhite/50 hover:text-gold transition-colors"
+              className="text-offwhite/80 hover:text-gold transition-colors"
             >
               {social.icon}
             </a>
@@ -93,7 +93,7 @@ export default function Footer() {
                 href={item.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+                className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
               >
                 {item.label}
               </a>
@@ -101,7 +101,7 @@ export default function Footer() {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+                className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
               >
                 {item.label}
               </a>
@@ -109,19 +109,19 @@ export default function Footer() {
           )}
           <Link
             href="/company"
-            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+            className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
           >
             {t("footer.company")}
           </Link>
           <Link
             href="/tokusyohou"
-            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+            className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
           >
             {t("footer.tokusho")}
           </Link>
           <Link
             href="/privacy"
-            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+            className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
           >
             {t("footer.privacy")}
           </Link>
@@ -129,14 +129,14 @@ export default function Footer() {
             href="https://nextstory.jp/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+            className="text-sm text-offwhite/80 hover:text-offwhite/80 transition-colors"
           >
             nextstory.jp
           </a>
         </nav>
 
         {/* Copyright */}
-        <p className="text-xs text-offwhite/30 mt-4">
+        <p className="text-xs text-offwhite/60 mt-4">
           {t("footer.copyright")}
         </p>
       </div>

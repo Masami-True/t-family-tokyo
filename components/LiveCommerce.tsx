@@ -52,10 +52,10 @@ export default function LiveCommerce() {
           <h2 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-gold mb-6">
             {t("label")}
           </h2>
-          <p className="text-xl md:text-2xl text-offwhite/80 font-heading">
+          <p className="text-xl md:text-2xl text-offwhite font-heading">
             {t("headline")}
           </p>
-          <p className="text-offwhite/50 mt-4 text-sm max-w-xl mx-auto">
+          <p className="text-offwhite mt-4 text-sm max-w-xl mx-auto">
             <span className="block sm:inline">{t("subcopy_line1")}</span>
             <span className="block sm:inline">{t("subcopy_line2")}</span>
           </p>
@@ -68,8 +68,8 @@ export default function LiveCommerce() {
           </h3>
           <div className="grid md:grid-cols-2 gap-3 mb-8">
             {(["worry1", "worry2", "worry3", "worry4"] as const).map((key) => (
-              <p key={key} className="text-sm text-offwhite/60 flex items-center gap-3 bg-offwhite/5 px-5 py-3 rounded">
-                <span className="text-offwhite/30">●</span>{t(key)}
+              <p key={key} className="text-sm text-offwhite flex items-center gap-3 bg-offwhite/5 px-5 py-3 rounded">
+                <span className="text-offwhite">●</span>{t(key)}
               </p>
             ))}
           </div>
@@ -94,7 +94,7 @@ export default function LiveCommerce() {
               <p className="text-sm tracking-[0.2em] font-medium mb-3 text-offwhite">
                 {t(step.titleKey)}
               </p>
-              <p className="text-offwhite/50 text-sm leading-relaxed">
+              <p className="text-offwhite text-sm leading-relaxed">
                 {t(step.descKey)}
               </p>
             </div>
@@ -107,7 +107,7 @@ export default function LiveCommerce() {
             {benefitKeys.map((key) => (
               <div key={key} className="flex items-start gap-3 bg-offwhite/5 p-5 rounded">
                 <span className="text-gold shrink-0 mt-0.5">✦</span>
-                <p className="text-sm text-offwhite/80 leading-relaxed">{t(key)}</p>
+                <p className="text-sm text-offwhite leading-relaxed">{t(key)}</p>
               </div>
             ))}
           </div>
@@ -118,14 +118,14 @@ export default function LiveCommerce() {
           <h3 className="text-xl font-heading text-gold mb-6 text-center sm:text-left">
             {t("official_title")}
           </h3>
-          <p className="text-sm text-offwhite/60 leading-relaxed max-w-2xl text-left">
+          <p className="text-sm text-offwhite leading-relaxed max-w-2xl text-left">
             {t("official_desc")}
           </p>
         </div>
 
         {/* Closing */}
         <div className="mb-12 text-center">
-          <p className="text-offwhite/80 font-heading text-base sm:text-xl md:text-2xl italic leading-relaxed whitespace-pre-line text-left sm:text-center">
+          <p className="text-offwhite font-heading text-base sm:text-xl md:text-2xl italic leading-relaxed whitespace-pre-line text-left sm:text-center">
             &ldquo;{t("closing")}&rdquo;
           </p>
         </div>
