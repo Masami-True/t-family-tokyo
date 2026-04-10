@@ -8,7 +8,8 @@ T-Family株式会社（後株）のコーポレートサイト
 - **Tech**: Next.js 16 + Tailwind CSS v4 + next-intl v4 (6言語: EN/JA/ZH/KO/ES/FR)
 - **自動言語判別**: ブラウザのAccept-Languageヘッダーで自動判別
 - **Google Analytics**: G-L8TLLNDFH9 ✅
-- **Google Search Console**: 所有権確認済み ✅
+- **Google Search Console**: 所有権確認済み + sitemap送信済み ✅
+- **Elfsight**: Google Reviews Widget (ID: 3740619c-f4fa-4380-861d-a953d8f0438c) ✅
 
 ## Company Info
 - 会社名: T-Family株式会社（後株 ← 株式会社T-Familyではない）
@@ -27,60 +28,63 @@ T-Family株式会社（後株）のコーポレートサイト
 - ホスティング: Vercel (Hobby plan, GitHub: Masami-True)
 - Vercel環境変数: SMTP_HOST=smtp.gmail.com, SMTP_PORT=587, SMTP_USER=tominaga@t-family.tokyo, SMTP_PASS=アプリパスワード
 
+## SEO ✅
+- **メタタグ**: title/description 日英キーワード最適化
+- **45+キーワード**: T-Family, 中古ブランド, 中古ブランドショップ, 中古ブランド銀座/新橋, ブランドバッグ, ライバー, BRAND BAG, Pre-owned luxury brand, Secondhand shops, Live Seller, CHANEL/HERMÈS/LV/GUCCI/PRADA/FENDI/DIOR/YSL/GOYARD/BURBERRY/BALENCIAGA/BVLGARI/CÉLINE/MIU MIU/BOTTEGA VENETA + BAG, inbound shopping Tokyo
+- **JSON-LD構造化データ**: LocalBusiness + 15ブランドProduct + 評価4.7★ + 営業時間 + GPS
+- **OGP + Twitterカード**: SNS共有最適化
+- **sitemap.xml**: 全6言語×5ページ = 30URL → Search Console送信済み
+- **robots.txt**: クローラー許可、/api/除外
+- **hreflang**: 6言語の正規URL + canonical
+- **SEOテキスト**: ページ最下部にキーワード豊富な日英テキスト
+- **nextstory.jpリンク**: フッターに相互リンク
+
 ## Pages
 - `/` — メインLP
-  - Hero（13枚キービジュアル、1.5秒切替（1枚目のみ2秒）、object-contain、背景にブランド名流れるテキスト opacity 15%）
-  - TrustBar（ブランド名スクロールのみ、バッジ削除済み）
-  - Philosophy（富士山＋桜＋河口湖の写真全面背景、黒オーバーレイ40%、白ガラスカード、スマホ用2行ヘッドライン）
-  - CollectionPreview（CHANEL/HERMÈS/LV/DIOR/GUCCI/FENDI、ブランド名大きく、タイトルなし）
-  - Authenticity（6カード: AI鑑定◉/返金保証✦/専門スタッフ◈ + 実店舗🏬/オンライン🌐/透明性✧ + 大きなEntrupy証明書セクション + スマホ中央揃えバッジ）
-  - GoogleReviews（★5レビュー4件、自動横スクロールカルーセル15秒、「レビューお待ちしております」メッセージ）
-  - LiveCommerce（ライブセラー募集中、悩み4項目2列カード、ベネフィット6項目、公認制度左揃え、クロージング、スマホ改行対応、CTAは/liveseller/へ）
-  - B2BSection（「業者様・バイヤー様向けご案内」大きなゴールド見出し、4特徴カード、ターゲット顧客リスト、取引条件、CTAは外部 t-family.tokyo/buyer01/）
-  - CeoGreeting（代表ご挨拶、ポートレート写真丸型、名前・肩書は右揃え、nextstory.jp全文メッセージ）
-  - ContactForm（お問い合わせフォーム: 名前/メール/種別セレクト/メッセージ、/api/contactでメール送信＋自動返信）
-  - StoreInfo（店舗情報、Google Maps、店内写真1枚、支払方法目立つ表示）
-  - Footer（SNSリンク、会社概要/特商法/プライバシーポリシーリンク、ロゴなし、余白縮小py-8）
+  - Hero（13枚キービジュアル、1.5秒切替（1枚目のみ2秒）、object-contain、背景ブランド名 opacity 15%、スマホ2x2ボタングリッド、安心訴求バッジ3つ、subcopy改行対応）
+  - TrustBar（ブランド名スクロールのみ）
+  - Philosophy（富士山＋桜＋河口湖の写真全面背景、白ガラスカード、スマホ2行ヘッドライン）
+  - CollectionPreview（6ブランド、ブランド名大きく表示）
+  - Authenticity（6カード左揃え + T-Family紹介文 + 大きなEntrupy証明書セクション）
+  - GoogleReviews（Elfsightウィジェット、自動スクロール2秒、日本語、Googleカラータイトル）
+  - LiveCommerce（ライブセラー募集中、悩みセクション、公認制度、クロージング改行対応）
+  - B2BSection（業者様・バイヤー様向けご案内、ターゲット顧客リスト）
+  - CeoGreeting（PC:写真左グラデーション+テキスト右、スマホ:タイトル→写真+名前横並び→メッセージ、ベージュ背景）
+  - ContactForm（お問い合わせフォーム、/api/contact）
+  - StoreInfo（店舗情報、Google Maps、支払方法目立つ表示）
+  - Footer（SNS、会社概要/特商法/プライバシー/nextstory.jpリンク）
   - FloatingContact（WhatsAppのみ）
-- `/liveseller/` — ライブセラー応募フォーム（/api/apply でメール送信）✅ メールテスト済み
-- `/company/` — 会社概要ページ
+  - SEOテキストセクション（日英キーワード）
+- `/liveseller/` — ライブセラー応募フォーム（/api/apply）
+- `/company/` — 会社概要
 - `/tokusyohou/` — 特定商取引法に基づく表記
 - `/privacy/` — プライバシーポリシー（9項目）
-- `/buyer01/` — Netlifyへリダイレクト（既存バイヤー登録ページ）※proxyのmatcherから除外済み
+- `/buyer01/` — Netlifyリダイレクト
 
-## Security
-- XSS対策: X-XSS-Protection ヘッダー + 全入力HTMLサニタイズ
-- クリックジャッキング防止: X-Frame-Options: DENY
-- MIME Sniffing防止: X-Content-Type-Options: nosniff
-- HTTPS強制: HSTS 2年
-- CSP: スクリプト・スタイル・画像・フレームの許可元制限
-- レート制限: API 5リクエスト/60秒/IPアドレス
-- 入力バリデーション: メール形式チェック、必須フィールド確認
-- ソースマップ非公開: productionBrowserSourceMaps: false
+## Security ✅
+- XSS: X-XSS-Protection + HTMLサニタイズ
+- クリックジャッキング: X-Frame-Options: DENY
+- MIME Sniffing: X-Content-Type-Options: nosniff
+- HTTPS: HSTS 2年
+- CSP: スクリプト/スタイル/画像/フレーム制限（Elfsight許可済み）
+- レート制限: API 5リクエスト/60秒/IP
+- 入力バリデーション + ソースマップ非公開
 
-## Email System ✅ テスト済み
-- **ライブセラー応募** → /api/apply (nodemailer)
-  - 通知: info@t-family.tokyoメーリスに応募内容送信
-  - 自動返信: 応募者へ確認メール
-- **お問い合わせフォーム** → /api/contact (nodemailer)
-  - 通知: info@t-family.tokyoに問い合わせ内容送信（種別: 商品購入/卸売/ライブセラー/その他）
-  - 自動返信: 問い合わせ者へ確認メール（問い合わせ内容含む）
-- 送信元: tominaga@t-family.tokyo（Google Workspace アプリパスワード）
-- Reply-To: info@t-family.tokyo
+## Email System ✅
+- **ライブセラー応募** → /api/apply (nodemailer) → info@t-family.tokyo通知 + 自動返信
+- **お問い合わせ** → /api/contact (nodemailer) → info@t-family.tokyo通知 + 自動返信
+- 送信元: tominaga@t-family.tokyo / Reply-To: info@t-family.tokyo
 
 ## Key Design Decisions
-- キービジュアル: HP作成/キービジュアル/ フォルダの全画像（Gemini画像含む13枚）、1.5秒切替（1枚目のみ2秒）
-- Philosophy: ユーザー提供の富士山＋桜＋河口湖画像を全面背景
-- ヘッダー: ダーク背景グラデーション、Cormorant Garamondフォント、ロゴ90px→クリックでTOPへ
-- スマホメニュー: 完全不透明ダーク背景(#111111)、大きなセリフフォント、会社概要＋特商法＋プライバシーポリシーリンク
-- スマホ改行対応: Philosophy・Authenticityヘッドライン、Live subcopy・worry_answer を2行分割
-- フッター翻訳: tokusho / privacy / company 全6言語対応
-- WeChat: 全削除済み
-- Entrupy: TrustBarバッジ削除、カードはアイコン(◉)、証明書セクションは大きな画像＋ゴールドボーダー
-- B2B: 「パートナーシップ」削除、「業者様・バイヤー様向けご案内」をゴールド大文字で表示
-- CEO挨拶: ポートレート写真(ceo-portrait.png)、名前・肩書は右揃え
+- キービジュアル: HP作成/キービジュアル/ フォルダ全画像（13枚）、1.5秒（1枚目2秒）
+- Philosophy: 富士山＋桜＋河口湖画像全面背景
+- ヘッダー: ダーク背景、Cormorant Garamond、ロゴ120px/スマホ60px
+- スマホメニュー: 不透明ダーク(#111111)、会社概要+特商法+プライバシーリンク
+- スマホ全般: フォント縮小、改行対応（subcopy/headline/closing等）、2x2ボタングリッド
+- Google口コミ: Elfsight（自動スクロール2秒、日本語、Widget Title OFF→サイト側多言語タイトル）
+- CEO挨拶: PC=写真左グラデーション+テキスト右、スマホ=タイトル→写真+名前→メッセージ
+- クロージング: 「T-Familyは、配信者一人ひとりのパートナーです。\n共に売り、共に成長し、世界へ挑戦するチームです。」
 - nextstory.jpコンテンツ: 全テキスト統合済み
-- Facebook: https://www.facebook.com/profile.php?id=61576088344723
 
 ## External Links
 - Shop: https://t-secondhands.jp/
@@ -93,20 +97,25 @@ T-Family株式会社（後株）のコーポレートサイト
 - nextstory.jp: https://nextstory.jp/
 - Buyer page: https://t-family.tokyo/buyer01/ → Netlifyリダイレクト
 - Google Reviews: https://share.google/eJlVMlu8ie6p8b51v
+- Google Review投稿: https://g.page/r/CT5WXUVxa3XmEAI/review
 
 ## Image Sources
-- キービジュアル: C:\Users\work\OneDrive\Claud\T-Family\HP作成\キービジュアル\ から全画像
-- 店内写真: store.jpg（1枚のみ）
-- CEO写真: ceo-portrait.png（Gemini生成）
-- 商品画像: t-secondhands.jpから取得 + Hermès Birkin個別ページ
+- キービジュアル: HP作成/キービジュアル/ 全画像
+- CEO写真: ceo-portrait.png（Gemini生成）+ ceo-portrait.jpg（実写）
 - Philosophy背景: fuji-sakura.jpg（ユーザー提供）
 - Entrupy証明書: entrupy.png
-- ロゴ: logo.png（ヘッダー90px）
+- ロゴ: logo.png（ヘッダー120px/スマホ60px）
+- ファビコン: T-Family_LOGO (2).jpg から生成
 
 ## COMPLETED ✅
-- [x] カスタムドメイン設定 (t-family.tokyo → Vercel)
-- [x] DNS設定 (Value Domain → A 216.198.79.1 + CNAME Vercel)
-- [x] セキュリティ強化 (CSP, HSTS, XSS, Rate Limiting, Sanitization)
+- [x] サイト構築（Next.js 16 + 6言語）
+- [x] カスタムドメイン（t-family.tokyo → Vercel + Value Domain DNS）
+- [x] セキュリティ強化（CSP, HSTS, XSS, Rate Limiting）
 - [x] Google Analytics (GA4: G-L8TLLNDFH9)
-- [x] Google Search Console (HTML file verification)
-- [x] メール送信テスト (自動返信 + 通知 両方動作確認済み)
+- [x] Google Search Console + sitemap送信
+- [x] メール送信（自動返信 + 通知、テスト済み）
+- [x] Elfsight Google Reviews（実口コミ、自動スクロール2秒、日本語）
+- [x] SEO最適化（45+キーワード、JSON-LD、OGP、hreflang）
+- [x] nextstory.jpコンテンツ統合
+- [x] GPTフィードバック対応（行動導線強化、口コミ改善、信頼訴求）
+- [x] スマホデザイン最適化
