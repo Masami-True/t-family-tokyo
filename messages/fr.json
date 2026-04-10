@@ -185,7 +185,9 @@
     "info_license": "N° de Licence",
     "info_address": "Adresse",
     "info_address_value": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
-    "cta": "EN SAVOIR PLUS"
+    "cta": "EN SAVOIR PLUS",
+    "info_tel": "Téléphone",
+    "info_email": "Email"
   },
   "contact": {
     "label": "CONTACTEZ-NOUS",

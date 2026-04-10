@@ -185,7 +185,9 @@
     "info_license": "古物商許可番号",
     "info_address": "所在地",
     "info_address_value": "東京都港区西新橋1丁目18-11\nル・グラシエルBLDG 15号館5F",
-    "cta": "詳細はこちら"
+    "cta": "詳細はこちら",
+    "info_tel": "電話番号",
+    "info_email": "メールアドレス"
   },
   "contact": {
     "label": "お問い合わせ",

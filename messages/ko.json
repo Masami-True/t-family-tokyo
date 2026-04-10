@@ -185,7 +185,9 @@
     "info_license": "허가 번호",
     "info_address": "주소",
     "info_address_value": "도쿄도 미나토구 니시신바시 1-18-11\nLe Gracielle BLDG 15, 5F",
-    "cta": "자세히 보기"
+    "cta": "자세히 보기",
+    "info_tel": "전화번호",
+    "info_email": "이메일"
   },
   "contact": {
     "label": "문의하기",

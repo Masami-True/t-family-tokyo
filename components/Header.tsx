@@ -67,15 +67,19 @@ export default function Header() {
           }}
           className="shrink-0"
         >
-          <Image
-            src="/images/logo.png"
-            alt="T-Family"
-            width={240}
-            height={90}
-            style={{ height: "90px", width: "auto" }}
-            className="max-h-[60px] md:max-h-[120px] w-auto"
-            priority
-          />
+          <div className="flex items-center gap-2 sm:gap-3">
+            <Image
+              src="/images/logo-gold.png"
+              alt="T-Family"
+              width={60}
+              height={60}
+              className="h-[45px] w-[45px] sm:h-[55px] sm:w-[55px] object-contain"
+              priority
+            />
+            <span className="font-heading text-gold text-lg sm:text-2xl tracking-wider">
+              T-Family Inc.
+            </span>
+          </div>
         </a>
 
         {/* Desktop Nav */}

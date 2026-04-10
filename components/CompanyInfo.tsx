@@ -13,6 +13,8 @@ export default function CompanyInfo() {
     { label: "info_capital", value: "3,000万円" },
     { label: "info_employees", value: "8名" },
     { label: "info_license", value: "第301132115776号" },
+    { label: "info_tel", value: "03-6822-8487" },
+    { label: "info_email", value: "info@t-family.tokyo" },
   ];
 
   return (

@@ -111,21 +111,21 @@ export default function Hero() {
               </span>
             </h1>
 
-            {/* Subcopy */}
-            <p className="mt-3 sm:mt-6 text-xs sm:text-base leading-relaxed text-white/60 tracking-wide max-w-[280px] sm:max-w-sm">
+            {/* Subcopy - white text */}
+            <p className="mt-3 sm:mt-6 text-xs sm:text-base leading-relaxed text-white tracking-wide max-w-[280px] sm:max-w-sm">
               <span className="block">{t("subcopy_line1")}</span>
               <span className="block">{t("subcopy_line2")}</span>
             </p>
 
-            {/* Trust badges */}
-            <div className="mt-3 sm:mt-4 flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
+            {/* Trust badges - larger, matching button width */}
+            <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row gap-1.5 sm:gap-2 max-w-[380px] sm:max-w-[520px]">
+              <span className="flex-1 text-center text-[10px] sm:text-sm tracking-wider text-gold border border-gold/40 px-3 sm:px-4 py-1.5 sm:py-2 font-medium">
                 {t("badge_auth")}
               </span>
-              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
+              <span className="flex-1 text-center text-[10px] sm:text-sm tracking-wider text-gold border border-gold/40 px-3 sm:px-4 py-1.5 sm:py-2 font-medium">
                 {t("badge_entrupy")}
               </span>
-              <span className="text-[8px] sm:text-xs tracking-wider text-gold border border-gold/30 px-2 sm:px-3 py-0.5 sm:py-1">
+              <span className="flex-1 text-center text-[10px] sm:text-sm tracking-wider text-gold border border-gold/40 px-3 sm:px-4 py-1.5 sm:py-2 font-medium">
                 {t("badge_refund")}
               </span>
             </div>
