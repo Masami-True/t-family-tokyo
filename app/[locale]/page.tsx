@@ -32,8 +32,8 @@ export default function HomePage() {
       </main>
       <Footer />
       <FloatingContact />
-      {/* SEO content - visible to crawlers, visually minimal */}
-      <section className="bg-offwhite px-6 py-8 text-[10px] text-subtext/30 leading-relaxed max-w-5xl mx-auto" aria-hidden="true">
+      {/* SEO content - hidden visually, readable by crawlers */}
+      <section className="sr-only">
         <h2 className="sr-only">T-Family - Pre-Owned Luxury Brand Bags Tokyo</h2>
         <p>
           T-Family株式会社は東京都港区西新橋にある中古ブランドバッグ専門店です。

@@ -118,7 +118,7 @@ export default function Hero() {
             </p>
 
             {/* Trust badges - larger, matching button width */}
-            <div className="mt-3 sm:mt-4 flex flex-col sm:flex-row gap-1.5 sm:gap-2 max-w-[380px] sm:max-w-[520px]">
+            <div className="mt-3 sm:mt-4 flex flex-row gap-1.5 sm:gap-2 w-full sm:max-w-[520px]">
               <span className="flex-1 text-center text-[10px] sm:text-sm tracking-wider text-gold border border-gold/40 px-3 sm:px-4 py-1.5 sm:py-2 font-medium">
                 {t("badge_auth")}
               </span>
