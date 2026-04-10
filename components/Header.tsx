@@ -67,7 +67,7 @@ export default function Header() {
           }}
           className="shrink-0"
         >
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-0.5 sm:gap-1">
             <Image
               src="/images/logo-gold.png"
               alt="T-Family"
