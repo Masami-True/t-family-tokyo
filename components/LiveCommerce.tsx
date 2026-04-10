@@ -94,7 +94,7 @@ export default function LiveCommerce() {
               <p className="text-sm tracking-[0.2em] font-medium mb-3 text-offwhite">
                 {t(step.titleKey)}
               </p>
-              <p className="text-offwhite text-sm leading-relaxed">
+              <p className="text-offwhite text-sm leading-relaxed whitespace-pre-line">
                 {t(step.descKey)}
               </p>
             </div>
