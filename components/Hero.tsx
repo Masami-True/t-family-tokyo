@@ -118,7 +118,7 @@ export default function Hero() {
             </p>
 
             {/* Trust badges - larger, matching button width */}
-            <div className="mt-3 sm:mt-4 flex flex-row gap-1.5 sm:gap-2 w-full sm:max-w-[520px]">
+            <div className="mt-3 sm:mt-4 flex flex-row gap-1.5 sm:gap-2 max-w-[320px] sm:max-w-[440px]">
               <span className="flex-1 text-center text-[10px] sm:text-sm tracking-wider text-gold border border-gold/40 px-3 sm:px-4 py-1.5 sm:py-2 font-medium">
                 {t("badge_auth")}
               </span>
@@ -151,14 +151,14 @@ export default function Hero() {
               </a>
               <a
                 href="#store"
-                className="flex items-center justify-center gap-1.5 border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold"
+                className="flex items-center justify-center gap-1.5 border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white transition-all hover:border-gold hover:text-gold"
               >
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-3.5 h-3.5 sm:w-4 sm:h-4 shrink-0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
                 {t("cta_store")}
               </a>
               <a
                 href="/liveseller/"
-                className="border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white/80 transition-all hover:border-gold hover:text-gold text-center"
+                className="border border-white/30 px-3 sm:px-6 py-2.5 sm:py-3 text-xs sm:text-sm tracking-[0.1em] text-white transition-all hover:border-gold hover:text-gold text-center"
               >
                 {t("cta_live")}
               </a>

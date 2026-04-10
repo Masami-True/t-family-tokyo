@@ -73,7 +73,7 @@ export default function Header() {
               alt="T-Family"
               width={60}
               height={60}
-              className="h-[45px] w-[45px] sm:h-[55px] sm:w-[55px] object-contain"
+              className="h-[45px] w-[45px] sm:h-[55px] sm:w-[55px] object-contain mix-blend-lighten"
               priority
             />
             <span className="font-heading text-gold text-lg sm:text-2xl tracking-wider">
