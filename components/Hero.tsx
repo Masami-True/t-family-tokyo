@@ -113,7 +113,8 @@ export default function Hero() {
 
             {/* Subcopy */}
             <p className="mt-3 sm:mt-6 text-xs sm:text-base leading-relaxed text-white/60 tracking-wide max-w-[280px] sm:max-w-sm">
-              {t("subcopy")}
+              <span className="block">{t("subcopy_line1")}</span>
+              <span className="block">{t("subcopy_line2")}</span>
             </p>
 
             {/* Trust badges */}

@@ -16,7 +16,9 @@
     "badge_auth": "AUTHENTICITY GUARANTEED",
     "badge_entrupy": "ENTRUPY CERTIFIED",
     "badge_refund": "FULL REFUND GUARANTEE",
-    "cta_store": "VISIT STORE"
+    "cta_store": "VISIT STORE",
+    "subcopy_line1": "Curated luxury pieces awaiting",
+    "subcopy_line2": "their next chapter. From Tokyo."
   },
   "trust": {
     "label": "AUTHENTIC BRANDS",

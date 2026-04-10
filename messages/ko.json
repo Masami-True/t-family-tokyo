@@ -16,7 +16,9 @@
     "badge_auth": "전품 정품보증",
     "badge_entrupy": "Entrupy AI 감정",
     "badge_refund": "전액환불보증",
-    "cta_store": "매장 보기"
+    "cta_store": "매장 보기",
+    "subcopy_line1": "엄선된 최고의 명품들이",
+    "subcopy_line2": "새로운 이야기를 기다리고 있습니다."
   },
   "trust": {
     "label": "정품 브랜드",

@@ -16,7 +16,9 @@
     "badge_auth": "AUTHENTICITÉ GARANTIE",
     "badge_entrupy": "CERTIFIÉ ENTRUPY",
     "badge_refund": "REMBOURSEMENT GARANTI",
-    "cta_store": "VOIR BOUTIQUE"
+    "cta_store": "VOIR BOUTIQUE",
+    "subcopy_line1": "Des pièces de luxe soigneusement sélectionnées,",
+    "subcopy_line2": "en attente de leur prochain chapitre."
   },
   "trust": {
     "label": "MARQUES AUTHENTIQUES",

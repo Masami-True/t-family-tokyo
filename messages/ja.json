@@ -16,7 +16,9 @@
     "badge_auth": "全商品真贋保証",
     "badge_entrupy": "Entrupy AI鑑定",
     "badge_refund": "全額返金保証",
-    "cta_store": "店舗を見る"
+    "cta_store": "店舗を見る",
+    "subcopy_line1": "厳選された至高の逸品たちが、",
+    "subcopy_line2": "新たな物語を待ちわびています。"
   },
   "trust": {
     "label": "正規ブランド",

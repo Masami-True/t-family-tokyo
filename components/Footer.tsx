@@ -125,6 +125,14 @@ export default function Footer() {
           >
             {t("footer.privacy")}
           </Link>
+          <a
+            href="https://nextstory.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-offwhite/50 hover:text-offwhite/80 transition-colors"
+          >
+            nextstory.jp
+          </a>
         </nav>
 
         {/* Copyright */}

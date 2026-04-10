@@ -16,7 +16,9 @@
     "badge_auth": "全品正品保证",
     "badge_entrupy": "Entrupy AI鉴定",
     "badge_refund": "全额退款保证",
-    "cta_store": "查看店铺"
+    "cta_store": "查看店铺",
+    "subcopy_line1": "精心甄选的至臻逸品，",
+    "subcopy_line2": "等待开启新的篇章。"
   },
   "trust": {
     "label": "正品品牌",
