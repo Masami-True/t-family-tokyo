@@ -119,8 +119,10 @@ export default async function LocaleLayout({
   const messages = (await import(`../../messages/${locale}.json`)).default;
 
   return (
-    <html lang={locale} suppressHydrationWarning>
+    <html lang={locale} translate="no" className="notranslate" suppressHydrationWarning>
       <head>
+        {/* Prevent Google Translate from auto-translating */}
+        <meta name="google" content="notranslate" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
