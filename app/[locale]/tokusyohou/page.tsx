@@ -1,5 +1,15 @@
+import { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "特定商取引法に基づく表記",
+  description:
+    "T-Family株式会社の特定商取引法に基づく表記。販売業者情報、返品・交換、支払方法等。",
+  alternates: {
+    canonical: "https://t-family.tokyo/ja/tokusyohou",
+  },
+};
 
 export default function TokusyohouPage() {
   return (

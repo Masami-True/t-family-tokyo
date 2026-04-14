@@ -5,8 +5,11 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 export const metadata = {
-  title:
-    "T-Family | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+  title: {
+    default:
+      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+    template: "%s | T-Family株式会社",
+  },
   description:
     "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL BAG, HERMÈS BAG, LOUIS VUITTON BAG, GUCCI BAG, PRADA BAG, FENDI BAG, DIOR BAGなど正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Tokyo. Secondhand shops near Ginza & Shimbashi. Live Seller program available.",
   keywords: [

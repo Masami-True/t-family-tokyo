@@ -1,5 +1,15 @@
+import { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+
+export const metadata: Metadata = {
+  title: "プライバシーポリシー",
+  description:
+    "T-Family株式会社のプライバシーポリシー。個人情報の取扱い、Cookie、Google Analyticsの利用について。",
+  alternates: {
+    canonical: "https://t-family.tokyo/ja/privacy",
+  },
+};
 
 export default function PrivacyPage() {
   return (
