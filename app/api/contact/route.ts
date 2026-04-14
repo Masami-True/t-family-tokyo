@@ -14,6 +14,12 @@ export async function POST(req: NextRequest) {
     }
 
     const data = await req.json();
+
+    // Honeypot check
+    if (data.website) {
+      return NextResponse.json({ success: true });
+    }
+
     const { name, email, subject, message } = data;
 
     // Validation

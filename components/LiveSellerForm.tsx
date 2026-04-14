@@ -14,6 +14,7 @@ interface FormData {
   followers: string;
   experience: string;
   message: string;
+  website: string; // honeypot field
 }
 
 export default function LiveSellerForm() {
@@ -28,10 +29,14 @@ export default function LiveSellerForm() {
   } = useForm<FormData>();
 
   const onSubmit = async (data: FormData) => {
+    // Honeypot check - if filled, it's a bot
+    if (data.website) return;
+
+    const { website, ...formData } = data;
     const res = await fetch("/api/apply", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      body: JSON.stringify(formData),
     });
     if (res.ok) {
       setSubmitted(true);
@@ -159,6 +164,18 @@ export default function LiveSellerForm() {
                 className={inputClass}
                 placeholder={t("message_placeholder")}
                 {...register("message")}
+              />
+            </div>
+
+            {/* Honeypot - hidden from users, bots will fill this */}
+            <div className="absolute opacity-0 top-0 left-0 h-0 w-0 -z-10 overflow-hidden" aria-hidden="true">
+              <label htmlFor="website">Website</label>
+              <input
+                type="text"
+                id="website"
+                autoComplete="off"
+                tabIndex={-1}
+                {...register("website")}
               />
             </div>
 

@@ -9,6 +9,7 @@ interface FormData {
   email: string;
   subject: string;
   message: string;
+  website: string; // honeypot
 }
 
 export default function ContactForm() {
@@ -36,10 +37,12 @@ export default function ContactForm() {
   }, []);
 
   const onSubmit = async (data: FormData) => {
+    if (data.website) return; // honeypot
+    const { website, ...formData } = data;
     const res = await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+      body: JSON.stringify(formData),
     });
     if (res.ok) {
       setSubmitted(true);
@@ -115,6 +118,12 @@ export default function ContactForm() {
               placeholder={t("message_placeholder")}
               {...register("message", { required: true })}
             />
+          </div>
+
+          {/* Honeypot */}
+          <div className="absolute opacity-0 top-0 left-0 h-0 w-0 -z-10 overflow-hidden" aria-hidden="true">
+            <label htmlFor="contact-website">Website</label>
+            <input type="text" id="contact-website" autoComplete="off" tabIndex={-1} {...register("website")} />
           </div>
 
           <button

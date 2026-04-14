@@ -14,6 +14,12 @@ export async function POST(req: NextRequest) {
     }
 
     const data = await req.json();
+
+    // Honeypot check - reject if filled
+    if (data.website) {
+      return NextResponse.json({ success: true }); // Silently reject
+    }
+
     const { name, email, contact_method, contact_id, sns_url, followers, experience, message } = data;
 
     // Validation
