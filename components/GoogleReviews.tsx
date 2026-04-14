@@ -104,7 +104,7 @@ const reviews = [
 
 function Stars({ count }: { count: number }) {
   return (
-    <div className="flex gap-0.5 text-[#FBBC05] text-sm">
+    <div className="flex gap-0.5 text-[#FBBC05] text-sm mb-2">
       {[...Array(count)].map((_, i) => (
         <span key={i}>★</span>
       ))}
@@ -116,29 +116,25 @@ export default function GoogleReviews() {
   const t = useTranslations("reviews");
   const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
-  const [current, setCurrent] = useState(0);
 
-  const totalPages = Math.ceil(reviews.length / 4);
-
-  const scrollToPage = useCallback((page: number) => {
+  // Auto scroll - continuous smooth scroll
+  useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
-    const cardWidth = el.scrollWidth / reviews.length;
-    el.scrollTo({ left: cardWidth * page * 4, behavior: "smooth" });
-    setCurrent(page);
-  }, []);
+    let animId: number;
+    let scrollPos = 0;
 
-  // Auto scroll
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrent((prev) => {
-        const next = (prev + 1) % totalPages;
-        scrollToPage(next);
-        return next;
-      });
-    }, 4000);
-    return () => clearInterval(timer);
-  }, [totalPages, scrollToPage]);
+    const step = () => {
+      scrollPos += 0.5;
+      if (scrollPos >= el.scrollWidth / 2) {
+        scrollPos = 0;
+      }
+      el.scrollLeft = scrollPos;
+      animId = requestAnimationFrame(step);
+    };
+    animId = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animId);
+  }, []);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -169,77 +165,42 @@ export default function GoogleReviews() {
           <span className="font-heading text-text ml-2">{t("headline_suffix")}</span>
         </h2>
 
-        {/* Rating header */}
-        <div className="bg-white rounded-lg shadow-sm border border-border p-4 sm:p-6 mb-6">
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-            <div className="flex items-center gap-3">
-              <span className="font-medium">
-                <span className="text-[#4285F4]">G</span>
-                <span className="text-[#EA4335]">o</span>
-                <span className="text-[#FBBC05]">o</span>
-                <span className="text-[#4285F4]">g</span>
-                <span className="text-[#34A853]">l</span>
-                <span className="text-[#EA4335]">e</span>
-              </span>
-              <span className="text-sm text-subtext">{t("headline_suffix")}</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <span className="text-2xl font-medium">4.7</span>
-              <Stars count={5} />
-              <span className="text-sm text-subtext">(21)</span>
-            </div>
-            <a
-              href="https://g.page/r/CT5WXUVxa3XmEAI/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#4285F4] text-white px-4 py-2 rounded text-sm font-medium hover:bg-[#3367D6] transition-colors text-center"
-            >
-              {t("write_review")}
-            </a>
-          </div>
+        {/* Write review button */}
+        <div className="text-center mb-8">
+          <a
+            href="https://g.page/r/CT5WXUVxa3XmEAI/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#4285F4] text-white px-6 py-2.5 rounded text-sm font-medium hover:bg-[#3367D6] transition-colors"
+          >
+            {t("write_review")}
+          </a>
         </div>
 
-        {/* Scrollable review cards */}
+        {/* Scrolling review cards - duplicated for seamless loop */}
         <div className="overflow-hidden" ref={scrollRef}>
-          <div
-            className="flex gap-4 transition-transform duration-500"
-            style={{ transform: `translateX(-${current * 100}%)` }}
-          >
-            {reviews.map((review, i) => (
+          <div className="flex gap-4 w-max">
+            {[...reviews, ...reviews].map((review, i) => (
               <div
                 key={i}
-                className="min-w-[260px] sm:min-w-[280px] md:min-w-[calc(25%-12px)] bg-white rounded-lg border border-border p-5 shrink-0"
+                className="w-[260px] sm:w-[280px] bg-white rounded-lg border border-border p-5 shrink-0"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-9 h-9 rounded-full ${review.color} flex items-center justify-center text-white text-sm font-medium`}>
+                  <div className={`w-9 h-9 rounded-full ${review.color} flex items-center justify-center text-white text-sm font-medium shrink-0`}>
                     {review.initial}
                   </div>
-                  <div>
-                    <p className="text-sm font-medium text-text leading-tight">{review.name}</p>
+                  <div className="min-w-0">
+                    <p className="text-sm font-medium text-text leading-tight truncate">{review.name}</p>
                     <p className="text-xs text-subtext">{review.date}</p>
                   </div>
                 </div>
                 <Stars count={review.rating} />
-                <p className="text-sm text-text leading-relaxed mt-2 line-clamp-5">
+                <p className="text-sm text-text leading-relaxed line-clamp-4">
                   {review.text}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-
-        {/* Dots */}
-        <div className="flex justify-center gap-2 mt-6">
-          {[...Array(totalPages)].map((_, i) => (
-            <button
-              key={i}
-              onClick={() => scrollToPage(i)}
-              className={`h-2 rounded-full transition-all ${
-                i === current ? "w-6 bg-gold" : "w-2 bg-border"
-              }`}
-              aria-label={`Page ${i + 1}`}
-            />
-          ))}
         </div>
 
         {/* Review request */}
