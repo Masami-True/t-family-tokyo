@@ -53,8 +53,39 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: "/(.*)",
+        // Apply strict security headers to everything EXCEPT /buyer01 (which proxies external content)
+        source: "/((?!buyer01).*)",
         headers: securityHeaders,
+      },
+      {
+        // Looser CSP for /buyer01/* to allow cdnjs, web3forms, Google Apps Script
+        source: "/buyer01/:path*",
+        headers: [
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+          {
+            key: "Strict-Transport-Security",
+            value: "max-age=63072000; includeSubDomains; preload",
+          },
+        ],
+      },
+    ];
+  },
+  // Rewrite /buyer01 to Netlify-hosted page WITHOUT changing the browser URL
+  // (unlike redirect, rewrite proxies content so the URL stays https://t-family.tokyo/buyer01/)
+  async rewrites() {
+    return [
+      {
+        source: "/buyer01",
+        destination: "https://t-family-buyer.netlify.app/buyer01/",
+      },
+      {
+        source: "/buyer01/",
+        destination: "https://t-family-buyer.netlify.app/buyer01/",
+      },
+      {
+        source: "/buyer01/:path*",
+        destination: "https://t-family-buyer.netlify.app/buyer01/:path*",
       },
     ];
   },
