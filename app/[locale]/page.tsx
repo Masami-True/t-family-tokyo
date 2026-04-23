@@ -14,15 +14,31 @@ import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 
-export const metadata: Metadata = {
-  title:
-    "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
-  description:
-    "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー募集中。Pre-owned luxury brand bags in Tokyo near Ginza & Shimbashi.",
-  alternates: {
-    canonical: "https://t-family.tokyo",
-  },
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  return {
+    title:
+      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+    description:
+      "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー募集中。Pre-owned luxury brand bags in Tokyo near Ginza & Shimbashi.",
+    alternates: {
+      canonical: `https://t-family.tokyo/${locale}`,
+      languages: {
+        ja: "https://t-family.tokyo/ja",
+        en: "https://t-family.tokyo/en",
+        zh: "https://t-family.tokyo/zh",
+        ko: "https://t-family.tokyo/ko",
+        es: "https://t-family.tokyo/es",
+        fr: "https://t-family.tokyo/fr",
+        "x-default": "https://t-family.tokyo/ja",
+      },
+    },
+  };
+}
 
 export default function HomePage() {
   return (
