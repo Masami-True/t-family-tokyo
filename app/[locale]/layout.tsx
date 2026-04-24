@@ -234,6 +234,58 @@ export default async function LocaleLayout({
             }),
           }}
         />
+        {/* WebSite + Organization schema - helps "T-Family" brand recognition + sitelinks searchbox */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "Organization",
+                  "@id": "https://t-family.tokyo/#organization",
+                  name: "T-Family",
+                  legalName: "T-Family株式会社",
+                  alternateName: ["T-Family Inc.", "T-Family株式会社", "ティーファミリー"],
+                  url: "https://t-family.tokyo",
+                  logo: {
+                    "@type": "ImageObject",
+                    url: "https://t-family.tokyo/images/logo.png",
+                    width: 400,
+                    height: 400,
+                  },
+                  foundingDate: "2020-11-27",
+                  founder: { "@type": "Person", name: "富永 朝樹", alternateName: "Asaki Tominaga" },
+                  sameAs: [
+                    "https://www.instagram.com/tfamily.inc/",
+                    "https://www.facebook.com/profile.php?id=61576088344723",
+                    "https://www.youtube.com/@T-Family-727",
+                    "https://x.com/NextStory7",
+                    "https://nextstory.jp/",
+                    "https://t-secondhands.jp/",
+                  ],
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    telephone: "+81-3-6822-8487",
+                    email: "info@t-family.tokyo",
+                    contactType: "customer service",
+                    availableLanguage: ["Japanese", "English", "Chinese", "Korean", "Spanish", "French"],
+                  },
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": "https://t-family.tokyo/#website",
+                  url: "https://t-family.tokyo",
+                  name: "T-Family",
+                  alternateName: "T-Family株式会社",
+                  description: "中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+                  publisher: { "@id": "https://t-family.tokyo/#organization" },
+                  inLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
+                },
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="font-[DM_Sans] bg-offwhite text-text antialiased">
         <GoogleAnalytics />
