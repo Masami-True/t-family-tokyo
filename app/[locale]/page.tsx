@@ -14,19 +14,32 @@ import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 
+const OG_LOCALE_MAP: Record<string, string> = {
+  ja: "ja_JP",
+  en: "en_US",
+  zh: "zh_CN",
+  ko: "ko_KR",
+  es: "es_ES",
+  fr: "fr_FR",
+};
+
 export async function generateMetadata({
   params,
 }: {
   params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
   const { locale } = await params;
+  const url = `https://t-family.tokyo/${locale}`;
   return {
-    title:
-      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+    // absolute bypasses layout's title.template so the full marketing title renders standalone
+    title: {
+      absolute:
+        "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+    },
     description:
       "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー・バイヤー・リセラー募集中。Wholesale buyers & resellers welcome. Pre-owned luxury brand bags in Tokyo near Ginza & Shimbashi.",
     alternates: {
-      canonical: `https://t-family.tokyo/${locale}`,
+      canonical: url,
       languages: {
         ja: "https://t-family.tokyo/ja",
         en: "https://t-family.tokyo/en",
@@ -36,6 +49,10 @@ export async function generateMetadata({
         fr: "https://t-family.tokyo/fr",
         "x-default": "https://t-family.tokyo/ja",
       },
+    },
+    openGraph: {
+      url,
+      locale: OG_LOCALE_MAP[locale] ?? "ja_JP",
     },
   };
 }
@@ -75,9 +92,8 @@ export default function HomePage() {
           We welcome inbound tourists and international buyers.
           Visit our secondhand shop near Ginza for the best pre-owned luxury brand bags in Tokyo.
           Live Seller program available - sell luxury bags from Japan to the world.
-          T-Family株式会社は卸売り・バイヤー・リセラー様の新規取引も歓迎しています。海外向け輸出・越境EC向け仕入れもご相談ください。
-          We also welcome wholesale buyers, resellers, and international distributors. Export / cross-border e-commerce sourcing partners wanted.
-          中古ブランド 銀座 | 中古ブランド 新橋 | ブランドバッグ | 中古ブランドショップ | ライバー | ライブセラー | バイヤー | リセラー | 卸 | 卸売り | Buyer | Reseller | Wholesale | Wholesaler | Distributor | Export | 越境EC | 海外仕入れ | 中古ブランド 仕入れ
+          T-Family株式会社は卸売り・バイヤー・リセラー様の新規取引も歓迎しています。海外向け輸出・越境EC向けの継続仕入れもご相談ください。
+          We also welcome wholesale buyers, resellers, and international distributors. Export and cross-border e-commerce sourcing partners are always welcome.
         </p>
       </section>
     </>

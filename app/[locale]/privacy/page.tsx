@@ -24,6 +24,11 @@ export async function generateMetadata({
         "x-default": "https://t-family.tokyo/ja/privacy",
       },
     },
+    openGraph: {
+      url: `https://t-family.tokyo/${locale}/privacy`,
+      locale:
+        ({ ja: "ja_JP", en: "en_US", zh: "zh_CN", ko: "ko_KR", es: "es_ES", fr: "fr_FR" } as Record<string, string>)[locale] ?? "ja_JP",
+    },
   };
 }
 
