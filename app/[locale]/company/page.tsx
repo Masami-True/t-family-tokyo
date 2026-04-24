@@ -15,6 +15,15 @@ export async function generateMetadata({
       "T-Family株式会社の会社概要。代表取締役 富永朝樹。東京都港区西新橋の中古ブランドバッグ専門店。2020年設立、資本金3000万円。",
     alternates: {
       canonical: `https://t-family.tokyo/${locale}/company`,
+      languages: {
+        ja: "https://t-family.tokyo/ja/company",
+        en: "https://t-family.tokyo/en/company",
+        zh: "https://t-family.tokyo/zh/company",
+        ko: "https://t-family.tokyo/ko/company",
+        es: "https://t-family.tokyo/es/company",
+        fr: "https://t-family.tokyo/fr/company",
+        "x-default": "https://t-family.tokyo/ja/company",
+      },
     },
   };
 }

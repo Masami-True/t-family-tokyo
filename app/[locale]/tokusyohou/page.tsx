@@ -14,6 +14,15 @@ export async function generateMetadata({
       "T-Family株式会社の特定商取引法に基づく表記。販売業者情報、返品・交換、支払方法等。",
     alternates: {
       canonical: `https://t-family.tokyo/${locale}/tokusyohou`,
+      languages: {
+        ja: "https://t-family.tokyo/ja/tokusyohou",
+        en: "https://t-family.tokyo/en/tokusyohou",
+        zh: "https://t-family.tokyo/zh/tokusyohou",
+        ko: "https://t-family.tokyo/ko/tokusyohou",
+        es: "https://t-family.tokyo/es/tokusyohou",
+        fr: "https://t-family.tokyo/fr/tokusyohou",
+        "x-default": "https://t-family.tokyo/ja/tokusyohou",
+      },
     },
   };
 }

@@ -14,6 +14,15 @@ export async function generateMetadata({
       "T-Family株式会社のプライバシーポリシー。個人情報の取扱い、Cookie、Google Analyticsの利用について。",
     alternates: {
       canonical: `https://t-family.tokyo/${locale}/privacy`,
+      languages: {
+        ja: "https://t-family.tokyo/ja/privacy",
+        en: "https://t-family.tokyo/en/privacy",
+        zh: "https://t-family.tokyo/zh/privacy",
+        ko: "https://t-family.tokyo/ko/privacy",
+        es: "https://t-family.tokyo/es/privacy",
+        fr: "https://t-family.tokyo/fr/privacy",
+        "x-default": "https://t-family.tokyo/ja/privacy",
+      },
     },
   };
 }
