@@ -4,51 +4,39 @@ import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 
-// Iconic key-visual items per brand — sourced from t-secondhands.jp (Shopify CDN)
-// Each one represents the brand's most recognizable silhouette / heritage piece.
+// Brand key visuals — sourced from the BRAND section of t-secondhands.jp
+// Each visual captures the brand × Japan aesthetic (model + iconic Japanese location)
 // (t-secondhands.jp is whitelisted in next.config.ts images.remotePatterns)
 const products = [
   {
-    // The timeless Classic Flap — CHANEL's signature
-    src: "https://t-secondhands.jp/cdn/shop/files/IMG-1121.jpg?v=1765870969&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Luxury_Japan_1800x900_chanel-classic.png?v=1777214117&width=1200",
     brand: "CHANEL",
-    name: "Black Lambskin Matelasse",
-    link: "https://t-secondhands.jp/products/chanel-%E3%83%9E%E3%83%88%E3%83%A9%E3%83%83%E3%82%BB%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%A9%E3%83%A0%E3%82%B9%E3%82%AD%E3%83%B3-%E3%82%B7%E3%83%A7%E3%83%AB%E3%83%80%E3%83%BC%E3%83%8F%E3%83%B3%E3%83%89%E3%83%90%E3%83%83%E3%82%B0-ch1961",
+    link: "https://t-secondhands.jp/collections/chanel",
   },
   {
-    // Kelly — HERMÈS' legendary flagship
-    src: "https://t-secondhands.jp/cdn/shop/files/2026-04-12_16_08_00.jpg?v=1775992638&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Gemini_Generated_Image_63buaw63buaw63bu.png?v=1777216311&width=1200",
     brand: "HERMÈS",
-    name: "Togo Leather Kelly Handbag",
-    link: "https://t-secondhands.jp/products/hermes-togo-leather-kelly-handbag-red-gold-hardware-he427",
+    link: "https://t-secondhands.jp/collections/hermes",
   },
   {
-    // Neverfull MM — the iconic Monogram silhouette (Murakami collab)
-    src: "https://t-secondhands.jp/cdn/shop/files/2026-04-17_21_25_43_5_2cf5bc17-2135-4727-9808-f6762c986dce.jpg?v=1776504486&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Luxury_Japan_Wide_vuitton-alma.png?v=1777214195&width=1200",
     brand: "LOUIS VUITTON",
-    name: "Monogram Neverfull MM",
-    link: "https://t-secondhands.jp/products/louis-vuitton-lo2351",
+    link: "https://t-secondhands.jp/collections/louisvuitton",
   },
   {
-    // Galleria — PRADA's signature Saffiano silhouette
-    src: "https://t-secondhands.jp/cdn/shop/files/2026-04-24_17_33_57_4.jpg?v=1777037512&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Luxury_Japan_Wide_prada-tote.png?v=1777214164&width=1200",
     brand: "PRADA",
-    name: "Saffiano Studded Galleria Tote",
-    link: "https://t-secondhands.jp/products/prada-saffiano-studded-galleria-tote-handbag-light-grey-silver-hardware-pr185",
+    link: "https://t-secondhands.jp/collections/prada",
   },
   {
-    // Horsebit 1955 — GUCCI's heritage hardware on GG Supreme
-    src: "https://t-secondhands.jp/cdn/shop/files/2026-04-24_17_27_12_10_1.jpg?v=1777031536&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Luxury_Japan_2-1_gucci-wide.png?v=1777214234&width=1200",
     brand: "GUCCI",
-    name: "GG Supreme Horsebit 1955",
-    link: "https://t-secondhands.jp/products/gucci-gg-supreme-horsebit-1955-mini-crossbody-beige-gold-hardware-gu579",
+    link: "https://t-secondhands.jp/collections/gucci",
   },
   {
-    // Peekaboo — FENDI's iconic two-faced silhouette
-    src: "https://t-secondhands.jp/cdn/shop/files/2026-04-23_16_22_46.jpg?v=1776934748&width=800",
+    src: "https://t-secondhands.jp/cdn/shop/collections/Luxury_Japan_2-1_fendi-wide-zucca.png?v=1776776064&width=1200",
     brand: "FENDI",
-    name: "Peekaboo Iconic Mini Handbag",
-    link: "https://t-secondhands.jp/products/fendi-leather-peekaboo-iconic-mini-handbag-dove-grey-silver-hardware-fe369",
+    link: "https://t-secondhands.jp/collections/fendi",
   },
 ];
 
@@ -95,27 +83,17 @@ export default function CollectionPreview() {
             rel="noopener noreferrer"
             className="bg-offwhite relative overflow-hidden group"
           >
-            {/* Image */}
+            {/* Image — brand name is embedded in the visual itself */}
             <div className="relative aspect-square">
               <Image
                 src={product.src}
-                alt={`${product.brand} ${product.name}`}
+                alt={`${product.brand} | T-Family 中古ブランドバッグ`}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
               {/* Gold border on hover */}
               <div className="absolute inset-0 border-2 border-gold opacity-0 group-hover:opacity-100 transition-opacity" />
-            </div>
-
-            {/* Brand name + product name */}
-            <div className="p-4 text-center">
-              <p className="text-sm sm:text-base tracking-[0.2em] font-medium text-text">
-                {product.brand}
-              </p>
-              <p className="text-[11px] tracking-[0.05em] text-text/60 mt-1 line-clamp-1">
-                {product.name}
-              </p>
             </div>
           </a>
         ))}
