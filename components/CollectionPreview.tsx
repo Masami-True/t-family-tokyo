@@ -83,7 +83,7 @@ export default function CollectionPreview() {
             rel="noopener noreferrer"
             className="bg-offwhite relative overflow-hidden group"
           >
-            {/* Image — brand name is embedded in the visual itself */}
+            {/* Image with brand name overlay at bottom */}
             <div className="relative aspect-square">
               <Image
                 src={product.src}
@@ -92,6 +92,12 @@ export default function CollectionPreview() {
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              {/* Dark gradient at bottom for text legibility */}
+              <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/70 via-black/30 to-transparent pointer-events-none" />
+              {/* Brand name overlay */}
+              <p className="absolute inset-x-0 bottom-5 text-center text-white text-base sm:text-lg tracking-[0.25em] font-medium drop-shadow-lg">
+                {product.brand}
+              </p>
               {/* Gold border on hover */}
               <div className="absolute inset-0 border-2 border-gold opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
