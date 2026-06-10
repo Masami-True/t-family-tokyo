@@ -117,6 +117,18 @@ T-Family株式会社（後株）のコーポレートサイト
 - **お問い合わせ** → /api/contact → info@t-family.tokyo通知 + 自動返信
 - 送信元: tominaga@t-family.tokyo / Reply-To: info@t-family.tokyo
 
+## Shopify (t-secondhands.jp) 連携メモ
+- **Shopify ストア名**: tfamily-tokyo（admin URL: https://admin.shopify.com/store/tfamily-tokyo/）
+- **テーマ**: Rise
+- **公開ドメイン**: t-secondhands.jp
+- **コレクションの自動振り分け**: 多くのコレクションは「タイトル 次の値を含む [BRAND]」で自動分類
+  - 例: CHANEL コレクション = 商品名に「CHANEL」を含む
+  - **要注意**: タイトル誤字（例: CELINI → CELINE）で商品をリネームした場合、コレクション条件も同じく修正しないと商品がヒットしなくなる
+- **「準備中」セクション**: t-secondhands.jp の `/collections` ページではアクティブ商品0個のコレクションが「準備中」エリアにフェード表示される
+  - 解決方法: ① コレクション条件を実際の商品タイトルに合わせる ② 商品を公開（販売チャネル: オンラインストアに含める）
+- **過去事例 (2026/05)**: CELINE コレクションが「準備中」になっていた → 自動振り分け条件が「CELINI」（綴り誤り）のままで商品タイトル「CELINE」と一致せず → 条件を「CELINE」に修正して解決、ライブサイトの正規ブランドエリアに復帰
+- **既知の小課題**: CELINE コレクションの URL handle が `christian-diorのコピー` のまま（DIOR コレクションをコピーして作成したため）。SEO的には `celine` に変更推奨
+
 ## Key Design Decisions
 - **ヘッダー**: ダーク背景、スクロール時完全不透明(#141414)、T-Family_LOGO_gold（透過処理済み、mix-blend-lighten）+ 「T-Family Inc.」ゴールドテキスト（translate="no"）、gap-0.5で密着
 - **スマホメニュー**: 不透明ダーク(#111111)
