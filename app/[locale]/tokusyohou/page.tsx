@@ -52,9 +52,9 @@ export default function TokusyohouPage() {
           <div>
             <h2 className="font-medium text-text mb-1">所在地</h2>
             <p>
-              東京都港区西新橋1丁目18-11
+              〒104-0061
               <br />
-              ル・グラシエルBLDG 15号館5F
+              東京都中央区銀座３－１２－１７ T-Familyビル
             </p>
           </div>
           <div>

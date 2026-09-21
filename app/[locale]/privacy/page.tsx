@@ -121,7 +121,7 @@ export default function PrivacyPage() {
             <h2 className="font-medium text-text mb-2 text-base">9. お問い合わせ窓口</h2>
             <p>
               T-Family株式会社<br />
-              東京都港区西新橋1丁目18-11 ル・グラシエルBLDG 15号館5F<br />
+              〒104-0061 東京都中央区銀座３－１２－１７ T-Familyビル<br />
               TEL: 03-6823-2699<br />
               EMAIL: info@t-family.tokyo
             </p>

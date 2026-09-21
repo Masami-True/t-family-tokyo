@@ -16,7 +16,7 @@ T-Family株式会社（後株）のコーポレートサイト
 ## Company Info
 - 会社名: T-Family株式会社（後株 ← 株式会社T-Familyではない）
 - 代表: 富永 朝樹（とみなが あさき）
-- 住所: 東京都港区西新橋1丁目18-11 ル・グラシエルBLDG 15号館5F
+- 住所: 〒104-0061 東京都中央区銀座３－１２－１７ T-Familyビル
 - TEL: 03-6822-8487
 - EMAIL: info@t-family.tokyo（メーリングリスト）
 - 管理者メール: tominaga@t-family.tokyo

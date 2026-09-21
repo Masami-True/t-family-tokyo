@@ -6,7 +6,7 @@
     "store": "Notre Boutique"
   },
   "hero": {
-    "eyebrow": "TOKYO · NISHI-SHIMBASHI",
+    "eyebrow": "TOKYO · GINZA",
     "h1_line1": "Au-delà du temps,",
     "h1_accent": "la valeur",
     "h1_line2": " perdure.",
@@ -98,11 +98,11 @@
   "store": {
     "label": "RENDEZ-NOUS VISITE",
     "name": "T-Family Inc.",
-    "address": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "address": "T-Family Bldg\n3-12-17 Ginza\nChuo-ku, Tokyo",
     "hours": "Lun – Ven · 9:00 – 21:00 (Fermé Sam & Dim)",
-    "access1": "Gare JR Shimbashi → 7 min à pied",
-    "access2": "Station Uchisaiwaicho → 7 min à pied",
-    "access3": "Station Toranomon → 7 min à pied",
+    "access1": "Station Ginza (Métro) → 3 min à pied",
+    "access2": "Station Ginza-itchome (Métro) → 5 min à pied",
+    "access3": "Gare Yurakucho (JR) → 7 min à pied",
     "tel": "03-6823-2699",
     "email": "info@t-family.tokyo",
     "whatsapp_btn": "WHATSAPP",
@@ -184,7 +184,7 @@
     "info_employees": "Effectifs",
     "info_license": "N° de Licence",
     "info_address": "Adresse",
-    "info_address_value": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "info_address_value": "T-Family Bldg\n3-12-17 Ginza\nChuo-ku, Tokyo",
     "cta": "EN SAVOIR PLUS",
     "info_tel": "Téléphone",
     "info_email": "Email"
@@ -203,5 +203,254 @@
     "message_placeholder": "Décrivez votre demande...",
     "submit": "ENVOYER",
     "success": "Merci pour votre demande. Nous vous répondrons rapidement."
+  },
+  "nmn": {
+    "meta": {
+      "title": "NMN KIWAMI | NMN premium sélectionné par T-Family",
+      "description": "NMN KIWAMI, le NMN premium d'Asa Pharmaceutical sélectionné par T-Family. β-NMN produit au Japon, 21 600 mg par boîte, 240 mg par gélule. Matière première, contrôle qualité, fabrication et conditionnement."
+    },
+    "nav": {
+      "quality": "QUALITY",
+      "why": "WHY NMN KIWAMI",
+      "about": "ABOUT NMN",
+      "faq": "FAQ",
+      "buy": "Acheter",
+      "menuOpen": "Ouvrir le menu",
+      "menuClose": "Fermer le menu",
+      "sections": "Sections"
+    },
+    "hero": {
+      "copy": [
+        "La question n'est pas",
+        "s'il s'agit de « NMN »,",
+        "mais de quel NMN."
+      ],
+      "en": [
+        "NOT JUST NMN.",
+        "THE QUALITY OF NMN."
+      ],
+      "note": "Selected by T-Family",
+      "cta": "Découvrir NMN KIWAMI"
+    },
+    "intro": {
+      "heading": "Tous les NMN ne sont pas identiques.",
+      "body": [
+        "Il existe sur le marché un très grand nombre de produits à base de NMN.\nLes prix, les teneurs et les procédés de fabrication diffèrent.",
+        "C'est pourquoi T-Family a regardé au-delà\nde la simple présence de NMN,\net a choisi en considérant aussi la matière première, la pureté,\nla fabrication, le contrôle qualité et la conservation.",
+        "C'est dans cette optique que nous présentons\nle « NMN KIWAMI » d'Asa Pharmaceutical."
+      ]
+    },
+    "keyNumbers": {
+      "labels": [
+        "NMN par boîte",
+        "NMN par gélule",
+        "90 gélules par boîte",
+        "Analyse de pureté pour chaque lot de fabrication"
+      ]
+    },
+    "quality": {
+      "en": "QUALITY BEYOND QUANTITY",
+      "heading": "Une teneur élevée ne suffit pas.",
+      "items": [
+        {
+          "title": "Matière première NMN produite au Japon",
+          "body": "β-nicotinamide mononucléotide (produit au Japon).\nLa matière première est fabriquée dans une usine certifiée JIHFS Health Food GMP."
+        },
+        {
+          "title": "240 mg par gélule",
+          "body": "21 600 mg de NMN par boîte. 240 mg par gélule."
+        },
+        {
+          "title": "Une exigence sur la pureté",
+          "body": "Les essais d'analyse alimentaire ont mis en évidence une pureté de NMN de 100 %.\nUne analyse de pureté est en outre réalisée pour chaque lot de fabrication, et seul le NMN japonais conforme à la norme est utilisé."
+        },
+        {
+          "title": "Technologie de fabrication propriétaire",
+          "body": "Procédé N-RA / procédé de micronisation Granu.\nC'est l'exigence de fabrication qui permet d'intégrer 240 mg de NMN dans une seule gélule."
+        },
+        {
+          "title": "Gélule d'origine végétale, résistante aux acides",
+          "lead": "Pas seulement le contenu,\nmais aussi la gélule.",
+          "body": "Nous utilisons une gélule résistante aux acides élaborée à partir de matières premières d'origine végétale."
+        }
+      ],
+      "ptp": {
+        "title": "Conditionnement individuel PTP",
+        "lead": "Pour préserver la qualité\njusqu'à la dernière gélule.",
+        "body": "Chaque gélule est conditionnée individuellement sous PTP.\nLes plaquettes sont ensuite placées dans un sachet aluminium à fond plat conçu pour protéger de la lumière et de l'humidité."
+      }
+    },
+    "package": {
+      "en": "PACKAGE & PRESERVATION",
+      "heading": "Le choix de protéger chaque gélule.",
+      "body": [
+        "NMN KIWAMI n'est pas conservé en vrac dans un flacon : chaque gélule est conditionnée individuellement sous PTP.\nComme on n'ouvre que ce qui est nécessaire, les gélules non ouvertes sont moins exposées à l'air.",
+        "Les plaquettes PTP sont ensuite placées dans un sachet aluminium à fond plat.",
+        "Une conception de la qualité pensée non seulement pour la matière première,\nmais pour « l'instant où le produit vous parvient »."
+      ]
+    },
+    "qc": {
+      "en": "QUALITY CONTROL",
+      "heading": "La qualité se décide\nlà où elle ne se voit pas.",
+      "items": [
+        "Matière première NMN produite au Japon",
+        "JIHFS Health Food GMP",
+        "Analyse de pureté pour chaque lot de fabrication",
+        "Supervision par des médecins et pharmaciens japonais",
+        "Démarche de préservation de la qualité"
+      ]
+    },
+    "why": {
+      "en": "WHY WE CHOSE IT",
+      "heading": "Pourquoi T-Family\na choisi NMN KIWAMI.",
+      "lines": [
+        "Il existe dans le monde de très nombreux NMN.",
+        "Si l'on ne regarde que le prix, il existe des produits moins chers.",
+        "Malgré cela, ce qui a compté pour T-Family\nn'a jamais été seulement « combien de mg il contient »."
+      ],
+      "pillars": [
+        "La matière première.",
+        "La pureté.",
+        "La fabrication.",
+        "Le contrôle qualité.",
+        "La gélule.",
+        "Et la conservation."
+      ],
+      "closing": [
+        "Précisément parce qu'il est consommé chaque jour,\nnous voulons vérifier chaque point avant de choisir.",
+        "C'est dans cette optique\nque nous présentons NMN KIWAMI."
+      ]
+    },
+    "aboutNmn": {
+      "en": "WHAT IS NMN?",
+      "heading": "Qu'est-ce que le NMN ?",
+      "body": [
+        "NMN est l'abréviation de nicotinamide mononucléotide. C'est un nucléotide dont la nicotinamide est l'un des éléments constitutifs, et une substance naturellement présente dans l'organisme.",
+        "Dans l'organisme, il est considéré comme l'un des précurseurs d'une coenzyme appelée NAD+ (nicotinamide adénine dinucléotide).",
+        "Le NAD+ est une coenzyme identifiée au début du XXe siècle. La manière dont il est produit dans l'organisme et la manière dont il est utilisé font encore aujourd'hui l'objet de recherches dans des universités et des instituts de recherche au Japon comme à l'étranger.",
+        "En revanche, ce qui se produit lorsque l'on consomme un aliment contenant cet ingrédient est un sujet sur lequel, en tant que publicité alimentaire, nous ne pouvons dire que peu de choses. C'est pourquoi cette page transmet des informations sur la façon dont le produit est fabriqué : la matière première, le procédé de fabrication et le contrôle de la qualité.",
+        "NMN KIWAMI est un complément alimentaire et non un médicament."
+      ]
+    },
+    "advisors": {
+      "en": "SUPERVISION",
+      "heading": "Supervision.",
+      "note": "NMN KIWAMI est développé sous la supervision de médecins et de chercheurs."
+    },
+    "product": {
+      "en": "PRODUCT",
+      "specs": [
+        "NMN",
+        "Contenu",
+        "Par gélule"
+      ],
+      "unitCapsules": "gélules",
+      "taxIncl": "TTC",
+      "cta": "Acheter NMN KIWAMI"
+    },
+    "trial": {
+      "en": "TRIAL",
+      "heading": "Commencez par découvrir NMN KIWAMI.",
+      "label": "Plaquette d'essai",
+      "unitCapsules": "gélules",
+      "cta": "Voir la plaquette d'essai"
+    },
+    "howToUse": {
+      "en": "HOW TO USE",
+      "heading": "Mode d'emploi",
+      "body": "En tant que complément alimentaire, prenez 2 à 3 gélules par jour avec de l'eau ou de l'eau tiède."
+    },
+    "faq": {
+      "heading": "Questions fréquentes",
+      "items": [
+        {
+          "q": "Qu'est-ce que le NMN ?",
+          "a": "NMN est l'abréviation de nicotinamide mononucléotide, une substance naturellement présente dans l'organisme. NMN KIWAMI est un complément alimentaire contenant cet ingrédient."
+        },
+        {
+          "q": "En quoi se distingue-t-il des autres NMN ?",
+          "a": "NMN KIWAMI utilise une matière première NMN produite au Japon et est fabriqué dans une usine certifiée JIHFS Health Food GMP. Une analyse de pureté est réalisée pour chaque lot de fabrication, et la gélule est une gélule résistante aux acides d'origine végétale. Chaque gélule est en outre conditionnée individuellement sous PTP et placée dans un sachet aluminium à fond plat. Sa particularité est une conception de la qualité allant de la matière première à la conservation."
+        },
+        {
+          "q": "Quelle quantité de NMN contient NMN KIWAMI ?",
+          "a": "Il contient 21 600 mg de NMN par boîte de 90 gélules, soit 240 mg par gélule."
+        },
+        {
+          "q": "Combien de gélules par jour ?",
+          "a": "En tant que complément alimentaire, prenez 2 à 3 gélules par jour."
+        },
+        {
+          "q": "À quel moment le prendre ?",
+          "a": "Il n'existe pas de règle particulière concernant le moment de la prise. Prenez-le avec de l'eau ou de l'eau tiède."
+        },
+        {
+          "q": "Je prends des médicaments, puis-je le prendre ?",
+          "a": "Si vous prenez des médicaments ou si vous êtes suivi médicalement, veuillez consulter votre médecin au préalable."
+        },
+        {
+          "q": "Puis-je le prendre pendant la grossesse ou l'allaitement ?",
+          "a": "Les personnes enceintes ou allaitantes, ainsi que les nourrissons et les enfants, doivent s'abstenir de consommer ce produit."
+        },
+        {
+          "q": "Comment le conserver ?",
+          "a": "Conservez-le à l'abri de la lumière directe du soleil, de la chaleur et de l'humidité élevée. Après ouverture, consommez-le dès que possible et tenez-le hors de portée des nourrissons."
+        },
+        {
+          "q": "Pourquoi un conditionnement PTP ?",
+          "a": "En conditionnant chaque gélule individuellement sous PTP, on n'ouvre que ce qui est nécessaire, de sorte que les gélules non ouvertes sont moins exposées à l'air. Les plaquettes sont ensuite placées dans un sachet aluminium à fond plat protégeant de la lumière et de l'humidité."
+        },
+        {
+          "q": "Pourquoi ce prix ?",
+          "a": "Matière première NMN produite au Japon, 21 600 mg par boîte, analyse de pureté pour chaque lot de fabrication, gélule d'origine végétale résistante aux acides, conditionnement individuel PTP et sachet aluminium à fond plat. Ce prix est le résultat d'une conception de la qualité allant de la matière première à la conservation."
+        }
+      ]
+    },
+    "precautions": {
+      "heading": "Précautions d'emploi",
+      "items": [
+        "Si vous ne vous sentez pas bien, interrompez la consommation et consultez un médecin.",
+        "Si vous prenez des médicaments ou si vous êtes suivi médicalement, consultez un médecin.",
+        "Les personnes enceintes ou allaitantes, les nourrissons et les enfants ne doivent pas consommer ce produit.",
+        "Après ouverture, consommez dès que possible.",
+        "Tenir hors de portée des nourrissons.",
+        "Selon le lot de fabrication, de légères différences de goût ou de couleur peuvent apparaître."
+      ]
+    },
+    "finalCta": {
+      "copy": [
+        "La question est",
+        "quel NMN."
+      ],
+      "note": "Selected by T-Family",
+      "cta": "Acheter NMN KIWAMI",
+      "contactNote": "Pour toute question sur le produit, veuillez contacter T-Family.",
+      "contactCta": "Nous contacter"
+    },
+    "footer": {
+      "maker": "Fabriqué par",
+      "seller": "Distribué par",
+      "brand": "T-Family",
+      "product": "Produit",
+      "contact": "Contact",
+      "privacy": "Politique de confidentialité",
+      "tokusho": "Mentions légales (loi sur les transactions commerciales spécifiées)",
+      "nav": "Pied de page"
+    },
+    "sticky": {
+      "cta": "Voir le produit"
+    },
+    "alt": {
+      "package": "Emballage du produit NMN KIWAMI",
+      "packagePlain": "Emballage de NMN KIWAMI",
+      "capsule": "Gélule de NMN KIWAMI",
+      "ptp": "Plaquettes PTP et sachet aluminium de NMN KIWAMI",
+      "pouch": "Emballage et sachet aluminium de NMN KIWAMI",
+      "trial": "Plaquette d'essai et emballage de NMN KIWAMI",
+      "factoryInspection": "Inspection des gélules pendant la fabrication",
+      "factoryLab": "Pesée pendant la fabrication",
+      "factoryLine": "Travail sur la ligne de production",
+      "advisor": "Portrait du spécialiste superviseur"
+    },
+    "skip": "Aller au contenu"
   }
 }

@@ -100,7 +100,7 @@ export async function POST(req: NextRequest) {
             <hr style="border:none;border-top:1px solid #E0D9CC;margin:24px 0;" />
             <p style="font-size:12px;color:#6B6B6B;">
               T-Family株式会社<br/>
-              東京都港区西新橋1丁目18-11 ル・グラシエルBLDG 15号館5F<br/>
+              〒104-0061 東京都中央区銀座３－１２－１７ T-Familyビル<br/>
               TEL: 03-6823-2699<br/>
               EMAIL: info@t-family.tokyo<br/>
               WEB: https://t-family.tokyo

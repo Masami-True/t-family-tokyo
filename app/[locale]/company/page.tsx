@@ -12,7 +12,7 @@ export async function generateMetadata({
   return {
     title: "会社概要",
     description:
-      "T-Family株式会社の会社概要。代表取締役 富永朝樹。東京都港区西新橋の中古ブランドバッグ専門店。2020年設立、資本金3000万円。",
+      "T-Family株式会社の会社概要。代表取締役 富永朝樹。東京都中央区銀座の中古ブランドバッグ専門店。2020年設立、資本金3000万円。",
     alternates: {
       canonical: `https://t-family.tokyo/${locale}/company`,
       languages: {

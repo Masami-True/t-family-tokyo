@@ -53,7 +53,7 @@ export default function StoreInfo() {
           {/* Left column — Map & Photos */}
           <div>
             <iframe
-              src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E6%B8%AF%E5%8C%BA%E8%A5%BF%E6%96%B0%E6%A9%8B1%E4%B8%81%E7%9B%AE18-11&output=embed"
+              src="https://maps.google.com/maps?q=%E6%9D%B1%E4%BA%AC%E9%83%BD%E4%B8%AD%E5%A4%AE%E5%8C%BA%E9%8A%80%E5%BA%A73-12-17+T-Family%E3%83%93%E3%83%AB&output=embed"
               className="w-full aspect-video border-0 rounded"
               loading="lazy"
               allowFullScreen

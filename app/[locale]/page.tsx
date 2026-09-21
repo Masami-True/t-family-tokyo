@@ -78,10 +78,10 @@ export default function HomePage() {
       <FloatingContact />
       {/* SEO content - hidden visually, readable by crawlers */}
       <section className="sr-only">
-        <h2 className="sr-only">T-Family株式会社 — 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo</h2>
+        <h2 className="sr-only">T-Family株式会社 — 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo</h2>
         <p>
-          T-Family株式会社（ティーファミリー）は東京都港区西新橋にある中古ブランドバッグ専門店です。T-Family株式会社の公式サイト。
-          新橋駅・虎ノ門駅・内幸町駅から徒歩7分、銀座エリアからもアクセス良好。
+          T-Family株式会社（ティーファミリー）は東京都中央区銀座にある中古ブランドバッグ専門店です。T-Family株式会社の公式サイト。
+          銀座駅より徒歩3分、有楽町駅より徒歩7分でアクセス良好。
           CHANEL BAG、HERMÈS BAG、LOUIS VUITTON BAG、GUCCI BAG、PRADA BAG、FENDI BAG、DIOR BAG、YSL BAG、GOYARD BAG、BURBERRY BAG、BALENCIAGA BAG、BVLGARI BAG、CÉLINE BAG、MIU MIU BAG、BOTTEGA VENETA BAGなど、
           世界的人気ブランドの正規中古品を取り揃えています。
           すべての商品はEntrupy AI鑑定済み、真贋保証・全額返金保証付き。

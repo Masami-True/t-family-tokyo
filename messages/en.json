@@ -6,7 +6,7 @@
     "store": "Store"
   },
   "hero": {
-    "eyebrow": "TOKYO · NISHI-SHIMBASHI",
+    "eyebrow": "TOKYO · GINZA",
     "h1_line1": "Timeless",
     "h1_accent": "Value,",
     "h1_line2": " Delivered.",
@@ -98,11 +98,11 @@
   "store": {
     "label": "VISIT US",
     "name": "T-Family Inc.",
-    "address": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "address": "T-Family Bldg\n3-12-17 Ginza\nChuo-ku, Tokyo",
     "hours": "Mon – Fri · 9:00 – 21:00 (Closed Sat & Sun)",
-    "access1": "JR Shimbashi Station → 7 min walk",
-    "access2": "Uchisaiwaicho Station → 7 min walk",
-    "access3": "Toranomon Station → 7 min walk",
+    "access1": "Ginza Station (Metro) → 3 min walk",
+    "access2": "Ginza-itchome Station (Metro) → 5 min walk",
+    "access3": "Yurakucho Station (JR) → 7 min walk",
     "tel": "03-6823-2699",
     "email": "info@t-family.tokyo",
     "whatsapp_btn": "WHATSAPP",
@@ -184,7 +184,7 @@
     "info_employees": "Employees",
     "info_license": "License No.",
     "info_address": "Address",
-    "info_address_value": "Le Gracielle BLDG 15, 5F\n1-18-11 Nishi-Shinbashi\nMinato-ku, Tokyo",
+    "info_address_value": "T-Family Bldg\n3-12-17 Ginza\nChuo-ku, Tokyo",
     "cta": "LEARN MORE",
     "info_tel": "Phone",
     "info_email": "Email"
@@ -203,5 +203,254 @@
     "message_placeholder": "Please describe your inquiry...",
     "submit": "SEND MESSAGE",
     "success": "Thank you for your inquiry. We will get back to you shortly."
+  },
+  "nmn": {
+    "meta": {
+      "title": "NMN KIWAMI | Premium NMN Selected by T-Family",
+      "description": "NMN KIWAMI, the premium NMN from Asa Pharmaceutical selected by T-Family. β-NMN produced in Japan, 21,600 mg per box, 240 mg per capsule. Raw material, quality control, manufacturing and packaging."
+    },
+    "nav": {
+      "quality": "QUALITY",
+      "why": "WHY NMN KIWAMI",
+      "about": "ABOUT NMN",
+      "faq": "FAQ",
+      "buy": "Purchase",
+      "menuOpen": "Open menu",
+      "menuClose": "Close menu",
+      "sections": "Sections"
+    },
+    "hero": {
+      "copy": [
+        "The question is not",
+        "whether it is “NMN,”",
+        "but which NMN."
+      ],
+      "en": [
+        "NOT JUST NMN.",
+        "THE QUALITY OF NMN."
+      ],
+      "note": "Selected by T-Family",
+      "cta": "Explore NMN KIWAMI"
+    },
+    "intro": {
+      "heading": "Not all NMN is the same.",
+      "body": [
+        "There are a great many NMN products on the market.\nPrices, amounts and manufacturing methods all differ.",
+        "That is why T-Family looked beyond\nwhether a product contains NMN,\nand chose based on the raw material, purity, manufacturing,\nquality control and storage as well.",
+        "It is from that perspective that we introduce\nAsa Pharmaceutical's NMN KIWAMI."
+      ]
+    },
+    "keyNumbers": {
+      "labels": [
+        "NMN per box",
+        "NMN per capsule",
+        "90 capsules per box",
+        "Purity analysis for every production lot"
+      ]
+    },
+    "quality": {
+      "en": "QUALITY BEYOND QUANTITY",
+      "heading": "A high amount alone is not enough.",
+      "items": [
+        {
+          "title": "NMN raw material produced in Japan",
+          "body": "β-Nicotinamide mononucleotide (produced in Japan).\nThe NMN raw material is manufactured at a facility certified under JIHFS Health Food GMP."
+        },
+        {
+          "title": "240 mg per capsule",
+          "body": "21,600 mg of NMN per box. 240 mg per capsule."
+        },
+        {
+          "title": "A focus on purity",
+          "body": "Food testing detected NMN purity of 100%.\nPurity analysis is also carried out for every production lot, and only domestic NMN meeting the standard is used."
+        },
+        {
+          "title": "Proprietary manufacturing technology",
+          "body": "N-RA process / Granu fine-particle process.\nThis is the manufacturing commitment behind fitting 240 mg of NMN into a single capsule."
+        },
+        {
+          "title": "Plant-based, acid-resistant capsule",
+          "lead": "Not only what goes inside,\nbut the capsule itself.",
+          "body": "We use an acid-resistant capsule made from plant-based materials."
+        }
+      ],
+      "ptp": {
+        "title": "PTP individual packaging",
+        "lead": "To protect the quality\ndown to the very last capsule.",
+        "body": "Each capsule is sealed individually in PTP packaging.\nThe sheets are then packed in an aluminium gusset bag designed to block light and moisture."
+      }
+    },
+    "package": {
+      "en": "PACKAGE & PRESERVATION",
+      "heading": "Choosing to protect every single capsule.",
+      "body": [
+        "NMN KIWAMI is not stored loose in a bottle — each capsule is sealed individually in PTP packaging.\nBecause only what is needed is opened, unopened capsules are less exposed to the air.",
+        "The PTP sheets are then stored in an aluminium gusset bag.",
+        "Quality designed not only around the raw material,\nbut around the moment it reaches you."
+      ]
+    },
+    "qc": {
+      "en": "QUALITY CONTROL",
+      "heading": "Quality is determined\nwhere it cannot be seen.",
+      "items": [
+        "NMN raw material produced in Japan",
+        "JIHFS Health Food GMP",
+        "Purity analysis for every production lot",
+        "Supervised by Japanese physicians and pharmacists",
+        "Ongoing commitment to quality retention"
+      ]
+    },
+    "why": {
+      "en": "WHY WE CHOSE IT",
+      "heading": "Why T-Family chose\nNMN KIWAMI.",
+      "lines": [
+        "There are a great many NMN products in the world.",
+        "Looking at price alone, less expensive options exist.",
+        "Even so, what mattered to T-Family\nwas never only how many milligrams it contains."
+      ],
+      "pillars": [
+        "The raw material.",
+        "The purity.",
+        "The manufacturing.",
+        "The quality control.",
+        "The capsule.",
+        "And how it is stored."
+      ],
+      "closing": [
+        "Precisely because it is taken every day,\nwe want to check each of these before choosing.",
+        "It is from that perspective\nthat we introduce NMN KIWAMI."
+      ]
+    },
+    "aboutNmn": {
+      "en": "WHAT IS NMN?",
+      "heading": "What exactly is NMN?",
+      "body": [
+        "NMN is the abbreviation for nicotinamide mononucleotide. It is a nucleotide built around nicotinamide, and a substance that is naturally present in the body.",
+        "Within the body it is positioned as one of the precursors of a coenzyme called NAD+ (nicotinamide adenine dinucleotide).",
+        "NAD+ is a coenzyme first identified in the early 1900s. How it is produced within the body and how it is used are questions still being studied today at universities and research institutions in Japan and abroad.",
+        "What happens when you consume a food containing this ingredient, however, is something we are limited in what we may say as food advertising. So what this page conveys is information about how the product is made: its raw material, its manufacturing and its quality control.",
+        "NMN KIWAMI is a nutritional supplement. It is not a pharmaceutical."
+      ]
+    },
+    "advisors": {
+      "en": "SUPERVISION",
+      "heading": "Supervision.",
+      "note": "NMN KIWAMI is developed under the supervision of physicians and researchers."
+    },
+    "product": {
+      "en": "PRODUCT",
+      "specs": [
+        "NMN",
+        "Contents",
+        "Per capsule"
+      ],
+      "unitCapsules": "capsules",
+      "taxIncl": "incl. tax",
+      "cta": "Purchase NMN KIWAMI"
+    },
+    "trial": {
+      "en": "TRIAL",
+      "heading": "Start by getting to know NMN KIWAMI.",
+      "label": "Trial sheet",
+      "unitCapsules": "capsules",
+      "cta": "View the trial sheet"
+    },
+    "howToUse": {
+      "en": "HOW TO USE",
+      "heading": "How to take",
+      "body": "As a dietary supplement, take 2 to 3 capsules per day with water or lukewarm water."
+    },
+    "faq": {
+      "heading": "Frequently asked questions",
+      "items": [
+        {
+          "q": "What is NMN?",
+          "a": "NMN stands for nicotinamide mononucleotide, a substance that is also naturally present in the body. NMN KIWAMI is a nutritional supplement containing this ingredient."
+        },
+        {
+          "q": "How does it differ from other NMN products?",
+          "a": "NMN KIWAMI uses NMN raw material produced in Japan and is manufactured at a facility certified under JIHFS Health Food GMP. Purity analysis is carried out for every production lot, and the capsule is an acid-resistant capsule made from plant-based materials. Each capsule is individually sealed in PTP packaging and stored in an aluminium gusset bag. Its defining feature is a quality design that spans everything from the raw material to how it is stored."
+        },
+        {
+          "q": "How much NMN does NMN KIWAMI contain?",
+          "a": "It contains 21,600 mg of NMN per box of 90 capsules, or 240 mg per capsule."
+        },
+        {
+          "q": "How many capsules per day?",
+          "a": "As a dietary supplement, take 2 to 3 capsules per day."
+        },
+        {
+          "q": "When should I take it?",
+          "a": "There is no particular rule about when to take it. Please take it with water or lukewarm water."
+        },
+        {
+          "q": "Can I take it while on medication?",
+          "a": "If you are taking medication or under medical care, please consult your physician in advance."
+        },
+        {
+          "q": "Can I take it while pregnant or breastfeeding?",
+          "a": "Those who are pregnant or breastfeeding, as well as infants and children, should refrain from taking this product."
+        },
+        {
+          "q": "How should I store it?",
+          "a": "Store away from direct sunlight, high temperature and high humidity. Once opened, please consume it as soon as possible, and keep it out of the reach of infants."
+        },
+        {
+          "q": "Why PTP packaging?",
+          "a": "Sealing each capsule individually in PTP packaging means only what is needed is opened, so unopened capsules are less exposed to the air. The sheets are then stored in an aluminium gusset bag designed to block light and moisture."
+        },
+        {
+          "q": "Why is it priced this way?",
+          "a": "NMN raw material produced in Japan, 21,600 mg per box, purity analysis for every production lot, a plant-based acid-resistant capsule, individual PTP packaging and an aluminium gusset bag. The price is the result of accumulating a quality design that spans the raw material through to storage."
+        }
+      ]
+    },
+    "precautions": {
+      "heading": "Precautions for use",
+      "items": [
+        "If you feel unwell, discontinue use and consult a physician.",
+        "If you are taking medication or under medical care, please consult a physician.",
+        "Those who are pregnant or breastfeeding, as well as infants and children, should not take this product.",
+        "Once opened, please consume as soon as possible.",
+        "Keep out of the reach of infants.",
+        "Slight differences in taste or colour may occur between production lots."
+      ]
+    },
+    "finalCta": {
+      "copy": [
+        "The question is",
+        "which NMN."
+      ],
+      "note": "Selected by T-Family",
+      "cta": "Purchase NMN KIWAMI",
+      "contactNote": "For any questions about the product, please contact T-Family.",
+      "contactCta": "Contact us"
+    },
+    "footer": {
+      "maker": "Manufactured by",
+      "seller": "Sold by",
+      "brand": "T-Family",
+      "product": "Product",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "tokusho": "Notation based on the Act on Specified Commercial Transactions",
+      "nav": "Footer"
+    },
+    "sticky": {
+      "cta": "View product"
+    },
+    "alt": {
+      "package": "NMN KIWAMI product package",
+      "packagePlain": "NMN KIWAMI package",
+      "capsule": "NMN KIWAMI capsule",
+      "ptp": "NMN KIWAMI PTP sheets and aluminium gusset bag",
+      "pouch": "NMN KIWAMI package and aluminium gusset bag",
+      "trial": "NMN KIWAMI trial sheet and package",
+      "factoryInspection": "Capsule inspection during manufacturing",
+      "factoryLab": "Weighing during manufacturing",
+      "factoryLine": "Work on the production line",
+      "advisor": "Portrait of the supervising specialist"
+    },
+    "skip": "Skip to content"
   }
 }

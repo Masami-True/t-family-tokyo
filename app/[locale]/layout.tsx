@@ -22,7 +22,7 @@ export const metadata = {
     "中古ブランド 新橋",
     "銀座おすすめ",
     "中古ブランドショップ 銀座",
-    "中古ブランド 西新橋",
+    "中古ブランド 銀座3丁目",
     "ライバー",
     "ライブセラー",
     "バイヤー",
@@ -147,7 +147,7 @@ export default async function LocaleLayout({
           crossOrigin="anonymous"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;700&family=Noto+Sans+JP:wght@200;300;400;500&family=Noto+Serif+JP:wght@200;300;400;500;700&display=swap"
           rel="stylesheet"
         />
         {/* JSON-LD Structured Data */}
@@ -166,18 +166,18 @@ export default async function LocaleLayout({
               email: "info@t-family.tokyo",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "西新橋1丁目18-11 ル・グラシエルBLDG 15号館5F",
-                addressLocality: "港区",
+                streetAddress: "銀座３－１２－１７ T-Familyビル",
+                addressLocality: "中央区",
                 addressRegion: "東京都",
-                postalCode: "105-0003",
+                postalCode: "104-0061",
                 addressCountry: "JP",
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 35.668,
-                longitude: 139.7515,
+                latitude: 35.671,
+                longitude: 139.765,
               },
-              openingHoursSpecification: {
+  openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
                   "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
@@ -226,7 +226,7 @@ export default async function LocaleLayout({
               currenciesAccepted: "JPY",
               areaServed: {
                 "@type": "GeoCircle",
-                geoMidpoint: { "@type": "GeoCoordinates", latitude: 35.668, longitude: 139.7515 },
+                geoMidpoint: { "@type": "GeoCoordinates", latitude: 35.671, longitude: 139.765 },
                 geoRadius: "50000",
               },
               knowsLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
