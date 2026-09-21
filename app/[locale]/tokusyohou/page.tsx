@@ -67,7 +67,7 @@ export default function TokusyohouPage() {
           </div>
           <div>
             <h2 className="font-medium text-text mb-1">営業時間</h2>
-            <p>9:00〜21:00（土日休み）</p>
+            <p>11:00〜20:00（日曜定休）</p>
           </div>
           <div>
             <h2 className="font-medium text-text mb-1">古物商許可</h2>

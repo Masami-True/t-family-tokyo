@@ -180,10 +180,10 @@ export default async function LocaleLayout({
   openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
-                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+                  "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
                 ],
-                opens: "09:00",
-                closes: "21:00",
+                opens: "11:00",
+                closes: "20:00",
               },
               priceRange: "¥¥¥",
               image: "https://t-family.tokyo/images/logo.png",
