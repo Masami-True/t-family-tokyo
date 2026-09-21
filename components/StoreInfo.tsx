@@ -86,6 +86,7 @@ export default function StoreInfo() {
               <p className="text-sm text-subtext mb-1">{t("access1")}</p>
               <p className="text-sm text-subtext mb-1">{t("access2")}</p>
               <p className="text-sm text-subtext mb-1">{t("access3")}</p>
+              <p className="text-sm text-subtext mb-1">{t("access4")}</p>
             </div>
 
             {/* Contact */}
