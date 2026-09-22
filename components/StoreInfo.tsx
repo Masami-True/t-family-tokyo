@@ -61,11 +61,11 @@ export default function StoreInfo() {
 
             <div className="mt-4">
               <Image
-                src="/images/store.jpg"
-                alt="T-Family Store"
+                src="/images/store.webp"
+                alt="T-VINTAGE GINZA 店舗外観"
                 width={600}
-                height={400}
-                className="w-full aspect-[3/2] object-cover rounded"
+                height={800}
+                className="w-full aspect-[3/4] object-cover object-top rounded"
               />
             </div>
           </div>
