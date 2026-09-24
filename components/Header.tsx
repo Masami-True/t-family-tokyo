@@ -76,9 +76,14 @@ export default function Header() {
               className="h-[45px] w-[45px] sm:h-[55px] sm:w-[55px] object-contain mix-blend-lighten"
               priority
             />
-            <span className="font-heading text-gold text-lg sm:text-2xl tracking-wider" translate="no">
-              T-Family Inc.
-            </span>
+            <div className="flex flex-col leading-tight">
+              <span className="font-heading text-gold text-lg sm:text-2xl tracking-wider" translate="no">
+                T-Family Inc.
+              </span>
+              <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-gold/70 font-light" translate="no">
+                T-VINTAGE GINZA
+              </span>
+            </div>
           </div>
         </a>
 
