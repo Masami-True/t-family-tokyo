@@ -77,11 +77,11 @@ export default function Header() {
               priority
             />
             <div className="flex flex-col leading-tight">
-              <span className="font-heading text-gold text-lg sm:text-2xl tracking-wider" translate="no">
-                T-Family Inc.
+              <span className="font-heading text-gold text-base sm:text-xl tracking-wider" translate="no">
+                T-VINTAGE
               </span>
-              <span className="text-[9px] sm:text-[10px] tracking-[0.22em] text-gold/70 font-light" translate="no">
-                T-VINTAGE GINZA
+              <span className="text-[9px] sm:text-[11px] tracking-[0.08em] text-gold/75 font-light" translate="no">
+                {locale === "ja" ? "（T-Family株式会社）" : "（T-Family Inc.）"}&nbsp;·&nbsp;GINZA
               </span>
             </div>
           </div>
