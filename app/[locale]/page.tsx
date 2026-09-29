@@ -34,10 +34,10 @@ export async function generateMetadata({
     // absolute bypasses layout's title.template so the full marketing title renders standalone
     title: {
       absolute:
-        "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+        "T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
     },
     description:
-      "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー・バイヤー・リセラー募集中。Wholesale buyers & resellers welcome. Pre-owned luxury brand bags in Tokyo near Ginza & Shimbashi.",
+      "T-Family株式会社は東京・銀座の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー・バイヤー・リセラー募集中。Wholesale buyers & resellers welcome. Pre-owned luxury brand bags in Ginza, Tokyo.",
     alternates: {
       canonical: url,
       languages: {
@@ -86,7 +86,7 @@ export default function HomePage() {
           世界的人気ブランドの正規中古品を取り揃えています。
           すべての商品はEntrupy AI鑑定済み、真贋保証・全額返金保証付き。
           T-Family is a premier pre-owned luxury brand bag shop in Tokyo, Japan.
-          Located near Shimbashi and Ginza, we offer authentic secondhand luxury bags.
+          Located in Ginza, Tokyo, we offer authentic secondhand luxury bags.
           Our collection includes CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA, FENDI, DIOR and more brand bags.
           All items are Entrupy certified with full authenticity guarantee and refund policy.
           We welcome inbound tourists and international buyers.

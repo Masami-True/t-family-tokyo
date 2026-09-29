@@ -45,7 +45,7 @@ T-Family株式会社（後株）のコーポレートサイト
   - `Organization` — `name: "T-Family"` (primary), `legalName: "T-Family株式会社"`, founder, contactPoint, sameAs（新規）
   - `WebSite` — `name: "T-Family"`, publisher refs Organization via `@id`（新規）
   - 用途: 「T-Family」単独でのブランド認識 + サイトリンク検索ボックス獲得
-- **キーワード（60+）**: T-Family, 中古ブランド, 中古ブランドショップ, ブランドバッグ, 中古ブランド銀座/新橋, ライバー, ライブセラー, **バイヤー, リセラー, 卸, 卸売り, Buyer, Reseller, Wholesale, Wholesaler, Distributor, Export, 越境EC, 海外仕入れ**, 全ブランド名+BAG, inbound shopping Tokyo
+- **キーワード（60+）**: T-Family, 中古ブランド, 中古ブランドショップ, ブランドバッグ, 中古ブランド銀座, ライバー, ライブセラー, **バイヤー, リセラー, 卸, 卸売り, Buyer, Reseller, Wholesale, Wholesaler, Distributor, Export, 越境EC, 海外仕入れ**, 全ブランド名+BAG, inbound shopping Tokyo
 - **OGP + Twitterカード**: SNS共有最適化
 - **sitemap.xml**: 全6言語×5ページ = 30URL → Search Console送信済み（非wwwで統一）
 - **robots.txt**: クローラー許可、/api/除外

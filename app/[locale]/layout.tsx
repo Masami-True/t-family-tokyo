@@ -7,11 +7,11 @@ import "../globals.css";
 export const metadata = {
   title: {
     default:
-      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
     template: "%s | T-Family株式会社",
   },
   description:
-    "T-Family株式会社は東京・新橋の中古ブランドバッグ専門店。CHANEL BAG, HERMÈS BAG, LOUIS VUITTON BAG, GUCCI BAG, PRADA BAG, FENDI BAG, DIOR BAGなど正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Tokyo. Secondhand shops near Ginza & Shimbashi. Live Seller program available.",
+    "T-Family株式会社は東京・銀座の中古ブランドバッグ専門店。CHANEL BAG, HERMÈS BAG, LOUIS VUITTON BAG, GUCCI BAG, PRADA BAG, FENDI BAG, DIOR BAGなど正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo. Live Seller program available.",
   keywords: [
     "T-Family",
     "中古ブランドショップ",
@@ -19,7 +19,7 @@ export const metadata = {
     "中古ブランドバッグ",
     "ブランドバッグ",
     "中古ブランド 銀座",
-    "中古ブランド 新橋",
+    "中古ブランド 銀座3丁目",
     "銀座おすすめ",
     "中古ブランドショップ 銀座",
     "中古ブランド 銀座3丁目",
@@ -66,7 +66,7 @@ export const metadata = {
     "luxury bags Tokyo",
     "authentic brand bags Japan",
     "Tokyo luxury secondhand",
-    "Shimbashi brand shop",
+    "Ginza brand shop",
     "Ginza pre-owned luxury",
     "Entrupy certified bags",
     "inbound shopping Tokyo",
@@ -74,9 +74,9 @@ export const metadata = {
   ],
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "T-Family | 中古ブランドバッグ専門店 東京・新橋",
+    title: "T-Family | 中古ブランドバッグ専門店 東京・銀座",
     description:
-      "CHANEL, HERMÈS, LOUIS VUITTON等の正規中古ブランドバッグ。Entrupy AI鑑定・全額返金保証。東京・新橋の実店舗 & オンラインショップ。",
+      "CHANEL, HERMÈS, LOUIS VUITTON等の正規中古ブランドバッグ。Entrupy AI鑑定・全額返金保証。東京・銀座の実店舗 & オンラインショップ。",
     url: "https://t-family.tokyo",
     siteName: "T-Family Inc.",
     locale: "ja_JP",
@@ -160,7 +160,7 @@ export default async function LocaleLayout({
               name: "T-Family株式会社",
               alternateName: ["T-Family Inc.", "T-Family", "ティーファミリー"],
               description:
-                "東京・新橋の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI等の正規品を取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Tokyo near Ginza.",
+                "東京・銀座の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI等の正規品を取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo.",
               url: "https://t-family.tokyo",
               telephone: "+81-3-6823-2699",
               email: "info@t-family.tokyo",
@@ -277,7 +277,7 @@ export default async function LocaleLayout({
                   url: "https://t-family.tokyo",
                   name: "T-Family",
                   alternateName: "T-Family株式会社",
-                  description: "中古ブランドバッグ専門店 東京・新橋 | Pre-Owned Luxury Brand Bags Tokyo",
+                  description: "中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
                   publisher: { "@id": "https://t-family.tokyo/#organization" },
                   inLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
                 },
