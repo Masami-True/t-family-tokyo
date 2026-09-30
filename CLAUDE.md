@@ -17,7 +17,7 @@ T-Family株式会社（後株）のコーポレートサイト
 - 会社名: T-Family株式会社（後株 ← 株式会社T-Familyではない）
 - 代表: 富永 朝樹（とみなが あさき）
 - 住所: 〒104-0061 東京都中央区銀座３－１２－１７ T-Familyビル
-- TEL: 03-6822-8487
+- TEL: 03-6823-2699
 - EMAIL: info@t-family.tokyo（メーリングリスト）
 - 管理者メール: tominaga@t-family.tokyo
 - 設立: 2020.11.27 / 資本金: 3000万円 / 従業員: 8名
@@ -95,7 +95,7 @@ T-Family株式会社（後株）のコーポレートサイト
   - FloatingContact（WhatsAppのみ）
   - SEOテキスト（sr-only非表示、自然な散文）
 - `/[locale]/liveseller/` — ライブセラー応募フォーム（ハニーポットスパム対策付き）
-- `/[locale]/company/` — 会社概要（TEL 03-6822-8487 + EMAIL info@t-family.tokyo）
+- `/[locale]/company/` — 会社概要（TEL 03-6823-2699 + EMAIL info@t-family.tokyo）
 - `/[locale]/tokusyohou/` — 特定商取引法に基づく表記
 - `/[locale]/privacy/` — プライバシーポリシー（9項目）
 - `/buyer01/` — **Netlify rewrite**（URL は `https://t-family.tokyo/buyer01/` のまま、コンテンツは `https://t-family-buyer.netlify.app/buyer01/` をプロキシ）
