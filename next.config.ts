@@ -44,10 +44,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "t-secondhands.jp",
       },
-      {
-        protocol: "https",
-        hostname: "nextstory.jp",
-      },
+
     ],
   },
   async headers() {

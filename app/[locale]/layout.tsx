@@ -198,7 +198,6 @@ export default async function LocaleLayout({
                 "https://www.facebook.com/profile.php?id=61576088344723",
                 "https://www.youtube.com/@T-Family-727",
                 "https://x.com/NextStory7",
-                "https://nextstory.jp/",
                 "https://t-secondhands.jp/",
               ],
               hasOfferCatalog: {
@@ -260,7 +259,6 @@ export default async function LocaleLayout({
                     "https://www.facebook.com/profile.php?id=61576088344723",
                     "https://www.youtube.com/@T-Family-727",
                     "https://x.com/NextStory7",
-                    "https://nextstory.jp/",
                     "https://t-secondhands.jp/",
                   ],
                   contactPoint: {

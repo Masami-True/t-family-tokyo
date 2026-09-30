@@ -50,7 +50,7 @@ T-Family株式会社（後株）のコーポレートサイト
 - **sitemap.xml**: 全6言語×5ページ = 30URL → Search Console送信済み（非wwwで統一）
 - **robots.txt**: クローラー許可、/api/除外
 - **SEOテキスト**: sr-onlyで非表示（**キーワード羅列はスパムリスクのため削除済み**、自然な散文のみ）
-- **nextstory.jpリンク**: フッターに相互リンク
+
 
 ## SEO 修正履歴（2026/04 「TOPページが検索で出ない」問題の根本対応）
 **問題**: Google検索で「T-Family株式会社」と検索したとき、`/company` や `/privacy` が上位表示され TOP ページが出てこなかった
@@ -91,7 +91,7 @@ T-Family株式会社（後株）のコーポレートサイト
   - CeoGreeting（PC:写真左グラデ+テキスト右、スマホ:タイトル→写真+名前→メッセージ、ベージュ背景）
   - ContactForm（お問い合わせフォーム、ハニーポットスパム対策付き）
   - StoreInfo（店舗情報、Google Maps、支払方法）
-  - Footer（SNS、会社概要/特商法/プライバシー/nextstory.jp、テキスト明るく）
+  - Footer（SNS、会社概要/特商法/プライバシー、テキスト明るく）
   - FloatingContact（WhatsAppのみ）
   - SEOテキスト（sr-only非表示、自然な散文）
 - `/[locale]/liveseller/` — ライブセラー応募フォーム（ハニーポットスパム対策付き）
@@ -137,7 +137,7 @@ T-Family株式会社（後株）のコーポレートサイト
 - **Google口コミ**: Elfsightから移行→サイト内蔵カルーセル（12件実口コミ、連続スムーススクロール、正方形カード、評価数非表示、レビュー投稿ボタンあり）
 - **CEO挨拶**: PC=写真左グラデーション+テキスト右、スマホ=タイトル→写真+名前→メッセージ
 - **全テキスト白**: ダークセクション（LiveCommerce・B2B）のグレー→白
-- **フッター**: テキスト明るく（/80）、nextstory.jpリンク
+- **フッター**: テキスト明るく（/80）
 - **Google翻訳防止**: notranslateメタ+クラス+ブランド名translate="no"
 - **スパム対策**: 全フォームにハニーポットフィールド
 
@@ -148,7 +148,7 @@ T-Family株式会社（後株）のコーポレートサイト
 - WhatsApp: https://wa.me/message/YLKX2G23XTTKM1
 - YouTube: https://www.youtube.com/@T-Family-727
 - X: https://x.com/NextStory7
-- nextstory.jp: https://nextstory.jp/
+
 - Buyer: https://t-family.tokyo/buyer01/ → Netlify rewrite（URL維持）
 - Google Review投稿: https://g.page/r/CT5WXUVxa3XmEAI/review
 
@@ -181,7 +181,7 @@ T-Family株式会社（後株）のコーポレートサイト
   - Codex セカンドオピニオン 2回実施
 - [x] **Vercel ドメイン設定変更**: 非wwwをPrimary、www→非wwwを308 Permanent
 - [x] **buyer01 を redirect から rewrite に変更**（URL維持でNetlifyコンテンツをプロキシ）
-- [x] nextstory.jpコンテンツ統合
+- [x] nextstory.jpリンク削除
 - [x] GPTフィードバック対応（行動導線強化、口コミ改善、信頼訴求）
 - [x] スマホデザイン最適化
 - [x] Google翻訳防止
