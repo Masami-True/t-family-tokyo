@@ -158,7 +158,7 @@ export default async function LocaleLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "T-Family株式会社",
-              alternateName: ["T-Family Inc.", "T-Family", "ティーファミリー"],
+              alternateName: ["T-Vintage", "T-Vintage GINZA", "T-Family Inc.", "T-Family", "ティーファミリー", "ティーヴィンテージ"],
               description:
                 "東京・銀座の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI等の正規品を取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo.",
               url: "https://t-family.tokyo",
@@ -177,7 +177,7 @@ export default async function LocaleLayout({
                 latitude: 35.671,
                 longitude: 139.765,
               },
-  openingHoursSpecification: {
+              openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
                   "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday",
@@ -263,7 +263,7 @@ export default async function LocaleLayout({
                   ],
                   contactPoint: {
                     "@type": "ContactPoint",
-                    telephone: "+81-3-6822-8487",
+                    telephone: "+81-3-6823-2699",
                     email: "info@t-family.tokyo",
                     contactType: "customer service",
                     availableLanguage: ["Japanese", "English", "Chinese", "Korean", "Spanish", "French"],
@@ -274,10 +274,14 @@ export default async function LocaleLayout({
                   "@id": "https://t-family.tokyo/#website",
                   url: "https://t-family.tokyo",
                   name: "T-Family",
-                  alternateName: "T-Family株式会社",
+                  alternateName: "T-Vintage GINZA",
                   description: "中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
                   publisher: { "@id": "https://t-family.tokyo/#organization" },
                   inLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
+                  speakable: {
+                    "@type": "SpeakableSpecification",
+                    cssSelector: ["h1", "h2", "[data-speakable]"],
+                  },
                 },
               ],
             }),
