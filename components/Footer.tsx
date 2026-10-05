@@ -54,6 +54,15 @@ const socialLinks = [
     ),
   },
   {
+    name: "Whatnot",
+    href: "https://www.whatnot.com/user/tfamilycoltd",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm.75 14.5h-1.5v-5.25l-1.97 1.97-1.06-1.06 3.28-3.28 3.28 3.28-1.06 1.06-1.97-1.97V16.5z"/>
+      </svg>
+    ),
+  },
+  {
     name: "Google Review",
     href: "https://g.page/r/CT5WXUVxa3XmEAE/review",
     icon: (
