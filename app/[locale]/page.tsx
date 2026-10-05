@@ -31,6 +31,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const url = `https://t-family.tokyo/${locale}`;
   return {
+    metadataBase: new URL("https://t-family.tokyo"),
     // absolute bypasses layout's title.template so the full marketing title renders standalone
     title: {
       absolute:

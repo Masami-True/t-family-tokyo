@@ -32,9 +32,37 @@ export async function generateMetadata({
   };
 }
 
-export default function TokusyohouPage() {
+export default async function TokusyohouPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "T-Vintage GINZA",
+                item: `https://t-family.tokyo/${locale}`,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "特定商取引法に基づく表記",
+                item: `https://t-family.tokyo/${locale}/tokusyohou`,
+              },
+            ],
+          }),
+        }}
+      />
       <Header />
       <main className="pt-24 pb-16 px-6 max-w-3xl mx-auto min-h-screen">
         <h1 className="font-[Noto_Serif_JP] text-2xl mb-8 text-center">

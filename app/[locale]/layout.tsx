@@ -5,6 +5,7 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import "../globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://t-family.tokyo"),
   title: {
     default:
       "T-Vintage GINZA | T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Bags",
@@ -86,18 +87,19 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://t-family.tokyo/images/logo.png",
-        width: 400,
-        height: 400,
-        alt: "T-Family Logo",
+        url: "/opengraph-image",
+        width: 1200,
+        height: 630,
+        alt: "T-Vintage GINZA | Pre-Owned Luxury Brand Bags in Ginza, Tokyo",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "T-Family | Pre-Owned Luxury Brand Bags Tokyo",
+    title: "T-Vintage GINZA | Pre-Owned Luxury Brand Bags Tokyo",
     description:
-      "Authentic CHANEL, HERMÈS, LOUIS VUITTON bags from Tokyo. Entrupy certified. Full refund guarantee.",
+      "Authentic CHANEL, HERMÈS, LOUIS VUITTON bags from Ginza, Tokyo. Entrupy AI certified. Full refund guarantee.",
+    images: ["/opengraph-image"],
   },
   alternates: {
     canonical: "https://t-family.tokyo",
@@ -147,6 +149,11 @@ export default async function LocaleLayout({
       <head>
         {/* Prevent Google Translate from auto-translating */}
         <meta name="google" content="notranslate" />
+        {/* rel=me: SNSプロフィール紐付け検証 */}
+        <link rel="me" href="https://www.instagram.com/tfamily.inc/" />
+        <link rel="me" href="https://www.facebook.com/profile.php?id=61576088344723" />
+        <link rel="me" href="https://x.com/NextStory7" />
+        <link rel="me" href="https://www.youtube.com/@T-Family-727" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"
@@ -163,14 +170,26 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "LocalBusiness",
+              "@type": ["ClothingStore", "LocalBusiness"],
+              "@id": "https://t-family.tokyo/#localbusiness",
               name: "T-Family株式会社",
-              alternateName: ["T-Vintage", "T-Vintage GINZA", "T-Family Inc.", "T-Family", "ティーファミリー", "ティーヴィンテージ"],
+              alternateName: ["T-Vintage", "T-Vintage GINZA", "T-Family Inc.", "T-Family", "ティーファミリー", "ティーヴィンテージ", "T-Vintage Ginza", "ティービンテージ銀座"],
               description:
                 "東京・銀座の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI等の正規品を取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo.",
               url: "https://t-family.tokyo",
               telephone: "+81-3-6823-2699",
               email: "info@t-family.tokyo",
+              hasMap: "https://maps.google.com/maps?q=T-Family+T-Vintage+%E9%8A%80%E5%BA%A73-12-17%EF%BC%8C%E4%B8%AD%E5%A4%AE%E5%8C%BA%EF%BC%8C%E6%9D%B1%E4%BA%AC%E9%83%BD+104-0061",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://t-family.tokyo/images/logo.png",
+                width: 400,
+                height: 400,
+              },
+              image: [
+                "https://t-family.tokyo/images/store-cropped.jpg",
+                "https://t-family.tokyo/images/logo.png",
+              ],
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "銀座３－１２－１７ T-Familyビル",
@@ -181,9 +200,10 @@ export default async function LocaleLayout({
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 35.671,
-                longitude: 139.765,
+                latitude: 35.6715,
+                longitude: 139.7648,
               },
+              openingHours: "Mo-Sa 11:00-20:00",
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
                 dayOfWeek: [
@@ -193,19 +213,31 @@ export default async function LocaleLayout({
                 closes: "20:00",
               },
               priceRange: "¥¥¥",
-              image: "https://t-family.tokyo/images/logo.png",
               aggregateRating: {
                 "@type": "AggregateRating",
                 ratingValue: "4.7",
                 reviewCount: "21",
                 bestRating: "5",
               },
+              amenityFeature: [
+                { "@type": "LocationFeatureSpecification", name: "多言語対応（日・英・中・韓・西・仏）", value: true },
+                { "@type": "LocationFeatureSpecification", name: "クレジットカード利用可", value: true },
+                { "@type": "LocationFeatureSpecification", name: "PayPay利用可", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Alipay利用可", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Entrupy AI真贋鑑定済み", value: true },
+                { "@type": "LocationFeatureSpecification", name: "全額返金保証", value: true },
+                { "@type": "LocationFeatureSpecification", name: "海外発送対応", value: true },
+                { "@type": "LocationFeatureSpecification", name: "インバウンド対応", value: true },
+              ],
               sameAs: [
                 "https://www.instagram.com/tfamily.inc/",
                 "https://www.facebook.com/profile.php?id=61576088344723",
                 "https://www.youtube.com/@T-Family-727",
                 "https://x.com/NextStory7",
                 "https://t-secondhands.jp/",
+                "https://www.whatnot.com/user/tfamilycoltd",
+                "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
+                "https://g.page/r/CT5WXUVxa3XmEAE",
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
@@ -230,11 +262,12 @@ export default async function LocaleLayout({
               },
               paymentAccepted: "VISA, MasterCard, JCB, AMEX, PayPay, Alipay, PayPal, WISE, Apple Pay, Google Pay, Cash, Bank Transfer",
               currenciesAccepted: "JPY",
-              areaServed: {
-                "@type": "GeoCircle",
-                geoMidpoint: { "@type": "GeoCoordinates", latitude: 35.671, longitude: 139.765 },
-                geoRadius: "50000",
-              },
+              areaServed: [
+                { "@type": "City", name: "東京", alternateName: "Tokyo" },
+                { "@type": "AdministrativeArea", name: "銀座", alternateName: "Ginza" },
+                { "@type": "AdministrativeArea", name: "中央区", alternateName: "Chuo-ku" },
+                { "@type": "Country", name: "Japan" },
+              ],
               knowsLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
             }),
           }}
@@ -267,6 +300,9 @@ export default async function LocaleLayout({
                     "https://www.youtube.com/@T-Family-727",
                     "https://x.com/NextStory7",
                     "https://t-secondhands.jp/",
+                    "https://www.whatnot.com/user/tfamilycoltd",
+                    "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
+                    "https://g.page/r/CT5WXUVxa3XmEAE",
                   ],
                   contactPoint: {
                     "@type": "ContactPoint",
@@ -288,6 +324,14 @@ export default async function LocaleLayout({
                   speakable: {
                     "@type": "SpeakableSpecification",
                     cssSelector: ["h1", "h2", "[data-speakable]"],
+                  },
+                  potentialAction: {
+                    "@type": "SearchAction",
+                    target: {
+                      "@type": "EntryPoint",
+                      urlTemplate: "https://t-family.tokyo/ja?q={search_term_string}",
+                    },
+                    "query-input": "required name=search_term_string",
                   },
                 },
               ],
