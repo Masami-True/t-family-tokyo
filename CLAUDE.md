@@ -98,6 +98,13 @@ T-Family株式会社（後株）のコーポレートサイト
 - `/[locale]/company/` — 会社概要（TEL 03-6823-2699 + EMAIL info@t-family.tokyo）
 - `/[locale]/tokusyohou/` — 特定商取引法に基づく表記
 - `/[locale]/privacy/` — プライバシーポリシー（9項目）
+- `/ja/opening`・`/en/opening` — **T-Vintage（produced by T-Family）グランドオープン案内**（2026.10.24 OPEN / OPENING DAYS 10.24–10.25、LINE等で共有する用、サイト共通Header/Footerなし）
+  - 共有URLは `https://t-family.tokyo/opening`（ブラウザ言語で /ja・/en に振り分け）。zh/ko/es/fr は /en/opening へリダイレクト
+  - 掲載文: `app/[locale]/opening/copy.tsx`（日英。「aside」はユーモアのひとこと）
+  - フッターのSNS・ナビは `lib/social-links.tsx`（サイト共通 Footer と共用）
+  - 画像: `public/images/opening/`（hero-portrait.webp=スマホ用, hero-wide.webp=PC用, og-image.jpg=OGP 1200×630, t-vintage-logo-gold.png=オープニング用ロゴ, orchid-watermark.webp=お花欄の透かし）
+  - カレンダー: `public/files/t-vintage-ginza-opening-days.ics`（日）/ `t-vintage-opening-days-en.ics`（英）+ Googleカレンダー追加リンク
+  - 注意: OneDrive 同期下では `next dev` の .next/dev キャッシュが壊れやすい。確認は `next build && next start` が安定
 - `/buyer01/` — **Netlify rewrite**（URL は `https://t-family.tokyo/buyer01/` のまま、コンテンツは `https://t-family-buyer.netlify.app/buyer01/` をプロキシ）
   - 以前は `redirect()` で URL が変わってしまう実装だったが、`next.config.ts` の `rewrites` に変更
   - `/buyer01/*` 用に CSP を緩和（cdnjs, web3forms, GAS 等の外部スクリプト許可）

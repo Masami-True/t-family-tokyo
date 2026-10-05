@@ -1,0 +1,18 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//T-Family Inc.//T-Vintage//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:opening-days-20261024-en@t-family.tokyo
+DTSTAMP:20261005T000000Z
+DTSTART:20261024T020000Z
+DTEND:20261025T110000Z
+SUMMARY:T-Vintage OPENING DAYS
+LOCATION:T-Family Bldg.\, 3-12-17 Ginza\, Chuo-ku\, Tokyo 104-0061\, Japan
+DESCRIPTION:T-Vintage (produced by T-Family) GRAND OPEN Sat\, Oct 24\, 2026
+  11:00\nOPENING DAYS Sat 10/24 & Sun 10/25 (Sunday is a special business d
+ ay) Hours 11:00 – 20:00\nhttps://t-family.tokyo/en/opening
+URL:https://t-family.tokyo/en/opening
+END:VEVENT
+END:VCALENDAR
