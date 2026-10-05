@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": {
     "about": "À propos",
     "shop": "Boutique",
@@ -6,7 +6,7 @@
     "store": "Notre Boutique"
   },
   "hero": {
-    "eyebrow": "T-VINTAGE GINZA · GINZA, TOKYO",
+    "eyebrow": "T-Vintage GINZA · GINZA, TOKYO",
     "h1_line1": "Au-delà du temps,",
     "h1_accent": "la valeur",
     "h1_line2": " perdure.",
@@ -97,7 +97,7 @@
   },
   "store": {
     "label": "RENDEZ-NOUS VISITE",
-    "name": "T-VINTAGE（T-Family Inc.）",
+    "name": "T-Vintage（T-Family Inc.）",
     "address": "T-Family Bldg\n3-12-17 Ginza\nChuo-ku, Tokyo",
     "hours": "Lun – Sam · 11:00 – 20:00 (Fermé Dim)",
     "access1": "Station Higashi-Ginza (Métro) → 3 min à pied",

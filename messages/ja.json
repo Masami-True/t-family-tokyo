@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": {
     "about": "私たちについて",
     "shop": "ショップ",
@@ -6,7 +6,7 @@
     "store": "店舗情報"
   },
   "hero": {
-    "eyebrow": "T-VINTAGE GINZA · GINZA, TOKYO",
+    "eyebrow": "T-Vintage GINZA · GINZA, TOKYO",
     "h1_line1": "時を越えて、",
     "h1_accent": "価値",
     "h1_line2": "を繋ぐ。",
@@ -97,7 +97,7 @@
   },
   "store": {
     "label": "店舗のご案内",
-    "name": "T-VINTAGE（T-Family株式会社）",
+    "name": "T-Vintage（T-Family株式会社）",
     "address": "東京都中央区銀座３－１２－１７\nT-Familyビル",
     "hours": "営業時間 · 11:00 – 20:00（日曜定休）",
     "access1": "東京メトロ「東銀座駅」より徒歩3分",

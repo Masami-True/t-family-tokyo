@@ -78,7 +78,7 @@ export default function Header() {
             />
             <div className="flex flex-col leading-tight">
               <span className="font-heading text-gold text-base sm:text-xl tracking-wider" translate="no">
-                T-VINTAGE
+                T-Vintage
               </span>
               <span className="text-[9px] sm:text-[11px] tracking-[0.08em] text-gold/75 font-light" translate="no">
                 {locale === "ja" ? "（T-Family株式会社）" : "（T-Family Inc.）"}&nbsp;·&nbsp;GINZA

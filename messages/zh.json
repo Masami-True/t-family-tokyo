@@ -1,4 +1,4 @@
-{
+﻿{
   "nav": {
     "about": "关于我们",
     "shop": "商店",
@@ -6,7 +6,7 @@
     "store": "店铺信息"
   },
   "hero": {
-    "eyebrow": "T-VINTAGE GINZA · GINZA, TOKYO",
+    "eyebrow": "T-Vintage GINZA · GINZA, TOKYO",
     "h1_line1": "跨越时间，",
     "h1_accent": "传递",
     "h1_line2": "价值。",
@@ -97,7 +97,7 @@
   },
   "store": {
     "label": "到店访问",
-    "name": "T-VINTAGE（T-Family株式会社）",
+    "name": "T-Vintage（T-Family株式会社）",
     "address": "T-Family大楼\n东京都中央区银座3-12-17",
     "hours": "周一至周六 · 11:00 – 20:00（周日休息）",
     "access1": "地铁东银座站 → 步行3分钟",
