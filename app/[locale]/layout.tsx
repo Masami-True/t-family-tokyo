@@ -7,12 +7,15 @@ import "../globals.css";
 export const metadata = {
   title: {
     default:
-      "T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
-    template: "%s | T-Family株式会社",
+      "T-Vintage GINZA | T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Bags",
+    template: "%s | T-Vintage GINZA",
   },
   description:
-    "T-Family株式会社は東京・銀座の中古ブランドバッグ専門店。CHANEL BAG, HERMÈS BAG, LOUIS VUITTON BAG, GUCCI BAG, PRADA BAG, FENDI BAG, DIOR BAGなど正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo. Live Seller program available.",
+    "T-Vintage GINZA（T-Family株式会社）は東京・銀座の中古ブランドバッグ専門店。CHANEL・HERMÈS・LOUIS VUITTON・GUCCI・PRADA・FENDI・DIOR など正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。Pre-owned luxury brand bags in Ginza, Tokyo.",
   keywords: [
+    "T-Vintage",
+    "T-Vintage GINZA",
+    "T-Vintage 銀座",
     "T-Family",
     "中古ブランドショップ",
     "中古ブランド",
@@ -74,9 +77,9 @@ export const metadata = {
   ],
   icons: { icon: "/favicon.ico" },
   openGraph: {
-    title: "T-Family | 中古ブランドバッグ専門店 東京・銀座",
+    title: "T-Vintage GINZA | 中古ブランドバッグ専門店 東京・銀座",
     description:
-      "CHANEL, HERMÈS, LOUIS VUITTON等の正規中古ブランドバッグ。Entrupy AI鑑定・全額返金保証。東京・銀座の実店舗 & オンラインショップ。",
+      "T-Vintage GINZA（T-Family株式会社）。CHANEL, HERMÈS, LOUIS VUITTON等の正規中古ブランドバッグ。Entrupy AI鑑定・全額返金保証。東京・銀座の実店舗。",
     url: "https://t-family.tokyo",
     siteName: "T-Family Inc.",
     locale: "ja_JP",

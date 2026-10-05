@@ -34,10 +34,10 @@ export async function generateMetadata({
     // absolute bypasses layout's title.template so the full marketing title renders standalone
     title: {
       absolute:
-        "T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Brand Bags Tokyo",
+        "T-Vintage GINZA | T-Family株式会社 | 中古ブランドバッグ専門店 東京・銀座 | Pre-Owned Luxury Bags",
     },
     description:
-      "T-Family株式会社は東京・銀座の中古ブランドバッグ専門店。CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。ライブセラー・バイヤー・リセラー募集中。Wholesale buyers & resellers welcome. Pre-owned luxury brand bags in Ginza, Tokyo.",
+      "T-Vintage GINZA（T-Family株式会社）は東京・銀座の中古ブランドバッグ専門店。CHANEL・HERMÈS・LOUIS VUITTON・GUCCI・PRADA等の正規品のみ取扱い。Entrupy AI鑑定・全額返金保証付き。バイヤー・リセラー歓迎。Pre-owned luxury brand bags in Ginza, Tokyo.",
     alternates: {
       canonical: url,
       languages: {
