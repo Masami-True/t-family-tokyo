@@ -120,6 +120,10 @@ export const metadata = {
   },
 };
 
+export function generateStaticParams() {
+  return ["ja", "en", "zh", "ko", "es", "fr"].map((locale) => ({ locale }));
+}
+
 export default async function LocaleLayout({
   children,
   params,
