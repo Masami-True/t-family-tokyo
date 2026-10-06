@@ -149,6 +149,11 @@ export default async function LocaleLayout({
       <head>
         {/* Prevent Google Translate from auto-translating */}
         <meta name="google" content="notranslate" />
+        {/* Geo tags — Apple Maps, Bing, travel aggregators */}
+        <meta name="geo.region" content="JP-13" />
+        <meta name="geo.placename" content="Ginza, Chuo-ku, Tokyo, Japan" />
+        <meta name="geo.position" content="35.6715;139.7648" />
+        <meta name="ICBM" content="35.6715, 139.7648" />
         {/* rel=me: SNSプロフィール紐付け検証 */}
         <link rel="me" href="https://www.instagram.com/tfamily.inc.japan/" />
         <link rel="me" href="https://www.facebook.com/profile.php?id=61576088344723" />
@@ -220,14 +225,17 @@ export default async function LocaleLayout({
                 bestRating: "5",
               },
               amenityFeature: [
+                { "@type": "LocationFeatureSpecification", name: "Multilingual Staff (Japanese / English / Chinese / Korean / Spanish / French)", value: true },
                 { "@type": "LocationFeatureSpecification", name: "多言語対応（日・英・中・韓・西・仏）", value: true },
-                { "@type": "LocationFeatureSpecification", name: "クレジットカード利用可", value: true },
-                { "@type": "LocationFeatureSpecification", name: "PayPay利用可", value: true },
-                { "@type": "LocationFeatureSpecification", name: "Alipay利用可", value: true },
-                { "@type": "LocationFeatureSpecification", name: "Entrupy AI真贋鑑定済み", value: true },
-                { "@type": "LocationFeatureSpecification", name: "全額返金保証", value: true },
-                { "@type": "LocationFeatureSpecification", name: "海外発送対応", value: true },
-                { "@type": "LocationFeatureSpecification", name: "インバウンド対応", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Credit Card Accepted (VISA / Mastercard / AMEX / JCB)", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Alipay & WeChat Pay Accepted", value: true },
+                { "@type": "LocationFeatureSpecification", name: "PayPal & WISE Accepted", value: true },
+                { "@type": "LocationFeatureSpecification", name: "PayPay Accepted", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Entrupy AI Authentication — Every Item Verified", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Full Refund Guarantee if Inauthentic", value: true },
+                { "@type": "LocationFeatureSpecification", name: "International Shipping Available", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Tourist / Inbound Friendly", value: true },
+                { "@type": "LocationFeatureSpecification", name: "Wholesale & Buyer Orders Welcome", value: true },
               ],
               sameAs: [
                 "https://www.instagram.com/tfamily.inc.japan/",
@@ -268,7 +276,14 @@ export default async function LocaleLayout({
                 { "@type": "AdministrativeArea", name: "中央区", alternateName: "Chuo-ku" },
                 { "@type": "Country", name: "Japan" },
               ],
-              knowsLanguage: ["ja", "en", "zh", "ko", "es", "fr"],
+              availableLanguage: [
+                { "@type": "Language", name: "Japanese", alternateName: "日本語" },
+                { "@type": "Language", name: "English" },
+                { "@type": "Language", name: "Chinese", alternateName: "中文" },
+                { "@type": "Language", name: "Korean", alternateName: "한국어" },
+                { "@type": "Language", name: "Spanish", alternateName: "Español" },
+                { "@type": "Language", name: "French", alternateName: "Français" },
+              ],
             }),
           }}
         />
