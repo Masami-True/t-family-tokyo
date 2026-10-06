@@ -14,6 +14,8 @@ type Copy = {
   heroDatesSr: string;
   heroSpecialDay: string;
   langSwitchLabel: string;
+  jumpNavLabel: string;
+  jumpNav: { label: string; target: string; badge?: boolean }[];
 
   greetingLabel: string;
   greeting: ReactNode[];
@@ -77,6 +79,13 @@ export const COPY: Record<Lang, Copy> = {
     heroDatesSr: "2026年10月24日（土）・25日（日）",
     heroSpecialDay: "10/25（日）は特別営業日として営業いたします",
     langSwitchLabel: "言語",
+    jumpNavLabel: "このページの内容",
+    jumpNav: [
+      { label: "日程", target: "sec-opening" },
+      { label: "お花", target: "sec-flowers" },
+      { label: "口コミ", target: "sec-reviews", badge: true },
+      { label: "アクセス", target: "sec-store" },
+    ],
 
     greetingLabel: "ご挨拶",
     greeting: [
@@ -219,6 +228,13 @@ export const COPY: Record<Lang, Copy> = {
     heroDatesSr: "Saturday, October 24 and Sunday, October 25, 2026",
     heroSpecialDay: "Open Sun 10/25 as a special business day",
     langSwitchLabel: "Language",
+    jumpNavLabel: "On this page",
+    jumpNav: [
+      { label: "Dates", target: "sec-opening" },
+      { label: "Flowers", target: "sec-flowers" },
+      { label: "Reviews", target: "sec-reviews", badge: true },
+      { label: "Access", target: "sec-store" },
+    ],
 
     greetingLabel: "GREETING",
     greeting: [

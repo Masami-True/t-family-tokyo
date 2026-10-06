@@ -266,10 +266,15 @@ export default async function OpeningPage({
         .op-rise { animation: op-rise 1100ms cubic-bezier(0.22, 1, 0.36, 1) both; }
         .op-mask { display: block; overflow: hidden; padding-bottom: 0.04em; }
         .op-up { display: block; animation: op-up 1200ms cubic-bezier(0.22, 1, 0.36, 1) both; }
+        @keyframes op-cue { 0% { transform: translateY(-100%); } 60%, 100% { transform: translateY(260%); } }
+        .op-cue { animation: op-cue 1800ms cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+        @keyframes op-nudge { 0%, 100% { transform: none; } 50% { transform: translateY(-3px); } }
+        .op-nudge { animation: op-nudge 1600ms ease-in-out infinite; }
 
         @media (prefers-reduced-motion: reduce) {
           .op-curtain { display: none; }
-          .op-zoom, .op-rise, .op-up, .op-twinkle { animation: none; }
+          .op-zoom, .op-rise, .op-up, .op-twinkle, .op-cue, .op-nudge { animation: none; }
+          .op-cue { transform: none; }
         }
       `}</style>
 
@@ -307,7 +312,7 @@ export default async function OpeningPage({
       </div>
 
       {/* ① ヒーロー */}
-      <header className="relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-[#141414] text-white">
+      <header className="relative isolate flex min-h-[calc(100svh-3.5rem)] flex-col overflow-hidden bg-[#141414] text-white">
         <picture>
           <source media="(min-width: 768px)" srcSet="/images/opening/hero-wide.webp" />
           <img
@@ -325,7 +330,7 @@ export default async function OpeningPage({
         />
 
         <div
-          className={`mx-auto flex w-full max-w-[640px] flex-1 flex-col ${GUTTER} pt-[max(1.75rem,env(safe-area-inset-top))] pb-[max(2.5rem,env(safe-area-inset-bottom))]`}
+          className={`mx-auto flex w-full max-w-[640px] flex-1 flex-col ${GUTTER} pt-[max(1.75rem,env(safe-area-inset-top))] pb-16`}
         >
           {/* 言語切り替え */}
           <nav
@@ -417,7 +422,49 @@ export default async function OpeningPage({
             </div>
           </div>
         </div>
+        {/* スクロールの合図 */}
+        <div
+          aria-hidden="true"
+          className="op-rise pointer-events-none absolute bottom-1 left-1/2 flex -translate-x-1/2 flex-col items-center gap-1.5 font-[Cormorant_Garamond] text-[10px] tracking-[0.35em] text-white/70 [animation-delay:4800ms]"
+        >
+          <span className="-mr-[0.35em]">SCROLL</span>
+          <span className="relative block h-7 w-px overflow-hidden bg-white/25">
+            <span className="op-cue absolute inset-x-0 top-0 block h-1/3 bg-[#C9A94A]" />
+          </span>
+        </div>
       </header>
+
+      {/* 目次バー：最初の画面の下端に見せ、スクロール後は上部に貼り付く */}
+      <nav
+        aria-label={t.jumpNavLabel}
+        className="sticky top-0 z-40 border-y border-[#C9A94A]/35 bg-[#141414]/95 backdrop-blur-sm"
+      >
+        <ol className={`mx-auto grid h-14 max-w-[640px] grid-cols-4 ${GUTTER}`}>
+          {t.jumpNav.map((item, i) => (
+            <li key={item.target}>
+              <a
+                href={`#${item.target}`}
+                className="flex h-full flex-col items-center justify-center gap-0.5 text-white/90 transition-colors hover:text-[#C9A94A]"
+              >
+                <span className="font-[Cormorant_Garamond] text-[11px] leading-none tracking-[0.2em] text-[#C9A94A] [font-variant-numeric:lining-nums]">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <span className="relative text-[13px] leading-none tracking-[0.06em]">
+                  {item.label}
+                  {item.badge && (
+                    <span
+                      aria-hidden="true"
+                      className="op-nudge absolute -top-2 -right-3 flex h-3.5 w-3.5 items-center justify-center rounded-full bg-[#C9A94A] text-[9px] font-bold text-[#141414]"
+                    >
+                      !
+                    </span>
+                  )}
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </nav>
 
       <main>
         {/* ② ご挨拶 */}
@@ -439,7 +486,7 @@ export default async function OpeningPage({
         </section>
 
         {/* ③ OPENING DAYS */}
-        <section aria-labelledby="opening-days" className={`bg-[#141414] text-white ${GUTTER} py-20`}>
+        <section id="sec-opening" aria-labelledby="opening-days" className={`scroll-mt-14 bg-[#141414] text-white ${GUTTER} py-20`}>
           <div className="mx-auto max-w-[31em]">
             <h2
               id="opening-days"
@@ -479,8 +526,9 @@ export default async function OpeningPage({
 
         {/* ④ お祝いのお花について */}
         <section
+          id="sec-flowers"
           aria-labelledby="flowers"
-          className={`relative isolate overflow-hidden bg-[#F5F0E8] ${GUTTER} py-24`}
+          className={`scroll-mt-14 relative isolate overflow-hidden bg-[#F5F0E8] ${GUTTER} py-24`}
         >
           {/* お祝いの演出: 光だまり＋胡蝶蘭2輪（写真: Jan Kopřiva / Unsplash を金〜ローズの透過素材に加工）＋きらめき */}
           <div
@@ -536,7 +584,7 @@ export default async function OpeningPage({
         </section>
 
         {/* ⑤ 口コミのお願い */}
-        <section aria-labelledby="reviews" className={`bg-[#141414] text-white ${GUTTER} py-20`}>
+        <section id="sec-reviews" aria-labelledby="reviews" className={`scroll-mt-14 bg-[#141414] text-white ${GUTTER} py-20`}>
           <div className="mx-auto max-w-[31em]">
             <p className="font-[Cormorant_Garamond] text-sm font-medium tracking-[0.5em] text-[#C9A94A]">
               REVIEWS
@@ -589,7 +637,7 @@ export default async function OpeningPage({
         </section>
 
         {/* ⑥ 店舗のご案内 */}
-        <section aria-labelledby="store" className={`${GUTTER} py-20`}>
+        <section id="sec-store" aria-labelledby="store" className={`scroll-mt-14 ${GUTTER} py-20`}>
           <div className="mx-auto max-w-[31em]">
             <h2
               id="store"
