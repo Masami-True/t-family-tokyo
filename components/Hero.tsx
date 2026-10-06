@@ -97,19 +97,19 @@ export default function Hero() {
       <div className="absolute inset-0 z-10 flex items-end sm:items-center pb-28 sm:pb-0">
         <div className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-12">
           <div className="max-w-[320px] sm:max-w-md lg:max-w-lg">
-            {/* Eyebrow */}
-            <p className="mb-3 sm:mb-6 text-[9px] sm:text-[10px] tracking-[0.35em] text-gold/80 uppercase border border-gold/25 inline-block px-3 sm:px-5 py-1.5 sm:py-2">
+            {/* H1 — "T-Vintage GINZA" を主キーワードとして配置 */}
+            <h1 className="mb-3 sm:mb-6 text-[9px] sm:text-[10px] tracking-[0.35em] text-gold/80 uppercase border border-gold/25 inline-block px-3 sm:px-5 py-1.5 sm:py-2" translate="no">
               {t("eyebrow")}
-            </p>
+            </h1>
 
-            {/* Heading */}
-            <h1 className="font-heading text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-white">
+            {/* Tagline */}
+            <p className="font-heading text-3xl sm:text-5xl lg:text-6xl xl:text-7xl leading-[1.1] text-white">
               <span className="block">{t("h1_line1")}</span>
               <span className="block mt-1 sm:mt-2">
                 <span className="text-gold">{t("h1_accent")}</span>
                 {t("h1_line2")}
               </span>
-            </h1>
+            </p>
 
             {/* Subcopy - white text */}
             <p className="mt-3 sm:mt-6 text-xs sm:text-base leading-relaxed text-white tracking-wide max-w-[280px] sm:max-w-sm">
