@@ -102,7 +102,6 @@ export const metadata = {
     images: ["/opengraph-image"],
   },
   alternates: {
-    canonical: "https://t-family.tokyo",
     languages: {
       "ja": "https://t-family.tokyo/ja",
       "en": "https://t-family.tokyo/en",
@@ -110,6 +109,7 @@ export const metadata = {
       "ko": "https://t-family.tokyo/ko",
       "es": "https://t-family.tokyo/es",
       "fr": "https://t-family.tokyo/fr",
+      "x-default": "https://t-family.tokyo/en",
     },
   },
   robots: {
