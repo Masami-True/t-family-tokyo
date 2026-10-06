@@ -25,5 +25,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
+  // オープン案内（日本語・英語のみ）
+  for (const locale of ["ja", "en"]) {
+    entries.push({
+      url: `${baseUrl}/${locale}/opening`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+      alternates: {
+        languages: {
+          ja: `${baseUrl}/ja/opening`,
+          en: `${baseUrl}/en/opening`,
+        },
+      },
+    });
+  }
+
   return entries;
 }

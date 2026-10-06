@@ -150,7 +150,7 @@ export default async function LocaleLayout({
         {/* Prevent Google Translate from auto-translating */}
         <meta name="google" content="notranslate" />
         {/* rel=me: SNSプロフィール紐付け検証 */}
-        <link rel="me" href="https://www.instagram.com/tfamily.inc/" />
+        <link rel="me" href="https://www.instagram.com/tfamily.inc.japan/" />
         <link rel="me" href="https://www.facebook.com/profile.php?id=61576088344723" />
         <link rel="me" href="https://x.com/NextStory7" />
         <link rel="me" href="https://www.youtube.com/@T-Family-727" />
@@ -230,7 +230,7 @@ export default async function LocaleLayout({
                 { "@type": "LocationFeatureSpecification", name: "インバウンド対応", value: true },
               ],
               sameAs: [
-                "https://www.instagram.com/tfamily.inc/",
+                "https://www.instagram.com/tfamily.inc.japan/",
                 "https://www.facebook.com/profile.php?id=61576088344723",
                 "https://www.youtube.com/@T-Family-727",
                 "https://x.com/NextStory7",
@@ -295,7 +295,7 @@ export default async function LocaleLayout({
                   foundingDate: "2020-11-27",
                   founder: { "@type": "Person", name: "富永 朝樹", alternateName: "Asaki Tominaga" },
                   sameAs: [
-                    "https://www.instagram.com/tfamily.inc/",
+                    "https://www.instagram.com/tfamily.inc.japan/",
                     "https://www.facebook.com/profile.php?id=61576088344723",
                     "https://www.youtube.com/@T-Family-727",
                     "https://x.com/NextStory7",

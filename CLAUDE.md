@@ -150,7 +150,7 @@ T-Family株式会社（後株）のコーポレートサイト
 
 ## External Links
 - Shop: https://t-secondhands.jp/
-- Instagram: https://www.instagram.com/tfamily.inc/
+- Instagram: https://www.instagram.com/tfamily.inc.japan/
 - Facebook: https://www.facebook.com/profile.php?id=61576088344723
 - WhatsApp: https://wa.me/message/YLKX2G23XTTKM1
 - YouTube: https://www.youtube.com/@T-Family-727
