@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 
 export default function CeoGreeting() {
   const t = useTranslations("greeting");
@@ -52,6 +53,16 @@ export default function CeoGreeting() {
         <div className="text-subtext text-sm leading-[2] whitespace-pre-line">
           {t("message")}
         </div>
+
+        <div className="mt-6">
+          <Link
+            href="/asaki-tominaga"
+            className="inline-flex items-center gap-2 text-sm text-[#8b6914] border border-[#c9a84c] px-5 py-2.5 rounded hover:bg-[#c9a84c] hover:text-white transition-colors duration-200"
+          >
+            {t("profileLink")}
+            <span aria-hidden="true">→</span>
+          </Link>
+        </div>
       </div>
 
       {/* Desktop layout - photo left with gradient fade, text right */}
@@ -76,9 +87,18 @@ export default function CeoGreeting() {
           <div className="text-subtext text-sm leading-[2] whitespace-pre-line mb-8">
             {t("message")}
           </div>
-          <div className="text-right">
-            <p className="text-sm text-subtext whitespace-pre-line">{t("title")}</p>
-            <p className="font-heading text-xl text-text mt-1">{t("name")}</p>
+          <div className="flex items-end justify-between mt-8">
+            <Link
+              href="/asaki-tominaga"
+              className="inline-flex items-center gap-2 text-sm text-[#8b6914] border border-[#c9a84c] px-5 py-2.5 rounded hover:bg-[#c9a84c] hover:text-white transition-colors duration-200"
+            >
+              {t("profileLink")}
+              <span aria-hidden="true">→</span>
+            </Link>
+            <div className="text-right">
+              <p className="text-sm text-subtext whitespace-pre-line">{t("title")}</p>
+              <p className="font-heading text-xl text-text mt-1">{t("name")}</p>
+            </div>
           </div>
         </div>
       </div>
