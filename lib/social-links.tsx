@@ -4,20 +4,18 @@ export const socialLinks = [
     name: "Instagram",
     href: "https://www.instagram.com/tfamily.inc.japan/",
     icon: (
-      <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none">
+      <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
         <defs>
-          <radialGradient id="ig-bg" cx="30%" cy="107%" r="150%">
-            <stop offset="0%" stopColor="#fdf497" />
-            <stop offset="5%" stopColor="#fdf497" />
-            <stop offset="45%" stopColor="#fd5949" />
-            <stop offset="60%" stopColor="#d6249f" />
-            <stop offset="90%" stopColor="#285AEB" />
-          </radialGradient>
+          <linearGradient id="ig-g" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#FFDC80" />
+            <stop offset="30%" stopColor="#FD5949" />
+            <stop offset="65%" stopColor="#D6249F" />
+            <stop offset="100%" stopColor="#285AEB" />
+          </linearGradient>
         </defs>
-        <rect x="0" y="0" width="24" height="24" rx="5.5" fill="url(#ig-bg)" />
-        <rect x="2.5" y="2.5" width="19" height="19" rx="4" fill="none" stroke="white" strokeWidth="1.8" />
-        <circle cx="12" cy="12" r="4.7" fill="none" stroke="white" strokeWidth="1.8" />
-        <circle cx="17.3" cy="6.7" r="1.2" fill="white" />
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-g)" strokeWidth="2" />
+        <circle cx="12" cy="12" r="5" stroke="url(#ig-g)" strokeWidth="2" />
+        <circle cx="17.5" cy="6.5" r="1.5" fill="url(#ig-g)" />
       </svg>
     ),
   },
@@ -26,7 +24,7 @@ export const socialLinks = [
     href: "https://www.facebook.com/profile.php?id=61576088344723",
     icon: (
       <svg viewBox="0 0 24 24" className="w-5 h-5">
-        <path fill="#1877F2" d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+        <path fill="#1877F2" d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0014.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z" />
       </svg>
     ),
   },
@@ -55,8 +53,7 @@ export const socialLinks = [
     href: "https://x.com/NextStory7",
     icon: (
       <svg viewBox="0 0 24 24" className="w-5 h-5">
-        <rect width="24" height="24" rx="5" fill="#000000" />
-        <path fill="white" d="M17.244 4.25h2.808l-6.127 7.003 7.207 9.497H15.67l-4.42-5.779-5.058 5.779H3.38l6.557-7.497L2.952 4.25h5.768l3.995 5.285zm-.986 14.85h1.556L7.832 5.844H6.163z" />
+        <path fill="white" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
       </svg>
     ),
   },
@@ -64,8 +61,12 @@ export const socialLinks = [
     name: "Whatnot",
     href: "https://www.whatnot.com/ja-JP/user/tfamilyjapan",
     icon: (
-      // eslint-disable-next-line @next/next/no-img-element
-      <img src="/images/whatnot-logo.png" alt="Whatnot" width={20} height={20} className="w-5 h-5 rounded object-contain" />
+      <svg viewBox="0 0 24 24" className="w-5 h-5">
+        <path
+          fill="#FFD600"
+          d="M4.5 2C2 2 0.5 4.5 1.5 7L6.5 19.5C7 21 8.5 22 10 21.5L12 16L14 21.5C15.5 22 17 21 17.5 19.5L22.5 7C23.5 4.5 22 2 19.5 2C17 2 14.5 5 12 8.5C9.5 5 7 2 4.5 2Z"
+        />
+      </svg>
     ),
   },
   {
