@@ -148,6 +148,28 @@ export default function Authenticity() {
         </div>
       </div>
 
+      {/* Authentication-only CTA */}
+      <div className="max-w-4xl mx-auto mt-8 bg-[#1a1a1a] rounded p-8 md:p-10 flex flex-col md:flex-row items-center justify-between gap-6">
+        <div className="text-center md:text-left">
+          <p className="text-xs tracking-[0.2em] text-gold mb-2">AUTHENTICATION SALON</p>
+          <h3 className="font-heading text-xl md:text-2xl text-offwhite mb-3">
+            {t("auth_only_title")}
+          </h3>
+          <p className="text-sm text-offwhite/70 leading-relaxed">
+            {t("auth_only_desc")}
+          </p>
+        </div>
+        <a
+          href="https://authentic-check.jp/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="shrink-0 inline-flex items-center gap-2 border border-gold text-gold px-7 py-3 rounded text-sm tracking-wider hover:bg-gold hover:text-[#1a1a1a] transition-colors duration-200 whitespace-nowrap"
+        >
+          {t("auth_only_btn")}
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+
       {/* License info */}
       <div className="max-w-3xl mx-auto mt-8 text-center">
         <p className="text-xs text-subtext tracking-wider">
