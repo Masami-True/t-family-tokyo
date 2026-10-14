@@ -87,7 +87,7 @@ export const socialLinks = [
         width={20}
         height={20}
         className="w-5 h-5 object-contain"
-        style={{ mixBlendMode: "lighten" }}
+        style={{ mixBlendMode: "lighten", minWidth: "20px" }}
       />
     ),
   },
@@ -108,7 +108,8 @@ export const socialLinks = [
     href: "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
     icon: (
       // eslint-disable-next-line @next/next/no-img-element
-      <img src="/images/tripadvisor-logo.png" alt="TripAdvisor" width={20} height={20} className="w-5 h-5 object-contain" />
+      // eslint-disable-next-line @next/next/no-img-element
+      <img src="/images/tripadvisor-logo.png" alt="TripAdvisor" width={20} height={20} className="w-5 h-5 object-contain" style={{ minWidth: "20px" }} />
     ),
   },
 ];
