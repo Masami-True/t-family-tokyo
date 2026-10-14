@@ -118,4 +118,5 @@ export const navItems = [
   { label: "Shop", href: "https://t-secondhands.jp/", external: true },
   { label: "Live Commerce", href: "/#live-seller" },
   { label: "Store", href: "/#store" },
+  { label: "真贋鑑定", href: "https://authentic-check.jp/", external: true },
 ];
