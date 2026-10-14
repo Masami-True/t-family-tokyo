@@ -1,21 +1,40 @@
 // SNS・口コミサイトへのリンク（サイト共通フッターと /ja/opening で共用）
 export const socialLinks = [
   {
-    name: "Instagram",
+    name: "Instagram (T-Family)",
     href: "https://www.instagram.com/tfamily.inc.japan/",
     icon: (
       <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
         <defs>
-          <linearGradient id="ig-g" x1="0%" y1="100%" x2="100%" y2="0%">
+          <linearGradient id="ig-g1" x1="0%" y1="100%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#FFDC80" />
             <stop offset="30%" stopColor="#FD5949" />
             <stop offset="65%" stopColor="#D6249F" />
             <stop offset="100%" stopColor="#285AEB" />
           </linearGradient>
         </defs>
-        <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-g)" strokeWidth="2" />
-        <circle cx="12" cy="12" r="5" stroke="url(#ig-g)" strokeWidth="2" />
-        <circle cx="17.5" cy="6.5" r="1.5" fill="url(#ig-g)" />
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-g1)" strokeWidth="2" />
+        <circle cx="12" cy="12" r="5" stroke="url(#ig-g1)" strokeWidth="2" />
+        <circle cx="17.5" cy="6.5" r="1.5" fill="url(#ig-g1)" />
+      </svg>
+    ),
+  },
+  {
+    name: "Instagram (T-Vintage)",
+    href: "https://www.instagram.com/t_vintage_ginza/",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
+        <defs>
+          <linearGradient id="ig-g2" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#FFDC80" />
+            <stop offset="30%" stopColor="#FD5949" />
+            <stop offset="65%" stopColor="#D6249F" />
+            <stop offset="100%" stopColor="#285AEB" />
+          </linearGradient>
+        </defs>
+        <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#ig-g2)" strokeWidth="2" />
+        <circle cx="12" cy="12" r="5" stroke="url(#ig-g2)" strokeWidth="2" />
+        <circle cx="17.5" cy="6.5" r="1.5" fill="url(#ig-g2)" />
       </svg>
     ),
   },
@@ -61,12 +80,15 @@ export const socialLinks = [
     name: "Whatnot",
     href: "https://www.whatnot.com/ja-JP/user/tfamilyjapan",
     icon: (
-      <svg viewBox="0 0 24 24" className="w-5 h-5">
-        <path
-          fill="#FFD600"
-          d="M4.5 2C2 2 0.5 4.5 1.5 7L6.5 19.5C7 21 8.5 22 10 21.5L12 16L14 21.5C15.5 22 17 21 17.5 19.5L22.5 7C23.5 4.5 22 2 19.5 2C17 2 14.5 5 12 8.5C9.5 5 7 2 4.5 2Z"
-        />
-      </svg>
+      // eslint-disable-next-line @next/next/no-img-element
+      <img
+        src="/images/whatnot-logo.png"
+        alt="Whatnot"
+        width={20}
+        height={20}
+        className="w-5 h-5 object-contain"
+        style={{ mixBlendMode: "lighten" }}
+      />
     ),
   },
   {
