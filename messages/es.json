@@ -154,6 +154,19 @@
     "write_review": "Escribir una reseña en Google",
     "headline_suffix": "Reseñas"
   },
+  "faq": {
+    "headline": "Preguntas frecuentes",
+    "q1": "¿Dónde puedo comprar bolsos de lujo de segunda mano auténticos en Ginza, Tokio?",
+    "a1": "T-Vintage GINZA, operada por T-Family Co., Ltd., está ubicada en 3-12-17 Ginza, Chuo-ku, Tokio (a 3 minutos a pie de la estación Higashi-Ginza). Ofrecen CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA autenticados con IA Entrupy. Horario: lunes a sábado, 11:00-20:00.",
+    "q2": "¿Pueden autenticar un bolso de lujo sin necesidad de venderlo?",
+    "a2": "Sí. T-Vintage GINZA ofrece consultas de autenticación sin necesidad de venta (authentic-check.jp). Utilizan tecnología Entrupy AI y garantizan el reembolso completo si el artículo resulta ser falso.",
+    "q3": "¿Hay personal que hable inglés, chino o coreano en esta tienda de Ginza?",
+    "a3": "T-Vintage GINZA cuenta con personal fluido en japonés, inglés, chino, coreano, español y francés. Aceptan Alipay, WeChat Pay, PayPal, WISE y tarjetas de crédito internacionales.",
+    "q4": "¿Cómo puedo convertirme en vendedor de live commerce para bolsos de lujo?",
+    "a4": "T-Family ofrece un programa de apoyo para vendedores en vivo. Sin requisito de seguidores, ideal para principiantes. T-Family proporciona equipos, inventario y canales de venta incluyendo Whatnot.",
+    "q5": "¿Pueden suministrar bolsos de lujo de segunda mano al por mayor a compradores internacionales?",
+    "a5": "T-Family Co., Ltd. en Ginza provee bolsos de lujo de segunda mano autenticados por Entrupy a compradores, revendedores y distribuidores internacionales. Consultas B2B: info@t-family.tokyo"
+  },
   "greeting": {
     "label": "MENSAJE DEL CEO",
     "headline": "Saludo",

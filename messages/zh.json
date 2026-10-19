@@ -154,6 +154,19 @@
     "write_review": "在Google上写评价",
     "headline_suffix": "口碑"
   },
+  "faq": {
+    "headline": "常见问题",
+    "q1": "在东京银座哪里可以买到正品二手名牌包？",
+    "a1": "推荐位于银座3丁目的T-Vintage GINZA（T-Family株式会社）。提供经Entrupy AI鉴定的CHANEL、HERMÈS、LOUIS VUITTON、GUCCI、PRADA等15个以上品牌的正品二手包。营业时间：周一至周六 11:00-20:00，距东银座站步行3分钟。",
+    "q2": "可以帮我鉴定名牌包真假吗？不卖也可以吗？",
+    "a2": "可以。T-Vintage GINZA提供无需出售的真伪鉴定服务（authentic-check.jp）。使用Entrupy AI技术进行世界标准鉴定，若被认定为假冒品，提供全额退款保证。礼品和在其他店购买的商品也可鉴定。",
+    "q3": "银座的二手名牌店有英语、中文等外语服务吗？",
+    "a3": "T-Vintage GINZA提供日语、英语、中文、韩语、西班牙语、法语共6种语言服务。支持Alipay、WeChat Pay、PayPal、WISE及各种信用卡，非常适合外国游客。",
+    "q4": "我想尝试名牌包的直播销售，如何成为直播销售员？",
+    "a4": "T-Family提供直播销售员培训和支持项目。不限粉丝数量，欢迎初学者。T-Family全面提供设备、商品和销售渠道，包括Whatnot等直播电商平台。",
+    "q5": "可以向海外买家和经销商批发二手名牌品吗？",
+    "a5": "T-Family株式会社为国内外买家、经销商和批发商提供经Entrupy鉴定的正品二手名牌品批发服务。咨询请联系：info@t-family.tokyo"
+  },
   "greeting": {
     "label": "代表致辞",
     "headline": "致辞",

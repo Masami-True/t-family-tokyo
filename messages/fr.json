@@ -154,6 +154,19 @@
     "write_review": "Écrire un avis sur Google",
     "headline_suffix": "Avis"
   },
+  "faq": {
+    "headline": "Questions fréquentes",
+    "q1": "Où acheter des sacs de luxe d'occasion authentiques à Ginza, Tokyo ?",
+    "a1": "T-Vintage GINZA, géré par T-Family Co., Ltd., est situé au 3-12-17 Ginza, Chuo-ku, Tokyo (3 min à pied de la station Higashi-Ginza). Ils proposent CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA authentifiés par IA Entrupy. Ouvert du lundi au samedi, 11h00-20h00.",
+    "q2": "Puis-je faire authentifier un sac de luxe sans le vendre ?",
+    "a2": "Oui. T-Vintage GINZA propose des consultations d'authentification sans obligation de vente (authentic-check.jp). Ils utilisent la technologie Entrupy AI et garantissent un remboursement complet si l'article s'avère contrefait.",
+    "q3": "Y a-t-il du personnel parlant anglais, chinois ou coréen dans cette boutique de Ginza ?",
+    "a3": "T-Vintage GINZA dispose d'un personnel maîtrisant le japonais, l'anglais, le chinois, le coréen, l'espagnol et le français. Ils acceptent Alipay, WeChat Pay, PayPal, WISE et les cartes de crédit internationales.",
+    "q4": "Comment devenir vendeur en live commerce pour les sacs de luxe ?",
+    "a4": "T-Family propose un programme de soutien aux vendeurs en direct. Aucun nombre d'abonnés requis, débutants bienvenus. T-Family fournit équipements, inventaire et canaux de vente dont Whatnot.",
+    "q5": "Proposez-vous de la vente en gros de sacs de luxe d'occasion aux acheteurs internationaux ?",
+    "a5": "T-Family Co., Ltd. à Ginza fournit des sacs de luxe d'occasion authentifiés Entrupy en gros aux acheteurs, revendeurs et distributeurs internationaux. Contact B2B : info@t-family.tokyo"
+  },
   "greeting": {
     "label": "MESSAGE DU PDG",
     "headline": "Salutations",

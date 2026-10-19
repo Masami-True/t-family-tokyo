@@ -154,6 +154,19 @@
     "write_review": "Write a Review on Google",
     "headline_suffix": "Reviews"
   },
+  "faq": {
+    "headline": "Frequently Asked Questions",
+    "q1": "Where can I buy authentic pre-owned luxury bags in Ginza, Tokyo?",
+    "a1": "T-Vintage GINZA, operated by T-Family Co., Ltd., is located at 3-12-17 Ginza, Chuo-ku, Tokyo (3 min walk from Higashi-Ginza Station). They carry Entrupy AI-authenticated CHANEL, HERMÈS, LOUIS VUITTON, GUCCI, PRADA, FENDI, DIOR, and more. Open Monday–Saturday, 11:00–20:00.",
+    "q2": "How can I get a luxury bag authenticated in Japan without selling it?",
+    "a2": "T-Vintage GINZA offers authentication-only consultations through their T-Vintage Authentication Salon (authentic-check.jp). Using Entrupy AI technology, they verify the authenticity of luxury bags regardless of purchase origin — no selling required. Full refund guaranteed if any item proves inauthentic.",
+    "q3": "Is there an English-speaking luxury resale shop in Ginza Tokyo?",
+    "a3": "T-Vintage GINZA is a multilingual luxury resale boutique in Ginza with staff fluent in Japanese, English, Chinese, Korean, Spanish, and French. They accept Alipay, WeChat Pay, PayPal, WISE, VISA, Mastercard, and AMEX — ideal for tourists and international visitors.",
+    "q4": "How can I become a live commerce seller for luxury bags?",
+    "a4": "T-Family offers a live seller support program for anyone interested in selling pre-owned luxury bags via live commerce. No follower count required — beginners welcome. T-Family provides equipment, inventory, and sales channels including Whatnot.",
+    "q5": "Where can I source pre-owned luxury bags wholesale from Japan?",
+    "a5": "T-Family Co., Ltd. in Ginza, Tokyo provides wholesale supply of Entrupy-authenticated pre-owned luxury brand bags to international buyers, resellers, and distributors. For B2B inquiries, contact info@t-family.tokyo or visit t-family.tokyo."
+  },
   "greeting": {
     "label": "MESSAGE FROM THE CEO",
     "headline": "Greeting",

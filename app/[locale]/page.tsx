@@ -13,6 +13,7 @@ import ContactForm from "@/components/ContactForm";
 import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
+import FaqSection from "@/components/FaqSection";
 
 const OG_LOCALE_MAP: Record<string, string> = {
   ja: "ja_JP",
@@ -86,6 +87,7 @@ export default function HomePage() {
         <GoogleReviews />
         <LiveCommerce />
         <B2BSection />
+        <FaqSection />
         <CeoGreeting />
         <ContactForm />
         <StoreInfo />
