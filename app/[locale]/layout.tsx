@@ -250,6 +250,7 @@ export default async function LocaleLayout({
                 "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
                 "https://g.page/r/CT5WXUVxa3XmEAE",
                 "https://authentic-check.jp/",
+                "https://www.xiaohongshu.com/user/profile/64b789b4000000002a036b02",
               ],
               hasOfferCatalog: {
                 "@type": "OfferCatalog",
@@ -324,6 +325,7 @@ export default async function LocaleLayout({
                     "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html",
                     "https://g.page/r/CT5WXUVxa3XmEAE",
                     "https://authentic-check.jp/",
+                    "https://www.xiaohongshu.com/user/profile/64b789b4000000002a036b02",
                   ],
                   contactPoint: {
                     "@type": "ContactPoint",

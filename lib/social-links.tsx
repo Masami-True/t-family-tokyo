@@ -112,6 +112,22 @@ export const socialLinks = [
       <img src="/images/tripadvisor-logo.png" alt="TripAdvisor" width={20} height={20} className="w-5 h-5 object-contain" style={{ minWidth: "20px" }} />
     ),
   },
+  {
+    name: "Xiaohongshu",
+    href: "https://www.xiaohongshu.com/user/profile/64b789b4000000002a036b02",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
+        <rect x="1" y="1" width="22" height="22" rx="6" fill="#FF2442" />
+        <path
+          stroke="white"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M7 5v14M7 5h6c2.5 0 4 1.7 4 4s-1.5 4-4 4H7M13 13l4 6"
+        />
+      </svg>
+    ),
+  },
 ];
 
 export const navItems = [
