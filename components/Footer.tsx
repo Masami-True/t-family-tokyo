@@ -11,8 +11,8 @@ export default function Footer() {
   return (
     <footer className="bg-dark py-8 px-6">
       <div className="max-w-5xl mx-auto text-center">
-        {/* SNS Icons */}
-        <div className="flex justify-center gap-6 mb-8">
+        {/* SNS Icons — mobile: 5 per row (2 rows for 10 icons), desktop: single row */}
+        <div className="flex flex-wrap justify-center gap-x-4 gap-y-4 mb-8 max-w-[195px] mx-auto sm:max-w-none sm:gap-x-5">
           {socialLinks.map((social) => (
             <a
               key={social.name}
