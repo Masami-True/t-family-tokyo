@@ -152,7 +152,9 @@
     "cta": "Google Mapsで口コミを見る →",
     "review_request": "Googleレビューお待ちしております。皆様のご感想をぜひお聞かせください。",
     "write_review": "Googleでレビューしてください",
-    "headline_suffix": "口コミ"
+    "headline_suffix": "口コミ",
+    "ta_headline_suffix": "口コミ",
+    "ta_all_reviews": "すべての口コミを見る →"
   },
   "faq": {
     "headline": "よくあるご質問",

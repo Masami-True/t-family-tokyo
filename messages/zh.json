@@ -152,7 +152,9 @@
     "cta": "在Google Maps查看评价 →",
     "review_request": "期待您的Google评价。请分享您的购物体验。",
     "write_review": "在Google上写评价",
-    "headline_suffix": "口碑"
+    "headline_suffix": "口碑",
+    "ta_headline_suffix": "评价",
+    "ta_all_reviews": "查看全部评价 →"
   },
   "faq": {
     "headline": "常见问题",

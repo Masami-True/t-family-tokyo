@@ -152,7 +152,9 @@
     "cta": "Ver reseñas en Google Maps →",
     "review_request": "Esperamos sus reseñas en Google. Comparta su experiencia con nosotros.",
     "write_review": "Escribir una reseña en Google",
-    "headline_suffix": "Reseñas"
+    "headline_suffix": "Reseñas",
+    "ta_headline_suffix": "Opiniones",
+    "ta_all_reviews": "Ver todas las opiniones →"
   },
   "faq": {
     "headline": "Preguntas frecuentes",

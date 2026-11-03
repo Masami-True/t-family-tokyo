@@ -1,9 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState, useCallback } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
-const reviews = [
+// Static reviews — fallback when Google Places API is not configured
+// Kept sorted newest first; add new reviews at the TOP of this array
+const staticReviews = [
   {
     name: "常チーノ",
     rating: 5,
@@ -102,6 +105,19 @@ const reviews = [
   },
 ];
 
+type Review = (typeof staticReviews)[0] & { photoUri?: string };
+
+const AVATAR_COLORS = [
+  "bg-green-500", "bg-blue-500", "bg-purple-500", "bg-pink-500",
+  "bg-orange-500", "bg-teal-500", "bg-indigo-500", "bg-rose-500",
+  "bg-emerald-500", "bg-cyan-500", "bg-yellow-600", "bg-green-600",
+];
+
+function nameToColor(name: string): string {
+  const code = name.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  return AVATAR_COLORS[code % AVATAR_COLORS.length];
+}
+
 function Stars({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5 text-[#FBBC05] text-sm mb-2">
@@ -112,30 +128,107 @@ function Stars({ count }: { count: number }) {
   );
 }
 
+function ReviewCard({ review }: { review: Review }) {
+  return (
+    <div className="w-[260px] sm:w-[280px] bg-white rounded-lg border border-border p-5 shrink-0">
+      <div className="flex items-center gap-3 mb-3">
+        {review.photoUri ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={review.photoUri}
+            alt={review.name}
+            width={36}
+            height={36}
+            className="w-9 h-9 rounded-full object-cover shrink-0"
+            referrerPolicy="no-referrer"
+          />
+        ) : (
+          <div
+            className={`w-9 h-9 rounded-full ${review.color} flex items-center justify-center text-white text-sm font-medium shrink-0`}
+          >
+            {review.initial}
+          </div>
+        )}
+        <div className="min-w-0">
+          <p className="text-sm font-medium text-text leading-tight truncate">
+            {review.name}
+          </p>
+          <p className="text-xs text-subtext">{review.date}</p>
+        </div>
+      </div>
+      <Stars count={review.rating} />
+      <p className="text-sm text-text leading-relaxed line-clamp-4">
+        {review.text}
+      </p>
+    </div>
+  );
+}
+
 export default function GoogleReviews() {
   const t = useTranslations("reviews");
   const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const animRef = useRef<number>(0);
+  const [displayReviews, setDisplayReviews] = useState<Review[]>(staticReviews);
 
-  // Auto scroll - continuous smooth scroll
+  // Fetch newest reviews from Google Places API
+  useEffect(() => {
+    fetch("/api/google-reviews")
+      .then((r) => r.json())
+      .then((data) => {
+        if (!data.reviews || data.reviews.length === 0) return;
+
+        const apiReviews: Review[] = data.reviews.map(
+          (r: {
+            authorAttribution: { displayName: string; photoUri?: string };
+            rating: number;
+            relativePublishTimeDescription: string;
+            text?: { text: string };
+            originalText?: { text: string };
+          }) => {
+            const name = r.authorAttribution.displayName;
+            return {
+              name,
+              rating: r.rating,
+              date: r.relativePublishTimeDescription,
+              text: r.text?.text ?? r.originalText?.text ?? "",
+              initial: name.charAt(0).toUpperCase(),
+              color: nameToColor(name),
+              photoUri: r.authorAttribution.photoUri,
+            };
+          }
+        );
+
+        // Prepend API reviews (newest), remove duplicates from static
+        const apiNames = new Set(apiReviews.map((r) => r.name));
+        const filteredStatic = staticReviews.filter(
+          (r) => !apiNames.has(r.name)
+        );
+        setDisplayReviews([...apiReviews, ...filteredStatic]);
+
+        // Reset carousel to show newest from the start
+        if (scrollRef.current) scrollRef.current.scrollLeft = 0;
+      })
+      .catch(() => {}); // silently use static fallback
+  }, []);
+
+  // Continuous auto-scroll
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
-    let animId: number;
     let scrollPos = 0;
 
     const step = () => {
       scrollPos += 0.5;
-      if (scrollPos >= el.scrollWidth / 2) {
-        scrollPos = 0;
-      }
+      if (scrollPos >= el.scrollWidth / 2) scrollPos = 0;
       el.scrollLeft = scrollPos;
-      animId = requestAnimationFrame(step);
+      animRef.current = requestAnimationFrame(step);
     };
-    animId = requestAnimationFrame(step);
-    return () => cancelAnimationFrame(animId);
-  }, []);
+    animRef.current = requestAnimationFrame(step);
+    return () => cancelAnimationFrame(animRef.current);
+  }, [displayReviews]); // restart when reviews update
 
+  // Fade-in on scroll
   useEffect(() => {
     const el = sectionRef.current;
     if (!el) return;
@@ -177,28 +270,11 @@ export default function GoogleReviews() {
           </a>
         </div>
 
-        {/* Scrolling review cards - duplicated for seamless loop */}
+        {/* Scrolling review cards */}
         <div className="overflow-hidden" ref={scrollRef}>
           <div className="flex gap-4 w-max">
-            {[...reviews, ...reviews].map((review, i) => (
-              <div
-                key={i}
-                className="w-[260px] sm:w-[280px] bg-white rounded-lg border border-border p-5 shrink-0"
-              >
-                <div className="flex items-center gap-3 mb-3">
-                  <div className={`w-9 h-9 rounded-full ${review.color} flex items-center justify-center text-white text-sm font-medium shrink-0`}>
-                    {review.initial}
-                  </div>
-                  <div className="min-w-0">
-                    <p className="text-sm font-medium text-text leading-tight truncate">{review.name}</p>
-                    <p className="text-xs text-subtext">{review.date}</p>
-                  </div>
-                </div>
-                <Stars count={review.rating} />
-                <p className="text-sm text-text leading-relaxed line-clamp-4">
-                  {review.text}
-                </p>
-              </div>
+            {[...displayReviews, ...displayReviews].map((review, i) => (
+              <ReviewCard key={i} review={review} />
             ))}
           </div>
         </div>

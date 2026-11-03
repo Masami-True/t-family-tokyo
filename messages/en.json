@@ -152,7 +152,9 @@
     "cta": "View Reviews on Google Maps →",
     "review_request": "We welcome your Google reviews. Please share your experience with us.",
     "write_review": "Write a Review on Google",
-    "headline_suffix": "Reviews"
+    "headline_suffix": "Reviews",
+    "ta_headline_suffix": "Reviews",
+    "ta_all_reviews": "View all reviews →"
   },
   "faq": {
     "headline": "Frequently Asked Questions",

@@ -14,6 +14,7 @@ import StoreInfo from "@/components/StoreInfo";
 import Footer from "@/components/Footer";
 import FloatingContact from "@/components/FloatingContact";
 import FaqSection from "@/components/FaqSection";
+import TripAdvisorReviews from "@/components/TripAdvisorReviews";
 
 const OG_LOCALE_MAP: Record<string, string> = {
   ja: "ja_JP",
@@ -85,6 +86,7 @@ export default function HomePage() {
         <CollectionPreview />
         <Authenticity />
         <GoogleReviews />
+        <TripAdvisorReviews />
         <LiveCommerce />
         <B2BSection />
         <FaqSection />

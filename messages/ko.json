@@ -152,7 +152,9 @@
     "cta": "Google Maps에서 리뷰 보기 →",
     "review_request": "Google 리뷰를 기다리고 있습니다. 여러분의 경험을 공유해 주세요.",
     "write_review": "Google에 리뷰 작성",
-    "headline_suffix": "리뷰"
+    "headline_suffix": "리뷰",
+    "ta_headline_suffix": "리뷰",
+    "ta_all_reviews": "모든 리뷰 보기 →"
   },
   "faq": {
     "headline": "자주 묻는 질문",
