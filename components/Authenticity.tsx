@@ -2,10 +2,15 @@
 
 import { useEffect, useRef } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 export default function Authenticity() {
   const t = useTranslations("authenticity");
+  const locale = useLocale();
+  const authCheckUrl =
+    locale === "ja"
+      ? "https://authentic-check.jp/"
+      : "https://authentic-check.jp/en";
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -160,7 +165,7 @@ export default function Authenticity() {
           </p>
         </div>
         <a
-          href="https://authentic-check.jp/"
+          href={authCheckUrl}
           target="_blank"
           rel="noopener noreferrer"
           className="shrink-0 inline-flex items-center gap-2 border border-gold text-gold px-7 py-3 rounded text-sm tracking-wider hover:bg-gold hover:text-[#1a1a1a] transition-colors duration-200 whitespace-nowrap"

@@ -1,12 +1,24 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
 const TA_PAGE_URL =
   "https://www.tripadvisor.jp/Attraction_Review-g1066444-d34714545-Reviews-T_Vintage_GINZA-Chuo_Tokyo_Tokyo_Prefecture_Kanto.html";
 
-const taReviews = [
+const AVATAR_COLORS = [
+  "bg-teal-500", "bg-green-600", "bg-pink-500", "bg-purple-500",
+  "bg-emerald-500", "bg-cyan-500", "bg-orange-500", "bg-blue-500",
+  "bg-indigo-500", "bg-rose-500", "bg-yellow-600", "bg-green-500",
+];
+
+function nameToColor(name: string): string {
+  const code = name.split("").reduce((acc, c) => acc + c.charCodeAt(0), 0);
+  return AVATAR_COLORS[code % AVATAR_COLORS.length];
+}
+
+// Static reviews — fallback / seed (newest first)
+const staticReviews = [
   {
     name: "Dreamer55594559518",
     rating: 5,
@@ -97,6 +109,8 @@ const taReviews = [
   },
 ];
 
+type Review = (typeof staticReviews)[0];
+
 function TaBubbles({ count }: { count: number }) {
   return (
     <div className="flex gap-0.5 mb-2">
@@ -109,7 +123,7 @@ function TaBubbles({ count }: { count: number }) {
   );
 }
 
-function TaReviewCard({ review }: { review: (typeof taReviews)[0] }) {
+function TaReviewCard({ review }: { review: Review }) {
   return (
     <div className="w-[260px] sm:w-[280px] bg-white rounded-lg border border-border p-5 shrink-0">
       <div className="flex items-center gap-3 mb-3">
@@ -155,7 +169,41 @@ export default function TripAdvisorReviews() {
   const sectionRef = useRef<HTMLElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const animRef = useRef<number>(0);
+  const [displayReviews, setDisplayReviews] = useState<Review[]>(staticReviews);
 
+  // Fetch live reviews from /api/ta-reviews
+  useEffect(() => {
+    fetch("/api/ta-reviews")
+      .then((r) => r.json())
+      .then(
+        (data: {
+          reviews: { name: string; rating: number; date: string; text: string }[] | null;
+        }) => {
+          if (!data.reviews || data.reviews.length === 0) return;
+
+          const apiReviews: Review[] = data.reviews.map((r) => ({
+            name: r.name,
+            rating: r.rating,
+            date: r.date,
+            text: r.text,
+            initial: r.name.charAt(0).toUpperCase() || "?",
+            color: nameToColor(r.name),
+          }));
+
+          // Prepend API reviews (newest), deduplicate against static by name
+          const apiNames = new Set(apiReviews.map((r) => r.name));
+          const filteredStatic = staticReviews.filter(
+            (r) => !apiNames.has(r.name)
+          );
+          setDisplayReviews([...apiReviews, ...filteredStatic]);
+
+          if (scrollRef.current) scrollRef.current.scrollLeft = 0;
+        }
+      )
+      .catch(() => {});
+  }, []);
+
+  // Continuous auto-scroll
   useEffect(() => {
     const el = scrollRef.current;
     if (!el) return;
@@ -169,7 +217,7 @@ export default function TripAdvisorReviews() {
     };
     animRef.current = requestAnimationFrame(step);
     return () => cancelAnimationFrame(animRef.current);
-  }, []);
+  }, [displayReviews]);
 
   useEffect(() => {
     const el = sectionRef.current;
@@ -197,7 +245,7 @@ export default function TripAdvisorReviews() {
 
         <div className="overflow-hidden" ref={scrollRef}>
           <div className="flex gap-4 w-max">
-            {[...taReviews, ...taReviews].map((review, i) => (
+            {[...displayReviews, ...displayReviews].map((review, i) => (
               <TaReviewCard key={i} review={review} />
             ))}
           </div>

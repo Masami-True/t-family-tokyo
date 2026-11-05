@@ -2,11 +2,17 @@
 
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { socialLinks, navItems } from "@/lib/social-links";
 
 export default function Footer() {
   const t = useTranslations();
+  const locale = useLocale();
+  const localizedNavItems = navItems.map((item) =>
+    item.href.includes("authentic-check.jp")
+      ? { ...item, href: locale === "ja" ? "https://authentic-check.jp/" : "https://authentic-check.jp/en" }
+      : item
+  );
 
   return (
     <footer className="bg-dark py-8 px-6">
@@ -29,7 +35,7 @@ export default function Footer() {
 
         {/* Navigation Links */}
         <nav className="flex justify-center gap-6 mb-8 flex-wrap">
-          {navItems.map((item) =>
+          {localizedNavItems.map((item) =>
             item.external ? (
               <a
                 key={item.label}
